@@ -1,5 +1,5 @@
 {
-  "name": "ivypandit-website",
+  "name": "ivypandit-v2",
   "private": true,
   "scripts": {
     "dev": "next dev",
