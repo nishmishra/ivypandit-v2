@@ -1,0 +1,188 @@
+import Image from "next/image";
+import Link from "next/link";
+
+export const topics = [
+  ["🧬", "Epigenetics & Garbhadhana", "Parental environment, stress, diet, behavior, and offspring biology — explored with scientific caution and respect for samskara traditions."],
+  ["🧠", "Meditation & Neuroplasticity", "Attention, emotional regulation, contemplative practice, brain networks, resilience, and cognitive performance."],
+  ["📜", "Sanskrit & Cognition", "Mantra, sound, rhythm, memory, recitation, language structure, and the cognitive value of Indian knowledge systems."],
+  ["☀️", "Gita & Psychology", "Arjuna’s crisis, self-regulation, purpose, dharma, decision-making, stress, and human flourishing."],
+  ["🏹", "Mahabharata & Leadership", "Conflict, ethics, strategy, moral injury, resentment, forgiveness, and decision-making under uncertainty."],
+  ["🕉️", "Vedanta & Consciousness", "Consciousness, selfhood, attention, philosophy of mind, neuroscience, and intellectual humility."],
+];
+
+export const series = [
+  "Bhagavad Gita & Neuroscience",
+  "Mahabharata & Psychology",
+  "Sanskrit, Sound & the Brain",
+  "Meditation & Neuroplasticity",
+  "Consciousness: Vedanta and Science",
+  "Garbhadhana Samskara & Epigenetics",
+];
+
+export function Nav() {
+  return (
+    <nav className="nav">
+      <Link href="/" className="brand">Ivy Pandit</Link>
+      <div className="navlinks">
+        <Link href="/about">About</Link>
+        <Link href="/topics">Topics</Link>
+        <Link href="/research">Research</Link>
+        <Link href="/videos">Videos</Link>
+        <Link href="/contact">Contact</Link>
+      </div>
+    </nav>
+  );
+}
+
+export function Footer() {
+  return (
+    <footer>
+      <div>
+        <strong>Ivy Pandit</strong>
+        <span>Neuroscience • Consciousness • Sanatana Dharma</span>
+      </div>
+      <div className="footerLinks">
+        <Link href="/about">About</Link>
+        <Link href="/research">Research</Link>
+        <Link href="/contact">Contact</Link>
+      </div>
+    </footer>
+  );
+}
+
+export function Hero() {
+  return (
+    <section className="hero">
+      <div className="glow glowOne" />
+      <div className="glow glowTwo" />
+      <div className="heroContent">
+        <div className="heroText">
+          <div className="eyebrow">🕉 Neuroscience • Sanskrit • Consciousness</div>
+          <h1>Ivy Pandit</h1>
+          <h2>Neuroscience & Sanatana Dharma</h2>
+          <p className="lead">Where modern neuroscience meets the living wisdom of Indian knowledge systems.</p>
+          <p className="bodyText">Exploring consciousness, epigenetics, meditation, Sanskrit literature, cognitive science, and the scientific value of the Vedas, Mahabharata, Puranas, and other Shastras.</p>
+          <div className="byline">
+            <strong>Nishant K Mishra, MD PhD</strong>
+            <span>Physician • Researcher • Sanskrit Enthusiast</span>
+          </div>
+          <div className="buttons">
+            <Link className="button primary" href="/videos">Watch Videos</Link>
+            <Link className="button secondary" href="/research">Explore Research</Link>
+          </div>
+        </div>
+        <div className="heroCard">
+          <Image src="/images/dr-nishant-mishra.jpeg" alt="Dr Nishant K Mishra" width={720} height={900} priority />
+          <div className="heroCaption">
+            <span>Featured Topic</span>
+            <h3>गर्भाधान संस्कार और Epigenetics</h3>
+            <p>भविष्य की संतान का विज्ञान | Neuroscience & Sanatana Dharma</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function BannerStrip() {
+  return (
+    <section className="bannerStrip">
+      <Image src="/images/ivy-pandit-banner.png" alt="Ivy Pandit YouTube banner" width={1920} height={768} />
+    </section>
+  );
+}
+
+export function AboutSection() {
+  return (
+    <section className="section split">
+      <div className="portraitPanel">
+        <Image src="/images/dr-nishant-mishra.jpeg" alt="Dr Nishant Mishra portrait" width={700} height={900} />
+      </div>
+      <div>
+        <p className="kicker">About</p>
+        <h2>About Dr. Nishant Mishra</h2>
+        <p>Dr. Nishant K Mishra is a physician-scientist, neurologist, educator, and Sanskrit enthusiast dedicated to exploring the relationship between modern neuroscience and the philosophical traditions of Sanatana Dharma.</p>
+        <p>Through Ivy Pandit, he presents evidence-informed discussions on consciousness, meditation, cognition, epigenetics, neuroplasticity, Sanskrit literature, and the scientific interpretation of ancient contemplative practices.</p>
+        <p>The mission is to build a credible bridge between ancient wisdom traditions and contemporary biomedical science while encouraging intellectual honesty, careful evidence, and respectful interdisciplinary dialogue.</p>
+        <div className="miniGrid">
+          <div><b>🧠 Neuroscience</b><span>Cognition, attention, neuroplasticity, meditation, and consciousness.</span></div>
+          <div><b>📜 Sanskrit & Dharma</b><span>Vedic literature, mantra, dharma, ethics, and contemplative traditions.</span></div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function TopicsSection() {
+  return (
+    <section className="section darkSection">
+      <p className="kicker center">Core Themes</p>
+      <h2 className="center">Science Meets Sacred Knowledge</h2>
+      <p className="center intro">Ivy Pandit is built around serious inquiry: not overclaiming, not dismissing tradition, but asking what can be meaningfully understood, tested, and discussed.</p>
+      <div className="topicGrid">
+        {topics.map(([icon, title, desc]) => (
+          <article className="topicCard" key={title}>
+            <div className="icon">{icon}</div>
+            <h3>{title}</h3>
+            <p>{desc}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+export function ResearchSection() {
+  return (
+    <section className="section split reverse">
+      <div>
+        <p className="kicker">Evidence & Inquiry</p>
+        <h2>Research Hub</h2>
+        <p>A future research library will organize Indian knowledge systems alongside modern scientific evidence, separating established evidence from emerging research and open philosophical questions.</p>
+        <div className="evidenceBox">
+          <div><strong>Strong Evidence</strong><span>Meditation, stress biology, attention, neuroplasticity.</span></div>
+          <div><strong>Emerging Research</strong><span>Chanting, mantra, Sanskrit recitation, cognition.</span></div>
+          <div><strong>Open Questions</strong><span>Consciousness, metaphysics, subtle-body concepts.</span></div>
+        </div>
+      </div>
+      <div className="seriesPanel">
+        <h3>Flagship Series</h3>
+        {series.map((item) => <div className="seriesItem" key={item}>✦ {item}</div>)}
+      </div>
+    </section>
+  );
+}
+
+export function VideosSection() {
+  return (
+    <section className="section darkSection">
+      <p className="kicker center">Featured Content</p>
+      <h2 className="center">Latest Lectures & Videos</h2>
+      <p className="center intro">Embed your YouTube channel, featured playlist, and short videos here as Ivy Pandit grows.</p>
+      <div className="videoGrid">
+        {series.slice(0,3).map((item) => (
+          <article className="videoCard" key={item}>
+            <div className="play">▶</div>
+            <h3>{item}</h3>
+            <p>Deep explorations integrating evidence-based neuroscience with Indian knowledge traditions.</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+export function ContactSection() {
+  return (
+    <section className="section contact">
+      <p className="kicker center">Join The Community</p>
+      <h2 className="center">The Ivy Pandit Letter</h2>
+      <p className="center intro">Receive neuroscience insights, Sanskrit reflections, research updates, new lectures, and announcements.</p>
+      <form className="signup" action="mailto:contact@ivypandit.com" method="post">
+        <input placeholder="Enter your email" aria-label="Email address" />
+        <button type="submit">Join Now</button>
+      </form>
+      <p className="small center">For talks, collaborations, and interviews: contact@ivypandit.com</p>
+    </section>
+  );
+}
