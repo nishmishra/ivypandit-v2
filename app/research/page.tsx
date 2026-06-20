@@ -1,1 +1,33 @@
-export default function Research(){return <main className="article"><h1>Research & Scientific Background</h1><p className="lead">IvyPandit is grounded in the scientific training and research career of Nishant K. Mishra, MD, PhD.</p><p>Dr. Mishra's scientific interests include stroke, cerebrovascular disease, epilepsy, cognition, neuroplasticity, brain health, clinical outcomes, and the careful study of questions emerging at the intersection of neuroscience and Indian Knowledge Systems.</p><div className="card"><h2>Google Scholar</h2><p>View peer-reviewed publications, citations, and scholarly work.</p><p><a className="btn" href="https://scholar.google.com/citations?user=1n2JUc8AAAAJ&hl=en">Open Google Scholar Profile</a></p></div><h2>Scientific achievements to showcase</h2><ul><li>MD, PhD physician-scientist and neurologist.</li><li>International research career across India, Europe, and the United States.</li><li>Peer-reviewed publications in neurology, stroke, cerebrovascular disease, epilepsy, and related fields.</li><li>Public educator connecting neuroscience, Sanskrit literature, cognition, brain health, and Indian Knowledge Systems.</li><li>Advocate for evidence-informed, India-relevant medical research, AI-enabled healthcare, and brain health education.</li></ul><h2>Research interests connected to IvyPandit</h2><div className="grid"><div className="card"><h3>Attention and learning</h3><p>Focused attention, memory, language, recitation, gurukul learning, and cognitive training.</p></div><div className="card"><h3>Meditation and neuroplasticity</h3><p>Stress regulation, emotional control, attention networks, and brain health.</p></div><div className="card"><h3>Ritual and the grieving brain</h3><p>Tarpana, shraddha, attachment, memory, grief, lineage, and emotional regulation.</p></div><div className="card"><h3>Indian data for Indian health</h3><p>India-specific research, registries, AI, prevention, and personalized care.</p></div></div><p className="small">IvyPandit content is educational and hypothesis-generating. It does not replace medical advice or formal scriptural instruction.</p></main>}
+export default function Research(){
+  return <main className="article">
+    <h1>Research & Scientific Background</h1>
+    <p className="lead">The scientific credibility behind IvyPandit comes from a career in neurology, stroke research, epilepsy, clinical outcomes, and international collaborative neuroscience.</p>
+    <div className="banner"><img src="/images/homepage-about-banner.png" alt="IvyPandit research and education" /></div>
+    <h2>Selected Scientific Highlights</h2>
+    <ul>
+      <li>Assistant Professor of Neurology and Stroke Director in a major academic and Veterans Affairs clinical setting.</li>
+      <li>Research focus in stroke, post-stroke epilepsy, neurovascular disease, precision medicine, neurogenomics, and long-term neurological outcomes.</li>
+      <li>Founder and convenor of the International Post-Stroke Epilepsy Research Consortium (IPSERC).</li>
+      <li>Founder of the International Post-Stroke Epilepsy Research Repository (IPSERR).</li>
+      <li>Publications in leading journals including <em>The BMJ</em>, <em>Stroke</em>, <em>Neurology</em>, <em>JAMA Neurology</em>, and <em>Epilepsy & Behavior</em>.</li>
+      <li>Scientific work contributing to guideline discussions and international evidence generation in stroke care.</li>
+    </ul>
+
+    <div className="card highlight brainIndia">
+      <h2>Brain Health in India</h2>
+      <p><strong>Stroke Program for India</strong> reflects a long-standing commitment to strengthening brain health, stroke care, training, and public-health infrastructure in India.</p>
+      <p>This early publication proposed a scalable national stroke-care model for India, including the idea of specialized stroke training and a broader public-health approach to neurological disease.</p>
+      <p>It remains part of the larger IvyPandit mission: to connect rigorous neuroscience, evidence generation, and Indian priorities for the welfare of society.</p>
+      <p><a className="btn" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2859584/">Read Stroke Program for India</a></p>
+    </div>
+
+    <div className="card highlight">
+      <h2>Google Scholar</h2>
+      <p>View publications, citations, and scholarly work.</p>
+      <p><a className="btn" href="https://scholar.google.com/citations?user=1n2JUc8AAAAJ&hl=en">Open Google Scholar Profile</a></p>
+    </div>
+    <h2>Why this matters for IvyPandit</h2>
+    <p>IvyPandit does not claim that ancient texts replace modern science. Rather, it asks whether ideas from Sanskrit literature and Indian Knowledge Systems can inspire careful, testable, and useful questions about the brain, behavior, education, resilience, and human flourishing.</p>
+    <p className="small">Scientific credentials are provided for transparency and context. IvyPandit content remains educational, hypothesis-generating, and independent.</p>
+  </main>
+}

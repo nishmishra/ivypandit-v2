@@ -1,1 +1,20 @@
-export default function About(){return <main className="article"><h1>About Dr. Nishant K. Mishra</h1><p className="lead"><strong>Nishant K. Mishra, MD, PhD</strong><br/>Exploring Ancient Wisdom Through Modern Neuroscience</p><div className="banner"><img src="/images/ivypandit-channel-banner.png" alt="IvyPandit banner" /></div><p>I am not a traditional Acharya or Guru. I am a neurologist, scientist, and lifelong student of Sanskrit literature. IvyPandit is my attempt to explore questions about the mind, memory, learning, suffering, ethics, attention, consciousness, and human flourishing through both modern science and the Indian knowledge tradition.</p><p>My work brings together neuroscience, clinical medicine, research, Sanskrit reading, and respectful engagement with Indian Knowledge Systems. The spirit of this platform is inquiry: to ask what classical texts can teach us, what modern science can test, and where humility is required.</p><h2>Why this matters</h2><p>Many people are interested in shastra, meditation, memory, mantra, ritual, and consciousness. Many others are trained in science but hesitant to engage traditional knowledge. IvyPandit tries to create a thoughtful bridge between these worlds without overclaiming and without dismissing tradition.</p><h2>How I approach the texts</h2><div className="grid"><div className="card"><h3>What the text says</h3><p>First, read carefully and respectfully.</p></div><div className="card"><h3>What it may mean</h3><p>Offer interpretation clearly as interpretation.</p></div><div className="card"><h3>What science knows</h3><p>Use evidence, limitations, and cautious language.</p></div><div className="card"><h3>What remains open</h3><p>Preserve wonder without making unsupported claims.</p></div></div><h2>Contact</h2><p><a href="mailto:nishant.mishra@ivypandit.com">nishant.mishra@ivypandit.com</a></p></main>}
+export default function About(){
+  return <main className="article">
+    <h1>About IvyPandit</h1>
+    <p className="lead">IvyPandit is a public education initiative devoted to ancient wisdom, modern neuroscience, and timeless inquiry.</p>
+    <div className="banner"><img src="/images/ivypandit-bridge-banner.png" alt="IvyPandit bridge between Varanasi and academic inquiry" /></div>
+    <h2>Mission</h2>
+    <p>IvyPandit is a sincere attempt to promote the Indian Knowledge System for the good of the world. It explores questions of mind, memory, learning, consciousness, ethics, and human flourishing through both modern neuroscience and the Indian knowledge tradition.</p>
+    <p>The spirit of IvyPandit is not to overclaim, dismiss, or preach. It is to inquire with humility, read with respect, and ask which ideas may inspire careful scholarship, public education, and future research.</p>
+    <blockquote>वसुधैव कुटुम्बकम्<br/><span>The world is one family.</span></blockquote>
+    <h2>Guiding Principles</h2>
+    <div className="grid">
+      <div className="card"><h3>ऋतं च सत्यं च</h3><p>Reality and truth: the shared ground of scientific and philosophical inquiry.</p></div>
+      <div className="card"><h3>Evidence and humility</h3><p>Scientific claims require evidence. Interpretations are presented as interpretations.</p></div>
+      <div className="card"><h3>Respectful dialogue</h3><p>Traditional knowledge and contemporary science can converse without reducing one to the other.</p></div>
+      <div className="card"><h3>Service</h3><p>The goal is knowledge that benefits individuals, communities, India, and the world.</p></div>
+    </div>
+    <h2>What IvyPandit is not</h2>
+    <p>IvyPandit is not a medical service, not a religious authority, and not a substitute for clinical care. It is an educational platform for thoughtful, hypothesis-generating discussion.</p>
+  </main>
+}

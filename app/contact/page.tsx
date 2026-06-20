@@ -1,1 +1,14 @@
-export default function Contact(){return <main className="article"><h1>Contact</h1><p className="lead">For speaking invitations, collaborations, interviews, media requests, and IvyPandit inquiries.</p><div className="card"><h2>Email</h2><p><a href="mailto:nishant.mishra@ivypandit.com">nishant.mishra@ivypandit.com</a></p></div><h2>Useful links</h2><p><a href="https://www.youtube.com/playlist?list=PLwQYDVEShtUqlbNhL2Rc53GbmzziVtgwN">YouTube Lecture Playlist</a></p><p><a href="https://scholar.google.com/citations?user=1n2JUc8AAAAJ&hl=en">Google Scholar Profile</a></p><h2>Best inquiry types</h2><p><span className="pill">Speaking invitation</span><span className="pill">University lecture</span><span className="pill">Medical conference</span><span className="pill">Sanskrit event</span><span className="pill">Research collaboration</span><span className="pill">Media interview</span></p></main>}
+export default function Contact(){
+  return <main className="article">
+    <h1>Contact IvyPandit</h1>
+    <p className="lead">For lectures, conversations, educational collaborations, media inquiries, and public programs.</p>
+    <div className="card highlight">
+      <h2>Email</h2>
+      <p><a href="mailto:nishant.mishra@ivypandit.com">nishant.mishra@ivypandit.com</a></p>
+    </div>
+    <h2>Useful Links</h2>
+    <p><a className="btn" href="https://www.youtube.com/@IvyPandit">YouTube @IvyPandit</a></p>
+    <p><a className="btn secondary" href="https://www.facebook.com/profile.php?id=61576900484843">Facebook Page</a></p>
+    <p><a className="btn secondary" href="https://scholar.google.com/citations?user=1n2JUc8AAAAJ&hl=en">Google Scholar</a></p>
+  </main>
+}
