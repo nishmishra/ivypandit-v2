@@ -1,20 +1,2 @@
-export default function About(){
-  return <main className="article">
-    <h1>About IvyPandit</h1>
-    <p className="lead">IvyPandit is a public education initiative devoted to ancient wisdom, modern neuroscience, and timeless inquiry.</p>
-    <div className="banner"><img src="/images/ivypandit-bridge-banner.png" alt="IvyPandit bridge between Varanasi and academic inquiry" /></div>
-    <h2>Mission</h2>
-    <p>IvyPandit is a sincere attempt to promote the Indian Knowledge System for the good of the world. It explores questions of mind, memory, learning, consciousness, ethics, and human flourishing through both modern neuroscience and the Indian knowledge tradition.</p>
-    <p>The spirit of IvyPandit is not to overclaim, dismiss, or preach. It is to inquire with humility, read with respect, and ask which ideas may inspire careful scholarship, public education, and future research.</p>
-    <blockquote>वसुधैव कुटुम्बकम्<br/><span>The world is one family.</span></blockquote>
-    <h2>Guiding Principles</h2>
-    <div className="grid">
-      <div className="card"><h3>ऋतं च सत्यं च</h3><p>Reality and truth: the shared ground of scientific and philosophical inquiry.</p></div>
-      <div className="card"><h3>Evidence and humility</h3><p>Scientific claims require evidence. Interpretations are presented as interpretations.</p></div>
-      <div className="card"><h3>Respectful dialogue</h3><p>Traditional knowledge and contemporary science can converse without reducing one to the other.</p></div>
-      <div className="card"><h3>Service</h3><p>The goal is knowledge that benefits individuals, communities, India, and the world.</p></div>
-    </div>
-    <h2>What IvyPandit is not</h2>
-    <p>IvyPandit is not a medical service, not a religious authority, and not a substitute for clinical care. It is an educational platform for thoughtful, hypothesis-generating discussion.</p>
-  </main>
-}
+import Link from 'next/link';
+export default function About(){return <><section className="pageHero"><h1>About IvyPandit</h1><p>A sincere attempt to promote Indian Knowledge Systems for the good of the world.</p></section><main className="content"><div className="twoCol"><div className="panel"><h2>What IvyPandit Is</h2><p>IvyPandit is an independent educational initiative at the intersection of neuroscience, Sanskrit literature, Indian Knowledge Systems, cognition, consciousness, and human flourishing.</p><p>It is not a religious organization, medical service, or institutional program. It is a platform for inquiry, learning, and dialogue.</p><p className="quoteBlock">वसुधैव कुटुम्बकम्<br/><small>The world is one family.</small></p></div><div className="panel"><h2>Why It Exists</h2><p>The goal is to build bridges: between ancient wisdom and modern science, between India and the world, and between scholarship and public understanding.</p><p>IvyPandit is meant to grow beyond one person — into a living archive and educational resource for future generations.</p><Link className="textLink" href="/journey">Meet the founder →</Link></div></div><img className="heroBanner" src="/images/ivypandit-legacy-hero.jpg" alt="IvyPandit mission banner"/></main></>}

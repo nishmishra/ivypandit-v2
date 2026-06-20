@@ -1,26 +1,8 @@
-const videos = [
-  ['Why I Created IvyPandit: Ancient Wisdom, Modern Neuroscience, and the Search for Understanding','The launch video introducing the purpose of the IvyPandit platform.','https://youtu.be/XkEqWuym3dc?si=-rj450GAkbZZYALF'],
-  ['Can Learning Sanskrit Change the Brain?','A discussion of language, memory, attention, recitation, and neuroplasticity.','https://youtu.be/egQBTnJCpAQ?si=m93SLXtxHJCTrnJH'],
-  ['Did Gurukuls Train Extraordinary Minds?','Learning, focused attention, natural environments, memory, and the science of education.','https://youtu.be/z8cUfCnHV10?si=1hHuUJD6dJO0dsx8'],
-  ['Did Ancient India Understand Hygiene Before Germ Theory?','Ayurveda, cleanliness, public health, daily practice, and contemporary scientific reflection.','https://youtu.be/j-7VlYV8WVQ?si=Nn-T0RRNV9VaAtB8']
-];
-
-export default function Videos(){
-  return <main className="article">
-    <h1>Featured Lectures</h1>
-    <p className="lead">A curated entry point into IvyPandit talks on neuroscience, Sanskrit literature, Indian Knowledge Systems, cognition, and human flourishing.</p>
-    <div className="videoCards pageCards">
-      {videos.map(([title,text,href]) => <a className="videoCard" href={href} key={title}><h3>{title}</h3><p>{text}</p><span>Watch →</span></a>)}
-    </div>
-    <h2>Gayatri Mantra Series</h2>
-    <p>A focused series on the Gayatri Mantra, Sanskrit recitation, meaning, and neuroscience.</p>
-    <p><a className="btn" href="https://youtube.com/playlist?list=PLwQYDVEShtUrQTTjvBffuXE8wWoEnKEXj&si=c76V84a4zyCdKdM_">Open Gayatri Playlist</a></p>
-    <div className="embed"><iframe src="https://www.youtube.com/embed/videoseries?list=PLwQYDVEShtUrQTTjvBffuXE8wWoEnKEXj" title="Gayatri Mantra Series" allowFullScreen></iframe></div>
-    <h2>Shastra and Neuroscience Talks</h2>
-    <p>All talks connecting shastra, neuroscience, cognition, meditation, brain health, and contemporary life.</p>
-    <div className="embed"><iframe src="https://www.youtube.com/embed/videoseries?list=PLwQYDVEShtUqlbNhL2Rc53GbmzziVtgwN" title="IvyPandit Lecture Playlist" allowFullScreen></iframe></div>
-    <h2>IvyPandit Channel Archive</h2>
-    <p>Simple readings of the Shastras and all past recordings are available on the IvyPandit YouTube channel.</p>
-    <p><a className="btn secondary" href="https://www.youtube.com/@IvyPandit">Visit YouTube Channel</a></p>
-  </main>
-}
+export default function Videos(){return <><section className="pageHero"><h1>Lectures</h1><p>Flagship talks connecting neuroscience, Sanskrit literature, Indian Knowledge Systems, and human flourishing.</p></section><main className="content"><div className="videoGrid">
+ <div className="panel"><h2>Why I Created IvyPandit</h2><p>The launch video explaining the mission behind IvyPandit.</p><a className="textLink" href="https://youtu.be/XkEqWuym3dc?si=-rj450GAkbZZYALF">Watch Launch Video →</a></div>
+ <div className="panel"><h2>Gayatri Mantra Series</h2><p>Text, meaning, philosophy, attention, learning, memory, and neuroplasticity.</p><a className="textLink" href="https://youtube.com/playlist?list=PLwQYDVEShtUrQTTjvBffuXE8wWoEnKEXj&si=c76V84a4zyCdKdM_">Watch Playlist →</a></div>
+ <div className="panel" id="sanskrit-brain"><h2>Can Sanskrit Change the Brain?</h2><p>A hypothesis-generating exploration of Sanskrit learning, attention, memory, and cognitive training.</p><a className="textLink" href="https://youtu.be/egQBTnJCpAQ?si=m93SLXtxHJCTrnJH">Watch Video →</a></div>
+ <div className="panel" id="gurukul"><h2>Gurukul and Attention</h2><p>How environment, discipline, memorization, and nature may shape attention and learning.</p><a className="textLink" href="https://youtu.be/z8cUfCnHV10?si=1hHuUJD6dJO0dsx8">Watch Video →</a></div>
+ <div className="panel"><h2>Hygiene Before Germ Theory?</h2><p>A public-health reflection on Ayurveda, cleanliness, and ancient Indian approaches to hygiene.</p><a className="textLink" href="https://youtu.be/j-7VlYV8WVQ?si=Nn-T0RRNV9VaAtB8">Watch Video →</a></div>
+ <div className="panel"><h2>All IvyPandit Recordings</h2><p>The full archive of readings, lectures, and reflections.</p><a className="textLink" href="https://www.youtube.com/@IvyPandit">Visit Channel →</a></div>
+ </div></main></>}

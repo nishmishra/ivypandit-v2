@@ -2,7 +2,7 @@ export default function Page() {
   return (
     <main>
       <section className="final-page-banner">
-        <img src="/images/cultural-page-banner.png" alt="Ivy Pandit banner" />
+        <img src="/images/cultural-page-banner.jpg" alt="Ivy Pandit banner" />
       </section>
 
       <section className="page-hero">

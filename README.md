@@ -13,6 +13,3 @@ Homepage updated to the approved IvyPandit 2.0 design style with:
 - No package-lock.json, matching the deployment fix that worked on Vercel
 
 Deploy by uploading the contents of this ZIP to the GitHub repo root for `ivypandit-v2`.
-
-
-Update: Added Stroke Program for India / brain health in India section with PMC link.

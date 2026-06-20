@@ -1,1 +1,1 @@
-export { default } from '../videos/page';
+export default function Youtube(){return <><section className="pageHero"><h1>YouTube</h1><p>Lectures, readings, and reflections from the IvyPandit channel.</p></section><main className="content"><div className="panel"><h2>IvyPandit Channel</h2><p>All past recordings of Shastra readings and neuroscience lectures are available on YouTube.</p><p><a className="textLink" href="https://www.youtube.com/@IvyPandit">Visit IvyPandit on YouTube →</a></p></div></main></>}

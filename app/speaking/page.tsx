@@ -1,16 +1,1 @@
-export default function Speaking(){
-  return <main className="article">
-    <h1>Lectures & Conversations</h1>
-    <p className="lead">Keynote lectures, invited presentations, educational programs, panel discussions, and public conversations on neuroscience, Sanskrit literature, Indian Knowledge Systems, and human flourishing.</p>
-    <div className="banner"><img src="/images/ivypandit-channel-banner.png" alt="IvyPandit Lectures and Conversations" /></div>
-    <blockquote>यद्यदाचरति श्रेष्ठस्तत्तदेवेतरो जनः ।<br/>स यत्प्रमाणं कुरुते लोकस्तदनुवर्तते ॥<br/><span>Whatever exemplary individuals do, others follow.</span></blockquote>
-    <h2>Representative Topics</h2>
-    <div className="grid">
-      {['Sanskrit and the Brain','Neuroplasticity and Learning','Mahabharata and Human Psychology','Gurukul Education and Attention Training','Meditation and Neuroscience','Consciousness: Ancient Questions and Modern Science','Indian Knowledge Systems and Global Health','Ritual, Grief, and the Brain'].map(x=><div className="card" key={x}><h3>{x}</h3><p>Evidence-informed, accessible, and respectful lecture for mixed scholarly and general audiences.</p></div>)}
-    </div>
-    <h2>Audiences</h2>
-    <p><span className="pill">Universities</span><span className="pill">Medical schools</span><span className="pill">Sanskrit departments</span><span className="pill">Professional societies</span><span className="pill">Community organizations</span><span className="pill">Cultural institutions</span><span className="pill">Public audiences</span></p>
-    <h2>Contact</h2>
-    <p>For lectures, conversations, workshops, interviews, and collaborations: <a href="mailto:nishant.mishra@ivypandit.com">nishant.mishra@ivypandit.com</a></p>
-  </main>
-}
+export default function Speaking(){return <><section className="pageHero"><h1>Lectures & Conversations</h1><p>Keynotes, public lectures, workshops, podcasts, panels, and consulting conversations.</p></section><main className="content"><div className="twoCol"><div className="panel"><h2>Available Formats</h2><ul><li>Keynote lectures and invited talks</li><li>University and community programs</li><li>Workshops on neuroscience, Sanskrit, and learning</li><li>Podcasts, interviews, and moderated conversations</li><li>Consulting on education, brain health, and IKS-oriented public scholarship</li></ul></div><div className="panel"><h2>Representative Topics</h2><ul><li>Sanskrit and the Brain</li><li>Mahabharata and Human Psychology</li><li>Neuroplasticity and Learning</li><li>Gurukul Education and Attention Training</li><li>Meditation, Consciousness, and Neuroscience</li><li>Indian Knowledge Systems and Global Health</li></ul></div></div><div className="panel"><h2>Leadership Through Example</h2><p className="quoteBlock">यद्यदाचरति श्रेष्ठस्तत्तदेवेतरो जनः ।<br/>स यत्प्रमाणं कुरुते लोकस्तदनुवर्तते ॥</p><p>Public education carries responsibility. IvyPandit lectures aim to invite careful thought, not blind agreement.</p><p><a className="textLink" href="mailto:nishant.mishra@ivypandit.com">Invite / Collaborate →</a></p></div></main></>}

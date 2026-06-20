@@ -87,7 +87,7 @@ export function Hero() {
 export function BannerStrip() {
   return (
     <section className="bannerStrip">
-      <Image src="/images/ivy-pandit-banner.png" alt="Ivy Pandit YouTube banner" width={1920} height={768} />
+      <Image src="/images/ivy-pandit-banner.jpg" alt="Ivy Pandit YouTube banner" width={1920} height={768} />
     </section>
   );
 }

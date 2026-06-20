@@ -1,15 +1,1 @@
-export default function Publications() {
-  return (
-    <main>
-      <section className="final-page-banner">
-        <img src="/images/cultural-page-banner.png" alt="Ivy Pandit banner" />
-      </section>
-
-      <section className="page-hero"><h1>Publications</h1><p>Selected scientific work and future research resources related to neurology, stroke, cognition, and brain health.</p></section>
-      <section className="section copy narrow">
-        <p>This page can include selected peer-reviewed publications, invited lectures, conference presentations, and research collaborations.</p>
-        <p>Add exact publication citations later from your CV, PubMed, or Google Scholar for accuracy.</p>
-      </section>
-    </main>
-  );
-}
+export default function Publications(){return <><section className="pageHero"><h1>Publications</h1><p>Research publications and scientific profile.</p></section><main className="content"><div className="panel"><h2>Google Scholar</h2><p>For current publications, citations, and research output, visit the Google Scholar profile.</p><p><a className="textLink" href="https://scholar.google.com/citations?user=1n2JUc8AAAAJ&hl=en">Open Google Scholar →</a></p></div><div className="panel"><h2>Stroke Program for India</h2><p>A long-standing commitment to India’s brain-health infrastructure.</p><p><a className="textLink" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2859584/">Read Stroke Program for India →</a></p></div></main></>}
