@@ -1,29 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import Link from 'next/link';
-
-export const metadata: Metadata = {
-  title: 'IvyPandit | Ancient Wisdom. Modern Neuroscience.',
-  description: 'IvyPandit is an independent educational initiative exploring neuroscience, Sanskrit literature, Indian Knowledge Systems, consciousness, learning, and human flourishing.'
-};
-
-const nav = [
-  ['Home','/'], ['About','/about'], ['Research','/research'], ['Shastra Study','/shastra-study'], ['Lectures','/videos'], ['Journey','/journey'], ['Speaking','/speaking'], ['Disclaimer','/disclaimer'], ['Contact','/contact']
-];
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return <html lang="en"><body>
-    <div className="topbar"><div className="topInner">
-      <div><Link href="/">English</Link><span>|</span><Link href="/hi">हिन्दी</Link><span>|</span><Link href="/sa">संस्कृतम्</Link></div>
-      <div className="social"><a href="https://www.youtube.com/@IvyPandit">YouTube</a><a href="https://www.facebook.com/profile.php?id=61576900484843">Facebook</a><a href="https://x.com/nishmishra">X</a><a href="https://www.linkedin.com/in/nishantkmishra">LinkedIn</a></div>
-    </div></div>
-    <header className="header"><Link href="/" className="brand"><span className="tree">☀</span><span><b>IVY PANDIT</b><small>Ancient Wisdom. Modern Neuroscience.</small></span></Link><nav>{nav.map(([n,h])=><Link key={h} href={h}>{n}</Link>)}</nav></header>
-    {children}
-    <footer className="footer"><div className="footerGrid">
-      <div><div className="footBrand">☀ IVY PANDIT</div><p>Ancient Wisdom.<br/>Modern Neuroscience.<br/>Timeless Inquiry.</p></div>
-      <div><h4>Explore</h4><Link href="/videos">Lectures</Link><Link href="/shastra-study">Shastra Study</Link><Link href="/research">Research</Link><Link href="/speaking">Lectures & Conversations</Link></div>
-      <div><h4>Connect</h4><a href="mailto:nishant.mishra@ivypandit.com">nishant.mishra@ivypandit.com</a><a href="https://www.youtube.com/@IvyPandit">YouTube @IvyPandit</a><a href="https://www.facebook.com/profile.php?id=61576900484843">Facebook</a><a href="https://scholar.google.com/citations?user=1n2JUc8AAAAJ&hl=en">Google Scholar</a></div>
-      <div><h4>Principle</h4><Link href="/principles#sa-vidya">सा विद्या या विमुक्तये</Link><p>Knowledge that liberates.</p><Link href="/disclaimer">Disclaimer</Link></div>
-    </div><div className="footerBottom">IvyPandit is independent. Views are personal, educational, and hypothesis-generating; not medical advice and not the views of any employer or institution. <span>© 2026 IvyPandit.</span></div></footer>
-  </body></html>;
+import Link from 'next/link'; export const metadata: Metadata = { title: 'IvyPandit | Ancient Wisdom. Modern Neuroscience.', description: 'IvyPandit is an independent educational initiative exploring neuroscience, Sanskrit literature, Indian Knowledge Systems, consciousness, learning, and human flourishing.'
+}; const nav = [ ['Home','/'], ['About','/about'], ['Research','/research'], ['Shastra Study','/shastra-study'], ['Lectures','/videos'], ['Journey','/journey'], ['Speaking','/speaking'], ['Disclaimer','/disclaimer'], ['Contact','/contact']
+]; export default function RootLayout({ children }: { children: React.ReactNode }) { return <html lang="en"><body> <div className="topbar"><div className="topInner"> <div><Link href="/">English</Link><span>|</span><Link href="/hi">हिन्दी</Link><span>|</span><Link href="/sa">संस्कृतम्</Link></div> <div className="social"><a href="https://www.youtube.com/@IvyPandit">YouTube</a><a href="https://www.facebook.com/profile.php?id=61576900484843">Facebook</a><a href="https://x.com/IvyPandit">X</a><a href="https://www.linkedin.com/in/ivy-pandit/">LinkedIn</a></div> </div></div> <header className="header"><Link href="/" className="brand"><span className="tree">☀</span><span><b>IVY PANDIT</b><small>Ancient Wisdom. Modern Neuroscience.</small></span></Link><nav>{nav.map(([n,h])=><Link key={h} href={h}>{n}</Link>)}</nav></header> {children} <footer className="footer"><div className="footerGrid"> <div><div className="footBrand">☀ IVY PANDIT</div><p>Ancient Wisdom.<br/>Modern Neuroscience.<br/>Timeless Inquiry.</p></div> <div><h4>Explore</h4><Link href="/videos">Lectures</Link><Link href="/shastra-study">Shastra Study</Link><Link href="/research">Research</Link><Link href="/speaking">Lectures & Conversations</Link></div> <div><h4>Connect</h4><a href="mailto:nishant.mishra@ivypandit.com">nishant.mishra@ivypandit.com</a><a href="https://www.youtube.com/@IvyPandit">YouTube @IvyPandit</a><a href="https://www.facebook.com/profile.php?id=61576900484843">Facebook</a><a href="https://scholar.google.com/citations?user=1n2JUc8AAAAJ&hl=en">Google Scholar</a></div> <div><h4>Principle</h4><Link href="/principles#sa-vidya">सा विद्या या विमुक्तये</Link><p>Knowledge that liberates.</p><Link href="/disclaimer">Disclaimer</Link></div> </div><div className="footerBottom">IvyPandit is independent. Views are personal, educational, and hypothesis-generating; not medical advice and not the views of any employer or institution. <span>© 2026 IvyPandit.</span></div></footer> </body></html>;
 }
