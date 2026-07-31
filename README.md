@@ -1,9 +1,39 @@
-# IvyPandit v2 Design Update Homepage updated to the approved IvyPandit 2.0 design style with: - Orange/gold hero design
-- Dr. Nishant K. Mishra profile and Varanasi imagery
-- Gayatri Mantra playlist link
-- IvyPandit YouTube channel archive link
-- Shastra Study emphasis
-- About Me panel with additional photographs
-- Research, Speaking, Support, Contact navigation
-- `.npmrc` forcing public npm registry
-- No package-lock.json, matching the deployment fix that worked on Vercel Deploy by uploading the contents of this ZIP to the GitHub repo root for `ivypandit-v2`.
+# IvyPandit
+
+**Tradition • Curiosity • Science**
+
+IvyPandit is an independent scholarly and educational platform for Sanskrit, Indian Knowledge Systems, scientific curiosity, interdisciplinary research, and public learning.
+
+## Current architecture
+
+- `/iks` — IKS Hub and future public knowledge repository
+- `/shastra-study` — Sanskrit and śāstra study
+- `/research` — science and research
+- `/sbkb` — Sanskrit Biomedical Knowledge Base
+- `/perspectives` — Perspectives and Working Papers
+- `/videos` — curated talks, lectures, recitations, and YouTube links
+- `/publications` — formal publications
+- `/data` — portable structured scholarly data
+- `/content` — portable editorial/source content
+
+## Core principle
+
+**Respect tradition. Encourage curiosity. Demand rigor.**
+
+Traditional source, interpretation, research question, scientific evidence, and public commentary should be distinguished.
+
+## Local development
+
+```bash
+npm install
+npm run dev
+```
+
+Production build:
+
+```bash
+npm run build
+npm run start
+```
+
+See `PORTABILITY.md`, `EDITORIAL_POLICY.md`, and `CONTENT_SCHEMA.md`.
