@@ -14,8 +14,9 @@ const nav = [
   ['Śāstra', '/shastra-study'],
   ['Research', '/research'],
   ['SBKB', '/sbkb'],
-  ['Perspectives', '/perspectives'],
+  ['Questions', '/questions'],
   ['Learn', '/videos'],
+  ['Collaborate', '/collaborate'],
   ['About', '/about'],
 ];
 
@@ -64,11 +65,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
             <div>
               <h4>Scholarship</h4>
-              <Link href="/perspectives">Perspectives & Working Papers</Link>
+              <Link href="/questions">Research Questions & Invitations</Link>
               <Link href="/publications">Publications</Link>
               <Link href="/videos">Talks & Learning</Link>
               <Link href="/articles">Articles</Link>
-              <Link href="/support">Support / Collaborate</Link>
+              <Link href="/collaborate">Collaborate</Link>
+              <Link href="/support">Support IvyPandit</Link>
             </div>
             <div>
               <h4>Connect</h4>

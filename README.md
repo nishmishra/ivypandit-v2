@@ -10,12 +10,14 @@ IvyPandit is an independent scholarly and educational platform for Sanskrit, Ind
 - `/repository` — portable knowledge-repository framework
 - `/shastra-study` — Sanskrit and śāstra study
 - `/research` — science and research
+- `/questions` — public research questions and invitations to collaboration
+- `/collaborate` — collaboration gateway for scholars, scientists, institutions, and funders
 - `/sbkb` — Sanskrit Biomedical Knowledge Base
 - `/perspectives` — Perspectives and Working Papers
 - `/videos` — curated talks, lectures, recitations, and YouTube links
 - `/publications` — formal publications
-- `/hi` — substantive Hindi gateway
-- `/sa` — substantive Sanskrit gateway
+- `/hi` — substantive Hindi gateway, with Hindi research questions and collaboration
+- `/sa` — substantive Sanskrit gateway, with Sanskrit research questions and collaboration
 - `/data` — portable structured scholarly data
 - `/content` — portable editorial/source content
 

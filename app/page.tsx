@@ -44,7 +44,7 @@ export default function Home() {
         </div>
         <div className="initiativeCards">
           <Link className="initiativeCard" href="/sbkb"><small>FLAGSHIP INITIATIVE</small><h3>Sanskrit Biomedical Knowledge Base</h3><p>A structured program to identify medically and scientifically relevant observations in Sanskrit literature and translate them into transparent, testable research questions.</p><strong>Discover SBKB →</strong></Link>
-          <Link className="initiativeCard" href="/perspectives"><small>OPEN SCHOLARSHIP</small><h3>Perspectives & Working Papers</h3><p>A durable home for rigorous ideas, exploratory scholarship, research proposals, invited perspectives, and work that may sit outside conventional journal formats.</p><strong>Explore scholarship →</strong></Link>
+          <Link className="initiativeCard" href="/questions"><small>INVITATION TO INQUIRY</small><h3>Research Questions & Collaborations</h3><p>Short, carefully framed questions at the meeting point of Sanskrit scholarship and contemporary science — shared to invite discussion, textual expertise, interdisciplinary projects, and future collaborative funding proposals.</p><strong>Explore the questions →</strong></Link>
         </div>
       </section>
 
