@@ -44,3 +44,10 @@ Production build:
 npm run build
 npm run start
 ```
+
+
+## Curated talks
+The website showcases selected videos that directly represent IvyPandit. Relevant talks hosted by external organizations are linked as external resources rather than featured as IvyPandit media.
+
+## Curated talks update
+The public talks collection uses the user-selected IvyPandit videos as featured media, keeps externally hosted appearances separate, and includes invitations for scholars and researchers to initiate interdisciplinary conversations. Topic summaries are deliberately conservative and should be refined whenever verified video descriptions/transcripts are available.
