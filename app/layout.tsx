@@ -60,6 +60,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/shastra-study">Śāstra</Link>
               <Link href="/research">Science & Research</Link>
               <Link href="/sbkb">SBKB</Link>
+              <Link href="/repository">Knowledge Repository</Link>
             </div>
             <div>
               <h4>Scholarship</h4>
@@ -67,6 +68,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/publications">Publications</Link>
               <Link href="/videos">Talks & Learning</Link>
               <Link href="/articles">Articles</Link>
+              <Link href="/support">Support / Collaborate</Link>
             </div>
             <div>
               <h4>Connect</h4>

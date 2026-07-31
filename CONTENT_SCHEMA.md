@@ -1,25 +1,24 @@
-# IvyPandit content schema — draft
+# IvyPandit Content Schema
 
-Structured scholarly records should use stable IDs and open formats.
+IvyPandit separates **source**, **interpretation**, **research question**, **evidence**, and **public commentary** wherever possible.
 
-Suggested common fields:
-- `id`
-- `title`
-- `type`
-- `authors`
-- `date`
-- `version`
-- `language`
-- `themes`
-- `tradition_or_text`
-- `scientific_domain`
-- `evidence_status`
-- `source_or_citation`
-- `related_questions`
-- `related_projects`
-- `related_publications`
-- `related_media`
-- `public_url`
-- `notes`
+## Portable data areas
 
-The schema should evolve deliberately before a large public repository is generated from existing indexed literature.
+- `data/literature/` — indexed modern literature
+- `data/research-questions/` — structured research questions
+- `data/iks-resources/` — institutions, journals, archives, courses, opportunities, tools
+- `data/sbkb/` — Sanskrit Biomedical Knowledge Base records
+- `content/working-papers/` — editorial metadata/source records
+- `public/library/working-papers/` — approved public PDFs
+
+## Core identifiers
+
+Every durable record should have a stable human-readable ID. Avoid provider-specific database IDs as the canonical identifier.
+
+## Multilingual content
+
+English, Hindi, and Sanskrit are content variants, not separate knowledge bases. Shared records should be linked by the same stable ID, with language-specific title, summary, translation, and notes where available.
+
+## Evidence discipline
+
+A traditional textual statement is not itself modern scientific evidence. Proposed mappings should be labelled as interpretation or hypothesis until empirically supported.

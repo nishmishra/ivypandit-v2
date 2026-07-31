@@ -29,7 +29,7 @@ export default function Home() {
       </section>
 
       <section className="gatewayGrid" aria-label="Explore IvyPandit">
-        <Link className="gatewayCard" href="/iks"><span>01</span><h3>IKS Hub</h3><p>A curated gateway to literature, institutions, journals, archives, educational opportunities, scholars, and resources across Indian Knowledge Systems.</p><strong>Explore the hub →</strong></Link>
+        <Link className="gatewayCard" href="/iks"><span>01</span><h3>IKS Hub</h3><p>A curated gateway to literature, institutions, journals, archives, educational opportunities, scholars, and the growing IvyPandit Knowledge Repository.</p><strong>Explore the hub →</strong></Link>
         <Link className="gatewayCard" href="/shastra-study"><span>02</span><h3>Śāstra & Sanskrit</h3><p>Texts, recitations, traditions, commentaries, study pathways, and direct engagement with India&apos;s classical knowledge traditions.</p><strong>Enter the library →</strong></Link>
         <Link className="gatewayCard" href="/research"><span>03</span><h3>Science & Research</h3><p>Brain health, neuroscience, cognition, cultural expertise, scientific methods, publications, and interdisciplinary research questions.</p><strong>View research →</strong></Link>
         <Link className="gatewayCard" href="/videos"><span>04</span><h3>Learn & Watch</h3><p>Curated lectures, conversations, recitations, and educational series — with the full IvyPandit YouTube archive connected to the website.</p><strong>Explore talks →</strong></Link>

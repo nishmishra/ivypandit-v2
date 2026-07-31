@@ -1,5 +1,5 @@
-# GitHub browser upload
+# Upload reminder
 
-Upload the CONTENTS of this folder to the repository root. Do not upload this outer folder itself.
+Unzip this package and upload the **contents inside this folder** to the root of `nishmishra/ivypandit-v2`.
 
-Expected top-level items include `app/`, `components/`, `content/`, `data/`, `public/`, `package.json`, and `README.md`.
+Correct paths should look like `/app/page.tsx`, `/data/literature/README.md`, `/public/images/...`, and `package.json` — never `/ivypandit-next-portable/app/...`.
