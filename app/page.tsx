@@ -57,38 +57,34 @@ export default function Home() {
       <section className={styles.vedicSection}>
         <div className={styles.vedicHeader}>
           <p className="kicker">Vedic visions of creation</p>
-          <h2>Ṛta, Satya, Puruṣa & the Cosmos</h2>
-          <p>Vedic poetry asks enduring questions about order, truth, creation, and the relationship between the cosmos and the divine. IvyPandit presents these passages as scriptural and philosophical visions that can inspire inquiry without being treated as substitutes for empirical science.</p>
+          <h2>Ṛta, Satya, Puruṣa, and the Cosmos</h2>
+          <p>Vedic poetry asks enduring questions about order, truth, creation, and the relationship between the cosmos and the divine. These verses are presented here as scriptural and philosophical visions that can deepen reflection and inspire inquiry without being treated as substitutes for empirical science.</p>
         </div>
 
-        <div className={styles.vedicGrid}>
-          <div className={styles.vedicText}>
-            <div className={styles.verseBlock}>
-              <div className={styles.sourceLabel}>Ṛgveda 10.190.1 • Ṛta and cosmic emergence</div>
-              <p className={styles.devanagari}>ऋतं च सत्यं चाभीद्धात्तपसोऽध्यजायत ।<br/>ततो रात्र्यजायत ततः समुद्रो अर्णवः ॥</p>
-              <p className={styles.transliteration}>ṛtaṃ ca satyaṃ cābhīddhāt tapaso ’dhyajāyata | tato rātry ajāyata tataḥ samudro arṇavaḥ ||</p>
-              <p className={styles.interpretation}>The hymn places <i>ṛta</i> (cosmic order), <i>satya</i> (truth), and <i>tapas</i> within a poetic account of cosmic emergence. For IvyPandit, the scientific value lies not in claiming a modern cosmology hidden in the verse, but in asking how ancient cultures conceptualized order, causation, emergence, and reality.</p>
-            </div>
+        <div className={styles.verseGrid}>
+          <article className={styles.verseCard}>
+            <div className={styles.sourceLabel}>Ṛgveda 10.190.1 • Ṛta and cosmic emergence</div>
+            <p className={styles.devanagari}>ऋतं च सत्यं चाभीद्धात्तपसोऽध्यजायत ।<br/>ततो रात्र्यजायत ततः समुद्रो अर्णवः ॥</p>
+            <p className={styles.transliteration}>ṛtaṃ ca satyaṃ cābhīddhāt tapaso ’dhyajāyata | tato rātry ajāyata tataḥ samudro arṇavaḥ ||</p>
+            <p className={styles.interpretation}>The hymn places <i>ṛta</i> (cosmic order), <i>satya</i> (truth), and <i>tapas</i> within a poetic account of cosmic emergence. The value of the verse here is not a claim that modern cosmology is hidden in Vedic poetry, but the invitation to examine how human beings have conceptualized order, causation, emergence, and reality.</p>
+          </article>
 
-            <div className={styles.verseBlock}>
-              <div className={styles.sourceLabel}>Puruṣa Sūkta • Ṛgveda 10.90.2</div>
-              <p className={styles.devanagari}>पुरुष एवेदं सर्वं यद्भूतं यच्च भव्यम् ।<br/>उतामृतत्वस्येशानो यदन्नेनातिरोहति ॥</p>
-              <p className={styles.transliteration}>puruṣa evedaṃ sarvaṃ yad bhūtaṃ yac ca bhavyam | utāmṛtatvasyeśāno yad annenātirohati ||</p>
-              <p className={styles.interpretation}>The Puruṣa is presented as encompassing all that has been and all that will be. Later Vaiṣṇava traditions identify the cosmic Puruṣa with Nārāyaṇa/Viṣṇu. In this theological vision, the divine is not merely one object inside the universe, but the source, ground, and pervasive presence of <i>jagat</i>—creation itself.</p>
-              <p style={{marginTop:'12px'}}><a className="textLink" href="https://vedicheritage.gov.in/hi/samhitas/rigveda/shakala-samhita/rigveda-shakala-samhita-mandal-10-sukta-090/" target="_blank" rel="noopener noreferrer">Read the Puruṣa Sūkta at the Vedic Heritage Portal →</a></p>
-            </div>
-          </div>
-
-          <div className={styles.vedicArt}>
-            <img src="/images/cosmic-vishnu-purusha.svg" alt="Symbolic cosmic Puruṣa and Viṣṇu-inspired figure surrounded by galaxies, planets, living forms, and scientific motifs" />
-            <div className={styles.artOverlay}>
-              <b>The divine and the fabric of creation</b>
-              <span>A symbolic visualization of the Hindu idea that the sacred is not external to creation alone, but also its source, support, and indwelling presence. The illustration is interpretive, not a scientific diagram.</span>
-            </div>
-          </div>
+          <article className={styles.verseCard}>
+            <div className={styles.sourceLabel}>Puruṣa Sūkta • Ṛgveda 10.90.2</div>
+            <p className={styles.devanagari}>पुरुष एवेदं सर्वं यद्भूतं यच्च भव्यम् ।<br/>उतामृतत्वस्येशानो यदन्नेनातिरोहति ॥</p>
+            <p className={styles.transliteration}>puruṣa evedaṃ sarvaṃ yad bhūtaṃ yac ca bhavyam | utāmṛtatvasyeśāno yad annenātirohati ||</p>
+            <p className={styles.interpretation}>The Puruṣa is presented as encompassing all that has been and all that will be. In later Vaiṣṇava traditions, the cosmic Puruṣa is identified with Nārāyaṇa/Viṣṇu. This is a theological vision in which the divine is not merely an object within the universe, but its source, ground, and pervasive presence.</p>
+            <p className={styles.verseLink}><a className="textLink" href="https://vedicheritage.gov.in/hi/samhitas/rigveda/shakala-samhita/rigveda-shakala-samhita-mandal-10-sukta-090/" target="_blank" rel="noopener noreferrer">Read the Puruṣa Sūkta at the Vedic Heritage Portal →</a></p>
+          </article>
         </div>
 
-        <div className={styles.methodNote}><b>Methodological distinction:</b> scriptural meaning, traditional theology, philosophical interpretation, research questions, and empirical scientific evidence are different categories. IvyPandit keeps them distinct while allowing each to enrich the questions we ask.</div>
+        <div className={styles.theologyBand}>
+          <p className="kicker">A theological vision of creation</p>
+          <h3>The divine as source, support, and indwelling presence</h3>
+          <p>Hindu traditions offer multiple ways of speaking about the relation between the divine and <i>jagat</i>. The Puruṣa Sūkta provides one powerful cosmic vision: creation is understood in relation to a reality that exceeds any single created object while also pervading the whole. IvyPandit approaches this as theology and philosophy first, and then asks what questions such ideas may inspire for the study of mind, meaning, human experience, and the history of ideas.</p>
+        </div>
+
+        <div className={styles.methodNote}><b>Methodological note:</b> scriptural meaning, traditional theology, philosophical interpretation, research questions, and empirical scientific evidence are distinct categories. IvyPandit keeps them separate while allowing each to sharpen the questions we ask.</div>
       </section>
 
       <section className="initiativeSection">
