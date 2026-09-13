@@ -3,9 +3,28 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'IvyPandit | Tradition. Curiosity. Science.',
-  description:
-    'IvyPandit is an independent scholarly and educational platform for Sanskrit, Indian Knowledge Systems, scientific curiosity, interdisciplinary research, and public learning.',
+  metadataBase: new URL('https://www.ivypandit.com'),
+  title: {
+    default: 'IvyPandit | Neuroscience, Sanskrit & Indian Knowledge Systems',
+    template: '%s | IvyPandit',
+  },
+  description: 'IvyPandit is an independent scholarly and educational platform led by neurologist and physician-scientist Nishant K. Mishra, exploring neuroscience, Sanskrit, Indian Knowledge Systems, cognition, brain health, and public scholarship.',
+  alternates: {
+    canonical: '/',
+    languages: { en: '/', hi: '/hi', sa: '/sa', 'x-default': '/' },
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://www.ivypandit.com',
+    siteName: 'IvyPandit',
+    title: 'IvyPandit | Neuroscience, Sanskrit & Indian Knowledge Systems',
+    description: 'Neuroscience, Sanskrit, Indian Knowledge Systems, cognition, brain health, public scholarship, and lectures by Nishant K. Mishra, MD, PhD.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'IvyPandit | Neuroscience, Sanskrit & Indian Knowledge Systems',
+    description: 'Neuroscience, Sanskrit, Indian Knowledge Systems, cognition, brain health, and public scholarship.',
+  },
 };
 
 const nav = [
