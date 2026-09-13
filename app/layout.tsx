@@ -16,6 +16,7 @@ const nav = [
   ['SBKB', '/sbkb'],
   ['Questions', '/questions'],
   ['Learn', '/videos'],
+  ['Speaking', '/speaking'],
   ['Collaborate', '/collaborate'],
   ['About', '/about'],
 ];
@@ -68,6 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/questions">Research Questions & Invitations</Link>
               <Link href="/publications">Publications</Link>
               <Link href="/videos">Talks & Learning</Link>
+              <Link href="/speaking">Lectures & Speaking</Link>
               <Link href="/articles">Articles</Link>
               <Link href="/collaborate">Collaborate</Link>
               <Link href="/support">Support IvyPandit</Link>
