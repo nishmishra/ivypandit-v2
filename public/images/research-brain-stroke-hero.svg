@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 760" role="img" aria-labelledby="title desc">
+  <title id="title">Brain perfusion and cerebrovascular research illustration</title>
+  <desc id="desc">Scalable scientific illustration of the human brain with cerebral vessels, perfusion heatmap, imaging panels and data traces.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05182b" stop-opacity="0"/>
+      <stop offset="0.46" stop-color="#08213a" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#071421" stop-opacity=".72"/>
+    </linearGradient>
+    <radialGradient id="brainGlass" cx="42%" cy="36%" r="72%">
+      <stop offset="0" stop-color="#dbeeff" stop-opacity=".96"/>
+      <stop offset=".55" stop-color="#8fc7e8" stop-opacity=".46"/>
+      <stop offset="1" stop-color="#2f6d96" stop-opacity=".18"/>
+    </radialGradient>
+    <radialGradient id="perfusion" cx="63%" cy="42%" r="58%">
+      <stop offset="0" stop-color="#fff36b"/>
+      <stop offset=".13" stop-color="#ffb62f"/>
+      <stop offset=".27" stop-color="#f34a27"/>
+      <stop offset=".46" stop-color="#2368d8"/>
+      <stop offset=".74" stop-color="#0a3b79"/>
+      <stop offset="1" stop-color="#071c35"/>
+    </radialGradient>
+    <linearGradient id="vessel" x1="0" y1="1" x2=".8" y2="0">
+      <stop offset="0" stop-color="#ff655f"/>
+      <stop offset=".55" stop-color="#ffb14a"/>
+      <stop offset="1" stop-color="#fff1a6"/>
+    </linearGradient>
+    <linearGradient id="data" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#19b9ff" stop-opacity=".05"/>
+      <stop offset=".48" stop-color="#19b9ff" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#4ce1ff" stop-opacity=".12"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <clipPath id="brainClip">
+      <path d="M1008 106 C1098 123 1166 191 1188 282 C1208 366 1190 455 1134 514 C1087 564 1022 583 954 575 C913 570 880 554 854 531 C820 549 778 558 736 551 C659 539 601 490 579 422 C553 343 574 255 633 190 C683 135 749 107 817 108 C849 78 905 67 948 82 C971 90 991 98 1008 106 Z"/>
+    </clipPath>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" fill="none" stroke="#4fb7dc" stroke-opacity=".09" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="760" fill="url(#bg)"/>
+  <rect x="525" width="1075" height="760" fill="url(#grid)" opacity=".65"/>
+
+  <!-- neural/data field -->
+  <g opacity=".62">
+    <path d="M0 430 C175 302 285 572 468 420 C604 306 683 368 793 427" fill="none" stroke="url(#data)" stroke-width="2.5"/>
+    <path d="M0 468 C179 350 289 606 472 455 C616 337 697 399 792 451" fill="none" stroke="#1ba2df" stroke-opacity=".26" stroke-width="1.5"/>
+    <g fill="#48cfff" opacity=".55">
+      <circle cx="96" cy="405" r="4"/><circle cx="174" cy="388" r="3"/><circle cx="239" cy="424" r="4"/><circle cx="317" cy="478" r="3"/>
+      <circle cx="390" cy="493" r="4"/><circle cx="471" cy="452" r="3"/><circle cx="553" cy="391" r="4"/><circle cx="636" cy="386" r="3"/>
+      <circle cx="714" cy="420" r="4"/>
+    </g>
+  </g>
+
+  <!-- halo -->
+  <ellipse cx="900" cy="330" rx="350" ry="300" fill="#0a74a7" opacity=".12" filter="url(#soft)"/>
+
+  <!-- brain body -->
+  <path d="M1008 106 C1098 123 1166 191 1188 282 C1208 366 1190 455 1134 514 C1087 564 1022 583 954 575 C913 570 880 554 854 531 C820 549 778 558 736 551 C659 539 601 490 579 422 C553 343 574 255 633 190 C683 135 749 107 817 108 C849 78 905 67 948 82 C971 90 991 98 1008 106 Z" fill="url(#brainGlass)" stroke="#b7e5ff" stroke-opacity=".65" stroke-width="3"/>
+
+  <!-- perfusion hemisphere -->
+  <g clip-path="url(#brainClip)">
+    <rect x="862" y="62" width="370" height="555" fill="url(#perfusion)" opacity=".95"/>
+    <ellipse cx="1051" cy="306" rx="88" ry="72" fill="#ff3b1f" opacity=".32" filter="url(#soft)"/>
+    <ellipse cx="1060" cy="306" rx="38" ry="31" fill="#ffd84d" opacity=".72" filter="url(#glow)"/>
+  </g>
+
+  <!-- sulci -->
+  <g fill="none" stroke="#dff3ff" stroke-opacity=".42" stroke-width="3" stroke-linecap="round">
+    <path d="M688 164 C654 207 662 250 711 268 C759 285 778 322 756 367 C735 410 746 455 792 482"/>
+    <path d="M768 124 C728 170 741 218 787 235 C828 250 843 284 827 321 C808 366 818 406 858 435"/>
+    <path d="M852 108 C826 156 840 196 875 220 C911 245 914 283 891 319 C866 357 873 397 909 430"/>
+    <path d="M624 259 C671 246 709 254 735 279"/>
+    <path d="M607 344 C653 327 699 335 728 362"/>
+    <path d="M625 433 C675 411 721 422 751 447"/>
+    <path d="M948 108 C925 154 936 190 968 215 C1001 241 1008 276 988 310"/>
+    <path d="M1068 139 C1042 184 1055 224 1092 247 C1125 268 1138 307 1120 342"/>
+    <path d="M1150 236 C1108 229 1074 241 1051 268"/>
+    <path d="M1164 381 C1124 362 1088 368 1059 396"/>
+  </g>
+
+  <!-- midline -->
+  <path d="M862 103 C855 182 857 257 862 335 C868 419 866 492 854 531" fill="none" stroke="#eaf7ff" stroke-opacity=".74" stroke-width="4"/>
+
+  <!-- cerebrovascular tree -->
+  <g fill="none" stroke="url(#vessel)" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+    <path d="M872 636 C868 574 870 524 882 477 C894 432 918 390 944 354 C971 317 1001 287 1034 263" stroke-width="13"/>
+    <path d="M905 435 C949 427 988 406 1020 373 C1048 344 1075 321 1111 310" stroke-width="9"/>
+    <path d="M938 364 C910 336 895 305 896 266 C897 226 914 190 937 159" stroke-width="8"/>
+    <path d="M1014 286 C1044 266 1068 240 1084 205 C1096 179 1113 158 1134 141" stroke-width="7"/>
+    <path d="M1022 372 C1063 381 1098 400 1126 432 C1143 451 1161 466 1181 477" stroke-width="7"/>
+    <path d="M964 404 C949 445 946 481 954 518" stroke-width="7"/>
+    <path d="M1004 297 C1026 310 1040 331 1043 356" stroke-width="5"/>
+    <path d="M968 336 C948 316 938 292 939 265" stroke-width="5"/>
+    <path d="M1085 205 C1068 195 1054 179 1047 159" stroke-width="4"/>
+    <path d="M1110 310 C1135 293 1150 271 1155 245" stroke-width="4"/>
+    <path d="M1126 432 C1148 425 1168 427 1186 438" stroke-width="4"/>
+  </g>
+
+  <!-- imaging panels -->
+  <g transform="translate(1252 105)">
+    <g opacity=".95">
+      <rect width="270" height="170" rx="12" fill="#05111f" stroke="#4da8cf" stroke-opacity=".45"/>
+      <circle cx="82" cy="85" r="59" fill="#a7cae1" opacity=".18" stroke="#b8e4ff" stroke-opacity=".55" stroke-width="2"/>
+      <ellipse cx="82" cy="85" rx="43" ry="52" fill="none" stroke="#b7d9ee" stroke-opacity=".45" stroke-width="8"/>
+      <path d="M62 66 C72 58 92 58 103 67 M60 104 C73 113 93 113 105 102 M82 43V126" stroke="#d9efff" stroke-opacity=".38" fill="none" stroke-width="4"/>
+      <text x="164" y="48" fill="#7fc8ea" font-family="Arial,sans-serif" font-size="16" letter-spacing="2">MRI</text>
+      <text x="164" y="76" fill="#d8ecf8" font-family="Arial,sans-serif" font-size="13">STRUCTURAL</text>
+      <path d="M164 111H236" stroke="#45bde8" stroke-opacity=".5"/>
+      <path d="M164 128H220" stroke="#45bde8" stroke-opacity=".3"/>
+    </g>
+    <g transform="translate(0 192)" opacity=".95">
+      <rect width="270" height="170" rx="12" fill="#05111f" stroke="#4da8cf" stroke-opacity=".45"/>
+      <circle cx="82" cy="85" r="59" fill="url(#perfusion)" opacity=".94"/>
+      <ellipse cx="96" cy="76" rx="24" ry="20" fill="#ffd94e" opacity=".88" filter="url(#glow)"/>
+      <text x="164" y="48" fill="#7fc8ea" font-family="Arial,sans-serif" font-size="16" letter-spacing="2">CTP</text>
+      <text x="164" y="76" fill="#d8ecf8" font-family="Arial,sans-serif" font-size="13">PERFUSION</text>
+      <rect x="164" y="108" width="72" height="7" rx="3.5" fill="url(#perfusion)"/>
+      <text x="164" y="139" fill="#6fa8c5" font-family="Arial,sans-serif" font-size="11">FLOW / DELAY</text>
+    </g>
+    <g transform="translate(0 384)" opacity=".95">
+      <rect width="270" height="170" rx="12" fill="#05111f" stroke="#4da8cf" stroke-opacity=".45"/>
+      <path d="M24 122 C54 40 80 142 111 69 C137 7 163 131 196 67 C217 26 236 83 252 53" fill="none" stroke="#1bbdf2" stroke-width="3"/>
+      <path d="M24 126 C61 89 92 122 121 104 C155 83 174 117 210 91 C226 78 242 75 252 78" fill="none" stroke="#ffb84b" stroke-width="2" stroke-opacity=".78"/>
+      <path d="M24 140H252" stroke="#6bb5d5" stroke-opacity=".3"/>
+      <text x="24" y="31" fill="#7fc8ea" font-family="Arial,sans-serif" font-size="16" letter-spacing="2">PERFUSION CURVES</text>
+    </g>
+  </g>
+
+  <!-- subtle technical labels -->
+  <g fill="#7fc8ea" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" opacity=".5">
+    <text x="622" y="636">CEREBRAL VASCULATURE</text>
+    <text x="1013" y="628">TISSUE PERFUSION</text>
+  </g>
+</svg>
