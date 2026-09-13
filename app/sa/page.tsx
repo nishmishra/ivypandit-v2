@@ -30,7 +30,9 @@ export default function Sanskrit(){
         <Link className="gatewayCard" href="/sa/about"><span>09</span><h3>आइवीपण्डितस्य परिचयः</h3><p>मञ्चस्य प्रयोजनम्, सम्पादकीयदृष्टिः, दीर्घकालीनलक्ष्यं च।</p><strong>परिचयं पठतु →</strong></Link>
       </div></section>
 
-      <section className="repositoryFeature panel"><p className="kicker">वर्धमानं ज्ञानसाधनम्</p><h2>आइवीपण्डित-ज्ञानसंग्रहः</h2><p>केवलं सामग्रीसंचयः न। मूलस्रोतांसि, व्याख्याः, आधुनिकसाहित्यं, अनुसन्धानप्रश्नाः, व्याख्यानानि, भाविपरियोजनाश्च परस्परं सम्बध्य व्यवस्थितः ज्ञानसंग्रहः निर्मीयते।</p><Link className="btn primary" href="/repository">Knowledge Repository →</Link></section>
+      <section className="panel" style={{marginTop:'36px'}}><p className="kicker">अन्यानि संस्कृतपृष्ठानि</p><h2>विद्वत्संसाधनानि सम्पर्कश्च</h2><div className="buttons" style={{justifyContent:'flex-start'}}><Link className="btn secondary" href="/sa/publications">प्रकाशनानि</Link><Link className="btn secondary" href="/sa/articles">लेखाः</Link><Link className="btn secondary" href="/sa/repository">ज्ञानसंग्रहः</Link><Link className="btn secondary" href="/sa/support">समर्थनम्</Link><Link className="btn secondary" href="/sa/contact">सम्पर्कः</Link><Link className="btn secondary" href="/sa/disclaimer">सूचना</Link></div></section>
+
+      <section className="repositoryFeature panel"><p className="kicker">वर्धमानं ज्ञानसाधनम्</p><h2>आइवीपण्डित-ज्ञानसंग्रहः</h2><p>केवलं सामग्रीसंचयः न। मूलस्रोतांसि, व्याख्याः, आधुनिकसाहित्यं, अनुसन्धानप्रश्नाः, व्याख्यानानि, भाविपरियोजनाश्च परस्परं सम्बध्य व्यवस्थितः ज्ञानसंग्रहः निर्मीयते।</p><Link className="btn primary" href="/sa/repository">ज्ञानसंग्रहं पश्यतु →</Link></section>
       <section className="missionBox"><h2>वसुधैव कुटुम्बकम्</h2><p>ज्ञानं मानवजातेः सामूहिकं दायम्। परम्परा, विज्ञानम्, संस्कृतिः, पीढयश्च मध्ये मुक्तः गम्भीरः संवादः सर्वजनहिताय भवतु।</p></section>
     </main>
   </>;
