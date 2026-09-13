@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" role="img" aria-labelledby="title desc">
+  <title id="title">Cosmic Puruṣa and Viṣṇu inspired illustration</title>
+  <desc id="desc">A symbolic high-resolution vector illustration of a luminous four-armed Viṣṇu-like cosmic Puruṣa surrounded by galaxies, stars, planets, living forms and subtle scientific motifs, representing the divine as source and pervasive ground of creation.</desc>
+  <defs>
+    <linearGradient id="space" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#020b18"/>
+      <stop offset=".44" stop-color="#071a33"/>
+      <stop offset="1" stop-color="#190817"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="48%" r="50%">
+      <stop offset="0" stop-color="#fff3b0" stop-opacity=".9"/>
+      <stop offset=".23" stop-color="#d7a84a" stop-opacity=".46"/>
+      <stop offset=".65" stop-color="#5d8bd6" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#071a33" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="body" x1=".3" y1="0" x2=".7" y2="1">
+      <stop offset="0" stop-color="#7ec7e9"/>
+      <stop offset=".55" stop-color="#3e77b2"/>
+      <stop offset="1" stop-color="#203e73"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff0a8"/>
+      <stop offset=".42" stop-color="#d4a449"/>
+      <stop offset="1" stop-color="#86571f"/>
+    </linearGradient>
+    <radialGradient id="planet" cx="35%" cy="28%" r="70%">
+      <stop offset="0" stop-color="#6fd4ff"/>
+      <stop offset=".55" stop-color="#246aa2"/>
+      <stop offset="1" stop-color="#0a2245"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="20"/></filter>
+    <pattern id="stars" width="92" height="92" patternUnits="userSpaceOnUse">
+      <circle cx="9" cy="13" r="1.2" fill="#fff" opacity=".72"/>
+      <circle cx="56" cy="25" r=".8" fill="#cfe8ff" opacity=".62"/>
+      <circle cx="75" cy="67" r="1.1" fill="#ffe6a8" opacity=".65"/>
+      <circle cx="29" cy="75" r=".7" fill="#fff" opacity=".52"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="780" fill="url(#space)"/>
+  <rect width="1200" height="780" fill="url(#stars)"/>
+  <ellipse cx="602" cy="386" rx="360" ry="330" fill="url(#halo)"/>
+
+  <!-- galaxies -->
+  <g opacity=".8" fill="none" stroke-linecap="round">
+    <ellipse cx="185" cy="145" rx="116" ry="31" transform="rotate(-18 185 145)" stroke="#b7d8ff" stroke-width="5" opacity=".32"/>
+    <ellipse cx="185" cy="145" rx="78" ry="18" transform="rotate(-18 185 145)" stroke="#ffd88b" stroke-width="3" opacity=".45"/>
+    <circle cx="185" cy="145" r="8" fill="#fff1a8" filter="url(#glow)"/>
+    <ellipse cx="1030" cy="604" rx="130" ry="35" transform="rotate(21 1030 604)" stroke="#8db9ff" stroke-width="5" opacity=".27"/>
+    <ellipse cx="1030" cy="604" rx="83" ry="20" transform="rotate(21 1030 604)" stroke="#ffb877" stroke-width="3" opacity=".34"/>
+  </g>
+
+  <!-- orbital field -->
+  <g fill="none" stroke="#79b6dc" stroke-opacity=".17">
+    <ellipse cx="600" cy="390" rx="505" ry="185" stroke-width="2"/>
+    <ellipse cx="600" cy="390" rx="485" ry="270" transform="rotate(18 600 390)" stroke-width="1.5"/>
+    <ellipse cx="600" cy="390" rx="460" ry="325" transform="rotate(-12 600 390)" stroke-width="1.2"/>
+  </g>
+
+  <!-- cosmic Purusha body -->
+  <g transform="translate(0 5)">
+    <!-- crown and head -->
+    <path d="M548 160 L570 92 L595 126 L620 78 L646 126 L672 93 L693 160 Z" fill="url(#gold)" stroke="#f9df8b" stroke-width="3"/>
+    <ellipse cx="620" cy="192" rx="64" ry="72" fill="url(#body)" stroke="#bde8ff" stroke-opacity=".55" stroke-width="3"/>
+    <path d="M598 184 Q620 200 642 184" fill="none" stroke="#d9f3ff" stroke-opacity=".45" stroke-width="2"/>
+    <path d="M620 168 L620 202" stroke="#cfecff" stroke-opacity=".38" stroke-width="2"/>
+    <ellipse cx="596" cy="174" rx="7" ry="4" fill="#10294a"/><ellipse cx="644" cy="174" rx="7" ry="4" fill="#10294a"/>
+    <path d="M616 137 L620 127 L624 137 L620 148 Z" fill="#f0b43e"/>
+
+    <!-- torso -->
+    <path d="M535 265 Q620 225 705 265 Q736 365 700 498 Q620 548 540 498 Q504 365 535 265 Z" fill="url(#body)" stroke="#a5d9f7" stroke-opacity=".42" stroke-width="3"/>
+    <path d="M530 294 Q620 338 710 294" fill="none" stroke="url(#gold)" stroke-width="17" stroke-linecap="round"/>
+    <circle cx="620" cy="385" r="18" fill="#e2b255" opacity=".72" filter="url(#glow)"/>
+    <path d="M570 502 Q620 538 670 502" fill="none" stroke="url(#gold)" stroke-width="16"/>
+
+    <!-- arms -->
+    <path d="M546 286 C472 244 418 211 364 185 C333 170 311 182 298 204 C286 225 300 249 328 257 C398 279 449 311 520 345" fill="none" stroke="url(#body)" stroke-width="42" stroke-linecap="round"/>
+    <path d="M694 286 C768 244 822 211 876 185 C907 170 929 182 942 204 C954 225 940 249 912 257 C842 279 791 311 720 345" fill="none" stroke="url(#body)" stroke-width="42" stroke-linecap="round"/>
+    <path d="M548 360 C466 383 408 422 347 467 C322 485 324 512 343 529 C360 544 386 538 405 518 C452 470 500 449 552 437" fill="none" stroke="url(#body)" stroke-width="40" stroke-linecap="round"/>
+    <path d="M692 360 C774 383 832 422 893 467 C918 485 916 512 897 529 C880 544 854 538 835 518 C788 470 740 449 688 437" fill="none" stroke="url(#body)" stroke-width="40" stroke-linecap="round"/>
+
+    <!-- hands -->
+    <circle cx="302" cy="207" r="24" fill="#5ea3cf"/><circle cx="938" cy="207" r="24" fill="#5ea3cf"/>
+    <circle cx="348" cy="515" r="23" fill="#5ea3cf"/><circle cx="892" cy="515" r="23" fill="#5ea3cf"/>
+
+    <!-- chakra -->
+    <g transform="translate(302 151)" stroke="url(#gold)" fill="none" filter="url(#glow)">
+      <circle r="36" stroke-width="5"/><circle r="11" stroke-width="4"/>
+      <path d="M0-34V34M-34 0H34M-24-24L24 24M24-24L-24 24" stroke-width="3"/>
+    </g>
+    <!-- conch -->
+    <g transform="translate(938 153) rotate(15)" fill="none" stroke="url(#gold)" stroke-width="5" stroke-linecap="round">
+      <path d="M-27 18 C-10-30 35-29 36 4 C37 29 5 42-19 25 Z"/>
+      <path d="M-13 9 C2-11 22-8 22 6 C22 17 8 22-4 17"/>
+    </g>
+    <!-- lotus -->
+    <g transform="translate(350 555)" fill="url(#gold)" opacity=".95">
+      <ellipse cx="0" cy="-18" rx="10" ry="25"/><ellipse cx="-18" cy="-9" rx="10" ry="24" transform="rotate(-45 -18 -9)"/><ellipse cx="18" cy="-9" rx="10" ry="24" transform="rotate(45 18 -9)"/><ellipse cx="0" cy="0" rx="12" ry="28"/>
+    </g>
+    <!-- mace -->
+    <g transform="translate(888 545) rotate(18)" fill="url(#gold)">
+      <rect x="-6" y="-28" width="12" height="88" rx="6"/><circle cy="-43" r="25"/>
+    </g>
+  </g>
+
+  <!-- planets and earth -->
+  <g>
+    <circle cx="205" cy="595" r="58" fill="url(#planet)" stroke="#8bd8ff" stroke-opacity=".5"/>
+    <path d="M165 575 C185 548 206 557 218 574 C233 592 245 589 260 606 C237 633 187 645 158 617 Z" fill="#58a46f" opacity=".78"/>
+    <circle cx="1023" cy="250" r="42" fill="#bd6b3a"/><circle cx="1051" cy="365" r="24" fill="#d3b05b"/><circle cx="985" cy="468" r="31" fill="#6c78be"/>
+    <ellipse cx="1023" cy="250" rx="68" ry="14" transform="rotate(-12 1023 250)" fill="none" stroke="#d7b56a" stroke-width="5" opacity=".75"/>
+  </g>
+
+  <!-- matter / life / knowledge motifs -->
+  <g fill="none" stroke="#70d4ff" stroke-opacity=".48" stroke-width="2.6">
+    <circle cx="145" cy="372" r="42"/><ellipse cx="145" cy="372" rx="72" ry="20" transform="rotate(22 145 372)"/><ellipse cx="145" cy="372" rx="72" ry="20" transform="rotate(-22 145 372)"/>
+    <circle cx="145" cy="372" r="5" fill="#ffd96b" stroke="none"/>
+    <path d="M1048 110 C1008 140 1008 180 1048 210 C1088 240 1088 280 1048 310"/>
+    <path d="M1102 110 C1062 140 1062 180 1102 210 C1142 240 1142 280 1102 310"/>
+    <path d="M1048 130H1102M1042 170H1096M1052 210H1106M1046 250H1100M1053 290H1107"/>
+  </g>
+
+  <!-- subtle tree / living world -->
+  <g transform="translate(85 545)" stroke="#9fd28f" fill="none" stroke-linecap="round">
+    <path d="M70 120 V35" stroke-width="7"/>
+    <path d="M70 55 C45 30 28 28 13 14 M70 67 C96 37 112 33 128 15 M70 79 C43 64 25 64 10 56 M70 91 C96 70 115 73 133 60" stroke-width="5"/>
+    <circle cx="12" cy="14" r="18" fill="#3e7d52" stroke="none" opacity=".85"/><circle cx="128" cy="15" r="19" fill="#4c8c5a" stroke="none" opacity=".85"/><circle cx="10" cy="56" r="20" fill="#39744d" stroke="none" opacity=".82"/><circle cx="133" cy="60" r="20" fill="#4b8b57" stroke="none" opacity=".82"/>
+  </g>
+
+  <!-- lower luminous line suggesting pervasive presence -->
+  <path d="M80 703 C260 652 412 742 600 690 C788 638 948 735 1120 674" fill="none" stroke="url(#gold)" stroke-width="3" opacity=".45" filter="url(#glow)"/>
+</svg>
