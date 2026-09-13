@@ -145,17 +145,6 @@
   font:12px/1.35 Arial,sans-serif;
 }
 .researchContent{position:relative;}
-.researchContent::before{
-  content:"";
-  position:absolute;
-  left:50%;
-  top:0;
-  width:min(96vw,1180px);
-  height:360px;
-  transform:translateX(-50%);
-  pointer-events:none;
-  background:radial-gradient(circle at 50% 0,rgba(55,143,188,.08),transparent 65%);
-}
 .bandWrap :global(.panel){
   border-color:#c8dce5;
   background:linear-gradient(180deg,rgba(255,255,255,.92),rgba(245,250,252,.94));
@@ -174,6 +163,8 @@
   border-radius:16px;
   padding:25px;
   box-shadow:0 12px 28px rgba(8,43,64,.065);
+  break-inside:avoid;
+  page-break-inside:avoid;
 }
 .publicationCard::before{
   content:"";
@@ -186,13 +177,36 @@
 }
 .publicationCard h2{color:#133f57;margin:8px 0 10px;}
 .publicationCard p{font-family:Arial,sans-serif;line-height:1.62;color:#4c5e68;}
+.cardTopline{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+}
 .journal{
   color:#1579a7;
   font:800 11px/1.2 Arial,sans-serif;
   letter-spacing:.16em;
   text-transform:uppercase;
 }
+.roleBadge{
+  display:inline-block;
+  padding:6px 9px;
+  border:1px solid #bdd8e5;
+  border-radius:999px;
+  background:#eef8fc;
+  color:#175773;
+  font:800 10px/1 Arial,sans-serif;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
 .publicationCard :global(.textLink){color:#0f709e;}
+.trajectory{
+  margin-top:34px;
+  break-inside:avoid;
+  page-break-inside:avoid;
+}
 .trajectory :global(.flowLine) span{
   border-color:#bdd7e3;
   background:#f6fbfd;
@@ -219,4 +233,31 @@
   .scienceBar div,.scienceBar div:nth-child(2){border-right:0;border-bottom:1px solid #d6e6ee;}
   .scienceBar div:last-child{border-bottom:0;}
   .publicationGrid{grid-template-columns:1fr;}
+}
+@media print{
+  .researchHero{
+    min-height:auto;
+    padding:34px 22px 30px;
+    break-inside:avoid;
+    page-break-inside:avoid;
+    print-color-adjust:exact;
+    -webkit-print-color-adjust:exact;
+  }
+  .researchHero::after{display:none;}
+  .heroArt{margin-right:0;}
+  .heroArt img{filter:none;}
+  .scienceBar{
+    margin:-14px auto 26px;
+    break-inside:avoid;
+    page-break-inside:avoid;
+    box-shadow:none;
+  }
+  .publicationCard,
+  .trajectory,
+  .bandWrap :global(.panel),
+  .researchContent :global(.panel){
+    break-inside:avoid;
+    page-break-inside:avoid;
+    box-shadow:none;
+  }
 }
