@@ -1,18 +1,37 @@
 import Link from 'next/link';
+import styles from './research.module.css';
 
 export default function Research(){
   return <>
-    <section className="pageHero">
-      <div className="eyebrow">Research & Scientific Work</div>
-      <h1>Scientific Work</h1>
-      <p>Research across stroke, reperfusion, neuroimaging, post-stroke epilepsy, biomarkers, clinical trials, cognition, language, neuroplasticity, and emerging cultural neuroscience.</p>
-      <div className="buttons" style={{justifyContent:'center', marginTop:'22px'}}>
-        <Link className="btn secondary" href="/hi/research">हिन्दी</Link>
-        <Link className="btn secondary" href="/sa/research">संस्कृतम्</Link>
+    <section className={styles.researchHero}>
+      <div className={styles.heroInner}>
+        <div className={styles.heroCopy}>
+          <div className={styles.heroEyebrow}>Research & Scientific Work</div>
+          <h1>Scientific Work</h1>
+          <p className={styles.heroLead}>Research across stroke, reperfusion, neuroimaging, post-stroke epilepsy, biomarkers, clinical trials, cognition, language, neuroplasticity, and emerging cultural neuroscience.</p>
+          <div className={styles.heroTags}>
+            <span>Stroke</span><span>Perfusion Imaging</span><span>Post-Stroke Epilepsy</span><span>Precision Neuroscience</span>
+          </div>
+          <div className={styles.languageLinks}>
+            <Link href="/hi/research">हिन्दी</Link>
+            <Link href="/sa/research">संस्कृतम्</Link>
+          </div>
+        </div>
+        <div className={styles.heroArt}>
+          <img src="/images/research-brain-stroke-hero.svg" alt="Scientific illustration of cerebral vasculature, brain perfusion imaging, and stroke research" />
+          <p className={styles.heroCaption}>Cerebral vasculature · perfusion imaging · tissue physiology</p>
+        </div>
       </div>
     </section>
 
-    <main className="content">
+    <div className={styles.scienceBar} aria-label="Research domains">
+      <div><b>Clinical Neuroscience</b><span>Stroke treatment & outcomes</span></div>
+      <div><b>Neuroimaging</b><span>Perfusion, mismatch & tissue viability</span></div>
+      <div><b>Brain Networks</b><span>Post-stroke epilepsy & recovery</span></div>
+      <div><b>Precision Science</b><span>Biomarkers, genetics & data</span></div>
+    </div>
+
+    <main className={`content ${styles.researchContent}`}>
       <section className="manifesto">
         <p className="kicker">A scientific continuum</p>
         <h2 className="sectionTitle">From acute brain injury to long-term recovery, prediction, and human cognition.</h2>
@@ -20,7 +39,7 @@ export default function Research(){
         <p>These are not separate interests. They are different ways of studying how the brain responds to injury, treatment, learning, repeated practice, language, attention, and experience.</p>
       </section>
 
-      <div className="researchBands">
+      <div className={`${styles.bandWrap} researchBands`}>
         <section className="panel">
           <h2>Stroke, Reperfusion & Neuroimaging</h2>
           <p>Acute ischemic stroke, thrombolysis, endovascular treatment, perfusion and mismatch imaging, tissue viability, patient selection, clinical outcomes, and the relationship between time, tissue, blood flow, and recovery.</p>
@@ -35,70 +54,72 @@ export default function Research(){
         </section>
       </div>
 
-      <section>
-        <p className="kicker">Selected scientific contributions</p>
-        <h2 className="sectionTitle">Representative papers and the questions they addressed</h2>
-        <p>Rather than reproduce a full bibliography, the studies below illustrate the evolution of the scientific questions that have shaped my work.</p>
+      <section className={styles.publicationSection}>
+        <div className={styles.publicationIntro}>
+          <p className="kicker">Selected scientific contributions</p>
+          <h2 className="sectionTitle">Representative papers and the questions they addressed</h2>
+          <p>Rather than reproduce a full bibliography, the studies below illustrate the evolution of the scientific questions that have shaped my work.</p>
+        </div>
 
-        <div className="twoCol">
-          <section className="panel">
-            <div className="eyebrow">The BMJ · 2010</div>
+        <div className={styles.publicationGrid}>
+          <section className={styles.publicationCard}>
+            <div className={styles.journal}>The BMJ · 2010</div>
             <h2>Thrombolysis in very elderly people</h2>
             <p>At a time when advanced age frequently limited access to thrombolytic treatment, this international analysis examined outcomes in very elderly patients and contributed evidence relevant to reconsidering age-based treatment restrictions.</p>
             <a className="textLink" href="https://doi.org/10.1136/bmj.c6046" target="_blank" rel="noopener noreferrer">View paper →</a>
           </section>
 
-          <section className="panel">
-            <div className="eyebrow">Diabetes Care · 2010</div>
+          <section className={styles.publicationCard}>
+            <div className={styles.journal}>Diabetes Care · 2010</div>
             <h2>Prior stroke, diabetes, and thrombolysis</h2>
             <p>Patients with both a previous stroke and diabetes had historically been treated cautiously, and in some settings excluded, from intravenous thrombolysis. This study examined whether that exclusion was supported by observed clinical outcomes.</p>
             <a className="textLink" href="https://doi.org/10.2337/dc10-1125" target="_blank" rel="noopener noreferrer">View paper →</a>
           </section>
 
-          <section className="panel">
-            <div className="eyebrow">Stroke · 2010</div>
+          <section className={styles.publicationCard}>
+            <div className={styles.journal}>Stroke · 2010</div>
             <h2>Mismatch-Based Delayed Thrombolysis</h2>
             <p>This work addressed a question that became central to modern stroke medicine: can imaging identify patients with salvageable brain tissue even when conventional time windows have passed? It helped frame the move from clock time alone toward biologically informed treatment selection.</p>
             <a className="textLink" href="https://doi.org/10.1161/STROKEAHA.109.566869" target="_blank" rel="noopener noreferrer">View paper →</a>
           </section>
 
-          <section className="panel">
-            <div className="eyebrow">Neurology · 2011</div>
+          <section className={styles.publicationCard}>
+            <div className={styles.journal}>Neurology · 2011</div>
             <h2>Thrombolysis after prior stroke and diabetes</h2>
             <p>Using a large international dataset, this study further examined an important treatment-exclusion question and added evidence relevant to thrombolysis in a population traditionally considered at increased risk.</p>
             <a className="textLink" href="https://doi.org/10.1212/WNL.0b013e318238ee42" target="_blank" rel="noopener noreferrer">View paper →</a>
           </section>
 
-          <section className="panel">
-            <div className="eyebrow">Stroke · 2011</div>
+          <section className={styles.publicationCard}>
+            <div className={styles.journal}>Stroke · 2011</div>
             <h2>Home time as a meaningful stroke outcome</h2>
             <p>Home time—the number of days a patient is alive and outside institutional care—offers an intuitive, patient-centered measure of recovery. This study examined home time in patients receiving thrombolytic therapy.</p>
             <a className="textLink" href="https://doi.org/10.1161/STROKEAHA.110.601302" target="_blank" rel="noopener noreferrer">View paper →</a>
           </section>
 
-          <section className="panel">
-            <div className="eyebrow">Stroke · 2013</div>
+          <section className={styles.publicationCard}>
+            <div className={styles.journal}>Stroke · 2013</div>
             <h2>Modified Graeb Score</h2>
             <p>This collaborative work developed and evaluated an enhanced method for quantifying intraventricular hemorrhage and relating hemorrhage burden to functional outcome.</p>
             <a className="textLink" href="https://doi.org/10.1161/STROKEAHA.112.670653" target="_blank" rel="noopener noreferrer">View paper →</a>
           </section>
 
-          <section className="panel">
-            <div className="eyebrow">Stroke · 2014</div>
+          <section className={styles.publicationCard}>
+            <div className={styles.journal}>Stroke · 2014</div>
             <h2>MRI mismatch and endovascular patient selection</h2>
             <p>This study continued the investigation of how advanced imaging might distinguish patients more likely to benefit from endovascular reperfusion therapy.</p>
             <a className="textLink" href="https://doi.org/10.1161/STROKEAHA.114.004772" target="_blank" rel="noopener noreferrer">View paper →</a>
           </section>
 
-          <section className="panel">
-            <div className="eyebrow">JAMA Neurology · 2023</div>
+          <section className={styles.publicationCard}>
+            <div className={styles.journal}>JAMA Neurology · 2023</div>
             <h2>Outcomes in patients with post-stroke seizures</h2>
             <p>This international collaborative study examined the relationship between seizures after stroke and subsequent clinical outcomes, bringing together investigators across stroke and epilepsy. I served as senior and corresponding author.</p>
             <a className="textLink" href="https://doi.org/10.1001/jamaneurol.2023.3240" target="_blank" rel="noopener noreferrer">View paper →</a>
           </section>
 
-          <section className="panel">
-            <div className="eyebrow">Neurology · 2024</div>
+          <section className={styles.publicationCard}>
+            <div className={styles.journal}>Neurology · 2024</div>
             <h2>Pathophysiology, diagnosis, prognosis, and prevention of post-stroke epilepsy</h2>
             <p>This international review connected vascular neurology and epileptology to synthesize current understanding of why epilepsy develops after stroke, how risk can be recognized, and how future preventive strategies might be developed.</p>
             <a className="textLink" href="https://doi.org/10.1212/WNL.0000000000209450" target="_blank" rel="noopener noreferrer">View paper →</a>
@@ -106,7 +127,7 @@ export default function Research(){
         </div>
       </section>
 
-      <section className="panel">
+      <section className={`panel ${styles.trajectory}`}>
         <p className="kicker">Scientific trajectory</p>
         <h2>Questions that connect the work</h2>
         <div className="flowLine"><span>Who should receive treatment?</span><b>→</b><span>What tissue can still be saved?</span><b>→</b><span>How should recovery be measured?</span><b>→</b><span>Who develops chronic complications?</span><b>→</b><span>Can we predict or prevent them?</span></div>
