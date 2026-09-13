@@ -1,5 +1,12 @@
 const academicHighlights = [
   {
+    id: 'dr-H6IToGx4',
+    start: 1104,
+    label: 'INVITED SANSKRIT FORUM',
+    title: 'Mahābhārata & Neuroscience — Invited Sanskrit Forum Talk',
+    summary: 'An invited scholarly appearance exploring how questions from the Mahābhārata can be placed in disciplined conversation with neuroscience, while keeping textual interpretation and scientific evidence distinct.'
+  },
+  {
     id: '_U0YB0YVWxI',
     start: 214,
     title: 'Academic & Scientific Lecture — Selected Example I',
@@ -65,7 +72,7 @@ export default function Videos(){return <>
 
       <div className="sectionHeaderRow" style={{marginTop:'30px'}}><div><p className="kicker">Selected examples</p><h2 className="sectionTitle">A few academic & scientific lectures</h2></div></div>
       <div className="curatedVideoGrid">
-        {academicHighlights.map((talk)=><a key={talk.id} className="videoCard" href={`https://www.youtube.com/watch?v=${talk.id}&t=${talk.start}s`} target="_blank" rel="noopener noreferrer"><img src={`https://i.ytimg.com/vi/${talk.id}/hqdefault.jpg`} alt={talk.title} loading="lazy"/><div><span className="label">ACADEMIC / SCIENTIFIC</span><h2>{talk.title}</h2><p>{talk.summary}</p><strong>Watch on YouTube →</strong></div></a>)}
+        {academicHighlights.map((talk)=><a key={talk.id} className="videoCard" href={`https://www.youtube.com/watch?v=${talk.id}&t=${talk.start}s`} target="_blank" rel="noopener noreferrer"><img src={`https://i.ytimg.com/vi/${talk.id}/hqdefault.jpg`} alt={talk.title} loading="lazy"/><div><span className="label">{talk.label ?? 'ACADEMIC / SCIENTIFIC'}</span><h2>{talk.title}</h2><p>{talk.summary}</p><strong>Watch on YouTube →</strong></div></a>)}
       </div>
 
       <div className="sectionHeaderRow" style={{marginTop:'44px'}}><div><p className="kicker">Curated IvyPandit collection</p><h2 className="sectionTitle">Additional interdisciplinary talks</h2></div></div>
