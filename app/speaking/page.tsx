@@ -18,10 +18,6 @@ export default function Speaking() { return <>
   <main className="content">
     <div className="callout"><b>Nishant K. Mishra, MD, PhD</b> offers public lectures, invited talks, workshops, panels, podcasts, and conversations at the meeting point of neuroscience, medicine, Sanskrit, Indian Knowledge Systems, cognition, and human experience. The purpose is not to use modern science to “prove” ancient traditions, but to understand traditional ideas carefully and ask what can be responsibly examined through contemporary scholarship.</div>
 
-    <section style={{marginBottom:'38px'}}>
-      <img className="heroBanner" src="/images/ivypandit-scholar-banner.jpg" alt="IvyPandit — Sanskrit, Indian knowledge traditions and neuroscience"/>
-    </section>
-
     <section><p className="kicker">Featured lecture topics</p><h2 className="sectionTitle">Five conversations for communities, classrooms, and scholarly audiences.</h2>
       <div className="twoCol">{lectures.slice(0,4).map(([title,subtitle,body,audience])=><article className="panel" key={title}><h2>{title}</h2><p><b>{subtitle}</b></p><p>{body}</p><p><b>Especially suitable for:</b> {audience}</p></article>)}</div>
       <article className="panel" style={{marginTop:'24px'}}><h2>{lectures[4][0]}</h2><p><b>{lectures[4][1]}</b></p><p>{lectures[4][2]}</p><p><b>Especially suitable for:</b> {lectures[4][3]}</p></article>
