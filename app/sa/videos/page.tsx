@@ -1,10 +1,10 @@
 import SanskritNav from '../SanskritNav';
 
 const academicHighlights = [
-  ['_U0YB0YVWxI',214,'चयनितम् अकादमिकं वैज्ञानिकं व्याख्यानम् — १','डॉ. मिश्रस्य व्यापक-आइवीपण्डित-व्याख्यानसंग्रहे अकादमिक-वैज्ञानिक-लोकशिक्षणस्य चयनितम् उदाहरणम्।'],
-  ['QsLBK1qPCPg',517,'चयनितम् अकादमिकं वैज्ञानिकं व्याख्यानम् — २','आइवीपण्डितस्य अकादमिक-अन्तरविषयकपक्षं दर्शयत् चयनितं व्याख्यानम्।'],
-  ['LjupamrT6Uw',31,'चयनितम् अकादमिकं वैज्ञानिकं व्याख्यानम् — ३','डॉ. निशान्त के. मिश्रस्य वैज्ञानिक-विद्वत्-लोकसंवादस्य अपरम् उदाहरणम्।'],
-  ['nTCykV_86Mo',153,'युद्धात् पूर्वम् अर्जुनस्य विषादस्य संज्ञानात्मकं पुनर्निरूपणम्','भगवद्गीतायाः प्रसङ्गेन अर्जुनस्य संकटम्, मोहः, दृष्टिकोणः, कर्तव्यम्, cognitive reframing च मनोविज्ञान-संज्ञानदृष्ट्या चर्च्यते।']
+  {id:'_U0YB0YVWxI',start:214,title:'चयनितम् अकादमिकं वैज्ञानिकं व्याख्यानम् — १',summary:'डॉ. मिश्रस्य व्यापक-आइवीपण्डित-व्याख्यानसंग्रहे अकादमिक-वैज्ञानिक-लोकशिक्षणस्य चयनितम् उदाहरणम्।'},
+  {id:'QsLBK1qPCPg',start:517,title:'चयनितम् अकादमिकं वैज्ञानिकं व्याख्यानम् — २',summary:'आइवीपण्डितस्य अकादमिक-अन्तरविषयकपक्षं दर्शयत् चयनितं व्याख्यानम्।'},
+  {id:'LjupamrT6Uw',start:31,title:'चयनितम् अकादमिकं वैज्ञानिकं व्याख्यानम् — ३',summary:'डॉ. निशान्त के. मिश्रस्य वैज्ञानिक-विद्वत्-लोकसंवादस्य अपरम् उदाहरणम्।'},
+  {id:'nTCykV_86Mo',start:153,title:'युद्धात् पूर्वम् अर्जुनस्य विषादस्य संज्ञानात्मकं पुनर्निरूपणम्',summary:'भगवद्गीतायाः प्रसङ्गेन अर्जुनस्य संकटम्, मोहः, दृष्टिकोणः, कर्तव्यम्, cognitive reframing च मनोविज्ञान-संज्ञानदृष्ट्या चर्च्यते।'}
 ];
 
 const talks = [
@@ -32,7 +32,7 @@ export default function SanskritVideos(){return <>
     <section className="callout"><b>एकः मञ्चः, द्वौ प्रवेशमार्गौ।</b> विश्वविद्यालय-वैज्ञानिक-व्यावसायिकदर्शकाः अकादमिकविषयेषु प्रत्यक्षं गच्छेयुः; हिन्दू-परम्परा, शास्त्रम्, अनुष्ठानम्, उत्सवाः, संस्कृतिः च इच्छन्तः पृथक् निर्दिष्टं संग्रहं पश्येयुः। एवं उभयोः स्वरूपं स्पष्टं तिष्ठति।</section>
 
     <section id="academic"><p className="kicker">संग्रहः १ • अकादमिकम् / वैज्ञानिकम् / अन्तरविषयकम्</p><h2 className="sectionTitle">न्यूरोविज्ञानम्, चिकित्सा, संज्ञानम्, संस्कृतम्, भारतीयज्ञानप्रणाली च</h2><p>एतानि व्याख्यानानि आइवीपण्डितस्य विद्वत्पक्षं प्रदर्शयन्ति — अकादमिकचिकित्सा-विज्ञानम्, संज्ञान-मनोविज्ञानम्, अनुसन्धानपद्धतिः, संस्कृतम्, IKS, तथा पारम्परिकस्रोतः आधुनिकजिज्ञासा च मध्ये परिकल्पनाजनकः संवादः।</p>
-      <div className="curatedVideoGrid" style={{marginTop:'30px'}}>{academicHighlights.map(([id,start,title,summary])=><a key={id} className="videoCard" href={`https://www.youtube.com/watch?v=${id}&t=${start}s`} target="_blank" rel="noopener noreferrer"><img src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`} alt={title} loading="lazy"/><div><span className="label">अकादमिकम् / वैज्ञानिकम्</span><h2>{title}</h2><p>{summary}</p><strong>YouTube मध्ये पश्यतु →</strong></div></a>)}</div>
+      <div className="curatedVideoGrid" style={{marginTop:'30px'}}>{academicHighlights.map((talk)=><a key={talk.id} className="videoCard" href={`https://www.youtube.com/watch?v=${talk.id}&t=${talk.start}s`} target="_blank" rel="noopener noreferrer"><img src={`https://i.ytimg.com/vi/${talk.id}/hqdefault.jpg`} alt={talk.title} loading="lazy"/><div><span className="label">अकादमिकम् / वैज्ञानिकम्</span><h2>{talk.title}</h2><p>{talk.summary}</p><strong>YouTube मध्ये पश्यतु →</strong></div></a>)}</div>
       <div className="sectionHeaderRow" style={{marginTop:'44px'}}><div><p className="kicker">चयनित-आइवीपण्डित-संग्रहः</p><h2 className="sectionTitle">अन्यानि अन्तरविषयकव्याख्यानानि</h2></div></div>
       <div className="curatedVideoGrid">{talks.map(([id,topic,summary])=><a key={id} className="videoCard" href={`https://youtu.be/${id}`} target="_blank" rel="noopener noreferrer"><img src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`} alt={topic} loading="lazy"/><div><span className="label">अकादमिकम् / अन्तरविषयकम्</span><h2>{topic}</h2><p>{summary}</p><strong>पश्यतु →</strong></div></a>)}</div>
     </section>
