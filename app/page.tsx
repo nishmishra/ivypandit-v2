@@ -56,6 +56,20 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="initiativeSection">
+        <div>
+          <p className="kicker">Invite a lecture</p>
+          <h2 className="sectionTitle">Bring an IvyPandit conversation to your community.</h2>
+          <p>Invite Dr. Nishant K. Mishra for public lectures, university seminars, workshops, youth programs, panels, and community conversations on neuroscience, Sanskrit, Indian Knowledge Systems, attention, memory, neuroplasticity, and traditional practices.</p>
+          <Link className="textLink" href="/speaking">Explore lecture topics →</Link>
+        </div>
+        <div className="panel">
+          <h3>Featured themes</h3>
+          <p>Gāyatrī & the developing brain • Pitṛpakṣa, memory & identity • Avadhāna & attention • Sandhyopāsanā & contemplative practice • Sanskrit, bilingualism & neuroplasticity</p>
+          <Link className="btn primary" href="/speaking">Lectures & Speaking</Link>
+        </div>
+      </section>
+
       <section className="evidenceSection">
         <p className="kicker">A simple rule</p>
         <h2 className="sectionTitle">Do not blur the layers.</h2>
