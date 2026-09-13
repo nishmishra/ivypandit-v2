@@ -9,7 +9,7 @@ export default function Hindi(){
         <h2>भारतीय ज्ञान-परम्परा और आधुनिक अनुसन्धान के बीच संवाद</h2>
         <p>संस्कृत, भारतीय ज्ञान प्रणालियों, विज्ञान, चिकित्सा और सार्वजनिक शिक्षा के लिए एक स्वतंत्र विद्वत् मंच — जहाँ परम्परा का सम्मान हो, प्रश्न पूछने की स्वतंत्रता हो और दावों के लिए प्रमाण अपेक्षित हो।</p>
         <div className="heroQuotes"><span className="quotePill"><b>परम्परा</b><span>समझें</span></span><span className="quotePill"><b>जिज्ञासा</b><span>प्रश्न करें</span></span><span className="quotePill"><b>अनुसन्धान</b><span>जाँचें</span></span></div>
-        <div className="buttons"><Link className="btn primary" href="/hi/prashna">अनुसन्धान-प्रश्न</Link><Link className="btn secondary" href="/hi/sahyog">सहयोग करें</Link></div>
+        <div className="buttons"><Link className="btn primary" href="/hi/prashna">अनुसन्धान-प्रश्न</Link><Link className="btn secondary" href="/hi/speaking">व्याख्यान के लिए आमन्त्रित करें</Link><Link className="btn secondary" href="/hi/sahyog">सहयोग करें</Link></div>
       </div>
     </section>
     <main className="content languagePage devanagariPage">
@@ -32,7 +32,8 @@ export default function Hindi(){
           <Link className="gatewayCard" href="/iks"><span>01</span><h3>भारतीय ज्ञान प्रणाली</h3><p>विश्वसनीय साहित्य, संस्थान, पत्रिकाएँ, डिजिटल अभिलेखागार, अध्ययन-अवसर और IKS संसाधनों का विकसित होता प्रवेश-द्वार।</p><strong>IKS Hub देखें →</strong></Link>
           <Link className="gatewayCard" href="/shastra-study"><span>02</span><h3>शास्त्र एवं संस्कृत</h3><p>गीता, महाभारत, भागवत, गायत्री, संस्कृत अध्ययन, मूलपाठ, व्याख्या और परम्परा से प्रत्यक्ष जुड़ने की सामग्री।</p><strong>शास्त्र अध्ययन →</strong></Link>
           <Link className="gatewayCard" href="/hi/prashna"><span>03</span><h3>अनुसन्धान-प्रश्न</h3><p>अधूरे शोध-पत्र नहीं, बल्कि ऐसे संक्षिप्त और गंभीर प्रश्न जिन्हें संस्कृतविद्, वैज्ञानिक और चिकित्सक मिलकर आगे बढ़ा सकें।</p><strong>प्रश्न देखें →</strong></Link>
-          <Link className="gatewayCard" href="/hi/sahyog"><span>04</span><h3>सहयोग</h3><p>यदि आपके पास कोई ग्रन्थ, परम्परा, अवधारणा, पद्धति या वैज्ञानिक प्रश्न है, तो उसे साझा शोध-परियोजना में विकसित करने के लिए संवाद आरम्भ करें।</p><strong>सहयोग करें →</strong></Link>
+          <Link className="gatewayCard" href="/hi/speaking"><span>04</span><h3>व्याख्यान और वक्तृत्व</h3><p>न्यूरोसाइंस, गीता, महाभारत, गायत्री, अवधान, पितृपक्ष, IKS, मस्तिष्क स्वास्थ्य और अन्य विषयों पर हिन्दी या अंग्रेज़ी में व्याख्यान।</p><strong>सभी व्याख्यान-विषय देखें →</strong></Link>
+          <Link className="gatewayCard" href="/hi/sahyog"><span>05</span><h3>सहयोग</h3><p>यदि आपके पास कोई ग्रन्थ, परम्परा, अवधारणा, पद्धति या वैज्ञानिक प्रश्न है, तो उसे साझा शोध-परियोजना में विकसित करने के लिए संवाद आरम्भ करें।</p><strong>सहयोग करें →</strong></Link>
         </div>
       </section>
 
@@ -42,7 +43,7 @@ export default function Hindi(){
 
       <section className="twoCol">
         <div className="panel"><h2>संस्कृत जैवचिकित्सा ज्ञानकोश — SBKB</h2><p>संस्कृत साहित्य में शरीर, मन, स्वास्थ्य, रोग, संज्ञान और मानव अनुभव से सम्बन्धित निरीक्षणों को व्यवस्थित रूप से पहचानकर वैज्ञानिक रूप से पूछे जा सकने वाले प्रश्नों में बदलने का कार्यक्रम।</p><Link className="textLink" href="/sbkb">SBKB →</Link></div>
-        <div className="panel"><h2>व्याख्यान और सार्वजनिक शिक्षा</h2><p>चयनित व्याख्यान, संवाद, पाठ और वीडियो वेबसाइट पर सन्दर्भ, ग्रन्थ-सूची और सम्बन्धित शोध-विषयों के साथ जोड़े जाएँगे।</p><Link className="textLink" href="/videos">देखें और सीखें →</Link></div>
+        <div className="panel"><h2>व्याख्यान और सार्वजनिक शिक्षा</h2><p>चयनित व्याख्यान, संवाद, पाठ और वीडियो वेबसाइट पर सन्दर्भ, ग्रन्थ-सूची और सम्बन्धित शोध-विषयों के साथ जोड़े जाएँगे। पूर्ण व्याख्यान हिन्दी और अंग्रेज़ी में उपलब्ध हैं।</p><Link className="textLink" href="/hi/speaking">व्याख्यान-विषय देखें →</Link></div>
       </section>
     </main>
   </>;
