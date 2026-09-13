@@ -1,3 +1,147 @@
 import Link from 'next/link';
 
-export default function Research(){return <><section className="pageHero"><div className="eyebrow">Science & Research</div><h1>Research</h1><p>Clinical neuroscience, brain health, cultural neuroscience, Indian Knowledge Systems, and the infrastructure needed to turn interesting observations into rigorous research.</p></section><main className="content"><div className="researchBands"><section className="panel"><h2>Brain Health & Clinical Neuroscience</h2><p>Stroke, post-stroke epilepsy, neurovascular disease, precision neurology, predictive models, biomarkers, clinical trials, and systems of care.</p><a className="textLink" href="https://scholar.google.com/citations?user=1n2JUc8AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar →</a></section><section className="panel"><h2>Cultural & Cognitive Neuroscience</h2><p>Attention, memory, language, Sanskrit learning and recitation, contemplative practices, long-duration cultural expertise, neuroplasticity, and human cognition.</p></section><section className="panel"><h2>IKS Research</h2><p>Methodologically careful study of questions inspired by śāstra, lived traditions, textual observations, and classical conceptual frameworks — without conflating tradition with empirical proof.</p><Link className="textLink" href="/sbkb">Explore SBKB →</Link></section></div><section className="panel"><h2>Research infrastructure</h2><p>The long-term aim is to connect indexed literature, classical sources, controlled concepts, research questions, evidence status, working papers, publications, and educational media in a portable knowledge system.</p><div className="flowLine"><span>Sources</span><b>→</b><span>Indexed knowledge</span><b>→</b><span>Questions</span><b>→</b><span>Studies</span><b>→</b><span>Outputs</span></div></section><section className="panel" id="stroke-program-india"><h2>Stroke Program for India</h2><p>A longstanding commitment to India&apos;s brain-health infrastructure includes the article <i>Stroke Program for India</i>, which proposed scalable approaches to stroke care, education, and public-health capacity.</p><a className="textLink" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2859584/" target="_blank" rel="noopener noreferrer">Read the article →</a></section></main></>}
+export default function Research(){
+  return <>
+    <section className="pageHero">
+      <div className="eyebrow">Research & Scientific Work</div>
+      <h1>Scientific Work</h1>
+      <p>Research across stroke, reperfusion, neuroimaging, post-stroke epilepsy, biomarkers, clinical trials, cognition, language, neuroplasticity, and emerging cultural neuroscience.</p>
+      <div className="buttons" style={{justifyContent:'center', marginTop:'22px'}}>
+        <Link className="btn secondary" href="/hi/research">हिन्दी</Link>
+        <Link className="btn secondary" href="/sa/research">संस्कृतम्</Link>
+      </div>
+    </section>
+
+    <main className="content">
+      <section className="manifesto">
+        <p className="kicker">A scientific continuum</p>
+        <h2 className="sectionTitle">From acute brain injury to long-term recovery, prediction, and human cognition.</h2>
+        <p>My scientific work has developed around a recurring question: how can a better understanding of the brain improve treatment, recovery, and human well-being? Over time, that work has moved from acute stroke and reperfusion to imaging-guided treatment, neurological outcomes, post-stroke epilepsy, biomarkers and precision neuroscience, while also expanding toward language, cognition, bilingualism, and neuroplasticity.</p>
+        <p>These are not separate interests. They are different ways of studying how the brain responds to injury, treatment, learning, repeated practice, language, attention, and experience.</p>
+      </section>
+
+      <div className="researchBands">
+        <section className="panel">
+          <h2>Stroke, Reperfusion & Neuroimaging</h2>
+          <p>Acute ischemic stroke, thrombolysis, endovascular treatment, perfusion and mismatch imaging, tissue viability, patient selection, clinical outcomes, and the relationship between time, tissue, blood flow, and recovery.</p>
+        </section>
+        <section className="panel">
+          <h2>Post-Stroke Epilepsy & Brain Networks</h2>
+          <p>Seizures after stroke, epileptogenesis, outcome prediction, biomarkers, genetics, proteomics, treatment questions, and international collaborative research linking vascular neurology and epilepsy.</p>
+        </section>
+        <section className="panel">
+          <h2>Cognition, Language & Neuroplasticity</h2>
+          <p>Bilingualism, multilingual experience, attention, memory, cognitive reserve, Sanskrit learning and recitation, long-duration expertise, contemplative practice, and scientifically testable questions arising from cultural traditions.</p>
+        </section>
+      </div>
+
+      <section>
+        <p className="kicker">Selected scientific contributions</p>
+        <h2 className="sectionTitle">Representative papers and the questions they addressed</h2>
+        <p>Rather than reproduce a full bibliography, the studies below illustrate the evolution of the scientific questions that have shaped my work.</p>
+
+        <div className="twoCol">
+          <section className="panel">
+            <div className="eyebrow">The BMJ · 2010</div>
+            <h2>Thrombolysis in very elderly people</h2>
+            <p>At a time when advanced age frequently limited access to thrombolytic treatment, this international analysis examined outcomes in very elderly patients and contributed evidence relevant to reconsidering age-based treatment restrictions.</p>
+            <a className="textLink" href="https://doi.org/10.1136/bmj.c6046" target="_blank" rel="noopener noreferrer">View paper →</a>
+          </section>
+
+          <section className="panel">
+            <div className="eyebrow">Diabetes Care · 2010</div>
+            <h2>Prior stroke, diabetes, and thrombolysis</h2>
+            <p>Patients with both a previous stroke and diabetes had historically been treated cautiously, and in some settings excluded, from intravenous thrombolysis. This study examined whether that exclusion was supported by observed clinical outcomes.</p>
+            <a className="textLink" href="https://doi.org/10.2337/dc10-1125" target="_blank" rel="noopener noreferrer">View paper →</a>
+          </section>
+
+          <section className="panel">
+            <div className="eyebrow">Stroke · 2010</div>
+            <h2>Mismatch-Based Delayed Thrombolysis</h2>
+            <p>This work addressed a question that became central to modern stroke medicine: can imaging identify patients with salvageable brain tissue even when conventional time windows have passed? It helped frame the move from clock time alone toward biologically informed treatment selection.</p>
+            <a className="textLink" href="https://doi.org/10.1161/STROKEAHA.109.566869" target="_blank" rel="noopener noreferrer">View paper →</a>
+          </section>
+
+          <section className="panel">
+            <div className="eyebrow">Neurology · 2011</div>
+            <h2>Thrombolysis after prior stroke and diabetes</h2>
+            <p>Using a large international dataset, this study further examined an important treatment-exclusion question and added evidence relevant to thrombolysis in a population traditionally considered at increased risk.</p>
+            <a className="textLink" href="https://doi.org/10.1212/WNL.0b013e318238ee42" target="_blank" rel="noopener noreferrer">View paper →</a>
+          </section>
+
+          <section className="panel">
+            <div className="eyebrow">Stroke · 2011</div>
+            <h2>Home time as a meaningful stroke outcome</h2>
+            <p>Home time—the number of days a patient is alive and outside institutional care—offers an intuitive, patient-centered measure of recovery. This study examined home time in patients receiving thrombolytic therapy.</p>
+            <a className="textLink" href="https://doi.org/10.1161/STROKEAHA.110.601302" target="_blank" rel="noopener noreferrer">View paper →</a>
+          </section>
+
+          <section className="panel">
+            <div className="eyebrow">Stroke · 2013</div>
+            <h2>Modified Graeb Score</h2>
+            <p>This collaborative work developed and evaluated an enhanced method for quantifying intraventricular hemorrhage and relating hemorrhage burden to functional outcome.</p>
+            <a className="textLink" href="https://doi.org/10.1161/STROKEAHA.112.670653" target="_blank" rel="noopener noreferrer">View paper →</a>
+          </section>
+
+          <section className="panel">
+            <div className="eyebrow">Stroke · 2014</div>
+            <h2>MRI mismatch and endovascular patient selection</h2>
+            <p>This study continued the investigation of how advanced imaging might distinguish patients more likely to benefit from endovascular reperfusion therapy.</p>
+            <a className="textLink" href="https://doi.org/10.1161/STROKEAHA.114.004772" target="_blank" rel="noopener noreferrer">View paper →</a>
+          </section>
+
+          <section className="panel">
+            <div className="eyebrow">JAMA Neurology · 2023</div>
+            <h2>Outcomes in patients with post-stroke seizures</h2>
+            <p>This international collaborative study examined the relationship between seizures after stroke and subsequent clinical outcomes, bringing together investigators across stroke and epilepsy. I served as senior and corresponding author.</p>
+            <a className="textLink" href="https://doi.org/10.1001/jamaneurol.2023.3240" target="_blank" rel="noopener noreferrer">View paper →</a>
+          </section>
+
+          <section className="panel">
+            <div className="eyebrow">Neurology · 2024</div>
+            <h2>Pathophysiology, diagnosis, prognosis, and prevention of post-stroke epilepsy</h2>
+            <p>This international review connected vascular neurology and epileptology to synthesize current understanding of why epilepsy develops after stroke, how risk can be recognized, and how future preventive strategies might be developed.</p>
+            <a className="textLink" href="https://doi.org/10.1212/WNL.0000000000209450" target="_blank" rel="noopener noreferrer">View paper →</a>
+          </section>
+        </div>
+      </section>
+
+      <section className="panel">
+        <p className="kicker">Scientific trajectory</p>
+        <h2>Questions that connect the work</h2>
+        <div className="flowLine"><span>Who should receive treatment?</span><b>→</b><span>What tissue can still be saved?</span><b>→</b><span>How should recovery be measured?</span><b>→</b><span>Who develops chronic complications?</span><b>→</b><span>Can we predict or prevent them?</span></div>
+      </section>
+
+      <section className="twoCol">
+        <div className="panel" id="stroke-program-india">
+          <h2>Brain Health & Stroke Research in India</h2>
+          <p>A longstanding interest in India&apos;s brain-health infrastructure includes the article <i>Stroke Program for India</i> and a broader effort to develop multicenter registries, trials, imaging collaborations, data platforms, training programs, and locally relevant approaches to prevention and treatment.</p>
+          <a className="textLink" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2859584/" target="_blank" rel="noopener noreferrer">Read Stroke Program for India →</a>
+        </div>
+        <div className="panel">
+          <h2>Biomarkers, Proteomics & Data Science</h2>
+          <p>Neurological diseases are biologically heterogeneous. Current work increasingly integrates clinical data with imaging, biomarkers, proteomics, genetics, and computational approaches to improve biological understanding, risk prediction, and precision neurological care.</p>
+        </div>
+      </section>
+
+      <section className="panel">
+        <p className="kicker">Emerging work</p>
+        <h2>Language, cultural neuroscience & testable questions</h2>
+        <p>Indian intellectual and contemplative traditions contain highly structured practices involving memory, attention, recitation, visualization, breath regulation, language learning, and sustained concentration. These traditions should neither be dismissed because they are old nor declared scientifically proven merely because they are traditional.</p>
+        <p>They can, however, generate serious research questions: how does sustained multilingual experience influence brain networks? What are the cognitive demands of Avadhāna? Can long-duration recitation or contemplative practice produce measurable changes in attention, memory, physiology, or neuroplasticity?</p>
+        <p><b>Traditional observation → Research question → Testable hypothesis → Scientific investigation → Evidence → Replication</b></p>
+        <Link className="textLink" href="/questions">Explore research questions →</Link>
+      </section>
+
+      <section className="panel">
+        <h2>Explore the scientific record</h2>
+        <p>For the complete publication record and current research activity, use the links below.</p>
+        <div className="buttons" style={{justifyContent:'flex-start'}}>
+          <a className="btn primary" href="https://scholar.google.com/citations?user=1n2JUc8AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+          <Link className="btn secondary" href="/publications">Selected Publications</Link>
+          <Link className="btn secondary" href="/collaborate">Collaborate</Link>
+        </div>
+      </section>
+    </main>
+  </>;
+}
