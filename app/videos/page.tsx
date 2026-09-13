@@ -93,13 +93,6 @@ export default function Videos(){return <>
   </section>
 
   <main className="content">
-    <section className="callout">
-      <b>Three pathways, one platform.</b> Research audiences can go directly to evidence-based and academic material; interdisciplinary talks explore questions that arise between classical sources and contemporary inquiry; and viewers interested in Hindu tradition, śāstra, ritual, festivals, and cultural learning have a clearly marked collection of their own.
-      <div className="flowLine" style={{marginBottom:0}}>
-        <span>Research / Academic</span><b>•</b><span>Interdisciplinary Inquiry</span><b>•</b><span>Tradition / Śāstra / Culture</span>
-      </div>
-    </section>
-
     <section className="panel" style={{marginBottom:'34px',padding:'22px 26px'}}>
       <p className="kicker">Scholar & speaker</p>
       <h2 style={{marginBottom:'8px'}}>Nishant K. Mishra, MD, PhD</h2>
