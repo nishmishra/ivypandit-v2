@@ -1,0 +1,113 @@
+.identityCard{
+  max-width:930px;
+  margin:0 auto 34px;
+  padding:26px 30px;
+  text-align:center;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:rgba(255,255,255,.8);
+  box-shadow:0 14px 30px rgba(65,30,5,.07);
+}
+.identityCard h2{font-size:30px;margin:0 0 8px;color:var(--maroon)}
+.identityCard p{margin:0;font-family:Arial,sans-serif;line-height:1.55;color:#49392f}
+.identityCard .identityLine{font-weight:700;color:#71301c;margin-top:5px}
+
+.gatewayRefined :global(.gatewayCard){padding:26px 24px}
+.gatewayRefined :global(.gatewayCard p){min-height:0;font-size:15.5px;line-height:1.6}
+
+.vedicSection{
+  margin:8px 0 54px;
+  border:1px solid #d9bd87;
+  border-radius:22px;
+  overflow:hidden;
+  background:linear-gradient(135deg,#fffaf0 0%,#fff4de 52%,#f8ead1 100%);
+  box-shadow:0 16px 34px rgba(70,35,10,.08);
+}
+.vedicHeader{
+  padding:30px 32px 18px;
+  text-align:center;
+}
+.vedicHeader h2{font-size:38px;line-height:1.1;margin:6px 0 10px;color:var(--maroon)}
+.vedicHeader p{max-width:860px;margin:0 auto;font-family:Arial,sans-serif;line-height:1.68;color:#4e3b31}
+.vedicGrid{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:0;
+  align-items:stretch;
+  border-top:1px solid #e3cfa6;
+}
+.vedicText{padding:30px 34px 34px}
+.verseBlock{padding:0 0 24px;margin-bottom:24px;border-bottom:1px solid #e4cfaa}
+.verseBlock:last-child{margin-bottom:0;padding-bottom:0;border-bottom:0}
+.sourceLabel{font:800 11px/1.2 Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#9b3a17;margin-bottom:10px}
+.devanagari{font-size:26px;line-height:1.55;color:#4c1812;margin:0 0 10px}
+.transliteration{font:italic 15px/1.55 Georgia,'Times New Roman',serif;color:#76594a;margin:0 0 10px}
+.interpretation{font:15.5px/1.68 Arial,sans-serif;color:#49392f;margin:0}
+.vedicArt{
+  position:relative;
+  min-height:100%;
+  background:#071829;
+}
+.vedicArt img{
+  width:100%;
+  height:100%;
+  min-height:530px;
+  object-fit:cover;
+  display:block;
+}
+.artOverlay{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:22px 24px;
+  background:linear-gradient(180deg,transparent,rgba(3,10,20,.9));
+  color:#fff8e6;
+}
+.artOverlay b{display:block;font-size:22px;margin-bottom:6px;color:#ffe39a}
+.artOverlay span{font:13px/1.55 Arial,sans-serif;color:#e4edf4}
+.methodNote{
+  margin:0 32px 30px;
+  padding:17px 19px;
+  border-radius:13px;
+  border:1px solid #d7b977;
+  background:#fff8e8;
+  font:14px/1.62 Arial,sans-serif;
+  color:#4c3b32;
+}
+.methodNote b{color:var(--maroon)}
+
+.featuredRefined :global(.talkGrid){grid-template-columns:1.2fr .8fr;padding:20px}
+.featuredRefined :global(.talkCopy){padding:16px}
+.featuredRefined :global(.talkCopy h3){font-size:30px;line-height:1.08}
+.featuredRefined :global(.talkCopy p){font-size:16px;line-height:1.65}
+
+.themeList{margin:8px 0 14px;padding-left:20px;font-family:Arial,sans-serif;color:#4d3a31;line-height:1.62}
+.themeList li{margin-bottom:4px}
+.languageLine{font-family:Arial,sans-serif;margin:10px 0 0}
+
+.evidenceRefined :global(.evidenceGrid){gap:16px}
+.evidenceRefined :global(.evidenceGrid)>div{padding:22px 20px;min-height:150px}
+.evidenceRefined :global(.evidenceGrid) b{font-size:19px}
+.evidenceRefined :global(.evidenceGrid) p{font-size:15px;line-height:1.58}
+
+@media(max-width:900px){
+  .vedicGrid{grid-template-columns:1fr}
+  .vedicArt img{min-height:360px}
+  .featuredRefined :global(.talkGrid){grid-template-columns:1fr}
+}
+
+@media(max-width:560px){
+  .identityCard{padding:22px 18px}
+  .identityCard h2{font-size:26px}
+  .vedicHeader{padding:25px 20px 16px}
+  .vedicHeader h2{font-size:31px}
+  .vedicText{padding:24px 20px 28px}
+  .devanagari{font-size:22px}
+  .methodNote{margin:0 20px 24px}
+}
+
+@media print{
+  .vedicSection,.identityCard{break-inside:avoid;page-break-inside:avoid}
+  .vedicArt img{min-height:360px}
+}
