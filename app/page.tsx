@@ -71,21 +71,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="initiativeSection">
-        <div>
-          <p className="kicker">Speaker & public scholarship</p>
-          <h2 className="sectionTitle">A physician-scientist in conversation with Sanskrit and Indian traditions.</h2>
-          <p>IvyPandit brings academic neuroscience, medicine, Sanskrit, Indian Knowledge Systems, and lived cultural traditions into one public-scholarship platform while keeping evidence, interpretation, and faith claims clearly distinguished.</p>
-          <p><Link className="textLink" href="/speaking">View speaking topics →</Link><br/><a className="textLink" href="https://www.linkedin.com/in/ivypandit/" target="_blank" rel="noopener noreferrer">LinkedIn →</a><br/><a className="textLink" href="https://x.com/IvyPandit" target="_blank" rel="noopener noreferrer">X / Twitter →</a></p>
-        </div>
-        <div>
-          <img className="heroBanner" src="/images/ivypandit-scholar-banner.jpg" alt="IvyPandit — Sanskrit, Indian knowledge traditions and neuroscience"/>
-        </div>
+      <section className="panel" style={{marginTop:'38px'}}>
+        <p className="kicker">Speaker & public scholarship</p>
+        <h2>A physician-scientist in conversation with Sanskrit and Indian traditions.</h2>
+        <p>IvyPandit brings academic neuroscience, medicine, Sanskrit, Indian Knowledge Systems, and lived cultural traditions into one public-scholarship platform while keeping evidence, interpretation, and faith claims clearly distinguished.</p>
+        <p><Link className="textLink" href="/speaking">View speaking topics →</Link><br/><a className="textLink" href="https://www.linkedin.com/in/ivypandit/" target="_blank" rel="noopener noreferrer">LinkedIn →</a><br/><a className="textLink" href="https://x.com/IvyPandit" target="_blank" rel="noopener noreferrer">X / Twitter →</a></p>
       </section>
 
       <section className="evidenceSection">
-        <p className="kicker">A simple rule</p>
-        <h2 className="sectionTitle">Do not blur the layers.</h2>
+        <h2 className="sectionTitle">How IvyPandit approaches interdisciplinary questions</h2>
+        <p>When a traditional idea is discussed alongside modern science, four different questions are considered separately:</p>
         <div className="evidenceGrid">
           <div><b>Classical source</b><p>What does the text actually say?</p></div>
           <div><b>Traditional interpretation</b><p>How has the idea been understood within its own tradition?</p></div>
