@@ -50,10 +50,10 @@ export default function Home() {
       </section>
 
       <section className="featuredTalks">
-        <div className="sectionHeaderRow"><div><p className="kicker">Featured talks</p><h2 className="sectionTitle">Ideas are easier to explore when you can hear the argument.</h2></div><Link className="textLink" href="/videos">Browse both video collections →</Link></div>
+        <div className="sectionHeaderRow"><div><p className="kicker">Featured talks</p><h2 className="sectionTitle">Ideas are easier to explore when you can hear the argument.</h2></div><Link className="textLink" href="/videos">Browse video collections →</Link></div>
         <div className="talkGrid">
           <div className="videoEmbed"><iframe src="https://www.youtube-nocookie.com/embed/CbtzXqFRGKI" title="Featured IvyPandit talk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></div>
-          <div className="talkCopy"><span className="label">ACADEMIC / INTERDISCIPLINARY</span><h3>Sanskrit, Indian Knowledge Systems & Scientific Inquiry</h3><p>A selected lecture representing the IvyPandit approach: engage classical knowledge with respect, remain curious about the questions it raises, and distinguish textual interpretation from hypotheses and scientific evidence.</p><a className="textLink" href="/videos#academic">Academic collection →</a><br/><a className="textLink" href="/videos#tradition">Tradition & Dharma collection →</a></div>
+          <div className="talkCopy"><span className="label">ACADEMIC / INTERDISCIPLINARY</span><h3>Sanskrit, Indian Knowledge Systems & Scientific Inquiry</h3><p>A selected lecture representing the IvyPandit approach: engage classical knowledge with respect, remain curious about the questions it raises, and distinguish textual interpretation from hypotheses and scientific evidence.</p><a className="textLink" href="/videos#academic">Academic collection →</a><br/><a className="textLink" href="/videos#tradition">Tradition & Dharma collection →</a><br/><a className="textLink" href="https://www.youtube.com/@IvyPandit" target="_blank" rel="noopener noreferrer">IvyPandit YouTube channel →</a></div>
         </div>
       </section>
 
@@ -62,7 +62,7 @@ export default function Home() {
           <p className="kicker">Invite a speaker</p>
           <h2 className="sectionTitle">Bring an IvyPandit conversation to your community, university, or institution.</h2>
           <p>Invite Dr. Nishant K. Mishra for public lectures, university seminars, workshops, youth programs, panels, podcasts, and community conversations on neuroscience, Sanskrit, Indian Knowledge Systems, attention, memory, neuroplasticity, and traditional practices.</p>
-          <div className="buttons" style={{justifyContent:'flex-start'}}><Link className="btn primary" href="/speaking">Invite Dr. Mishra to Speak</Link><a className="btn secondary" href="mailto:nishant.mishra@ivypandit.com?subject=IvyPandit%20Lecture%20Invitation">Email an Invitation</a></div>
+          <div className="buttons" style={{justifyContent:'flex-start'}}><Link className="btn primary" href="/speaking">Invite Dr. Mishra to Speak</Link><a className="btn secondary" href="mailto:nishant.mishra@ivypandit.com?cc=nishmishra@gmail.com&subject=IvyPandit%20Lecture%20Invitation">Email an Invitation</a></div>
         </div>
         <div className="panel">
           <h3>Featured lecture themes</h3>
@@ -75,12 +75,11 @@ export default function Home() {
         <div>
           <p className="kicker">Speaker & public scholarship</p>
           <h2 className="sectionTitle">A physician-scientist in conversation with Sanskrit and Indian traditions.</h2>
-          <p>The public-facing work of IvyPandit spans academic lectures, interdisciplinary discussions, Sanskrit and IKS education, and cultural engagement. Selected visual material from the IvyPandit archive is presented across the site to reflect these different settings.</p>
-          <Link className="textLink" href="/speaking">View speaking topics →</Link>
+          <p>IvyPandit brings academic neuroscience, medicine, Sanskrit, Indian Knowledge Systems, and lived cultural traditions into one public-scholarship platform while keeping evidence, interpretation, and faith claims clearly distinguished.</p>
+          <p><Link className="textLink" href="/speaking">View speaking topics →</Link><br/><a className="textLink" href="https://www.linkedin.com/in/ivypandit/" target="_blank" rel="noopener noreferrer">LinkedIn →</a><br/><a className="textLink" href="https://x.com/IvyPandit" target="_blank" rel="noopener noreferrer">X / Twitter →</a></p>
         </div>
-        <div className="twoCol">
-          <img className="photo" src="/images/dr-nishant-mishra.jpeg" alt="Dr. Nishant K. Mishra"/>
-          <img className="photo" src="/images/ivy-pandit-feature-banner.jpg" alt="IvyPandit public scholarship"/>
+        <div>
+          <img className="heroBanner" src="/images/ivypandit-scholar-banner.jpg" alt="IvyPandit — Sanskrit, Indian knowledge traditions and neuroscience"/>
         </div>
       </section>
 
