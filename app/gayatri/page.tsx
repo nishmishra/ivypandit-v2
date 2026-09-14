@@ -8,6 +8,14 @@ export default function Page() { return <main>
       <section className="panel"><p className="kicker">Traditional practice</p><h2>Gāyatrī in lived tradition</h2><p>Gāyatrī is embedded in lineages of recitation, Sandhyāvandana, initiation, daily discipline, breath, attention, contemplation, and theological meaning. Those dimensions should be understood before isolating any one component for scientific study.</p><p><b>Method:</b> source → commentary → lived practice → research question → evidence.</p></section>
     </div>
 
+    <section className="featuredTalks" style={{marginTop:'30px',marginBottom:'34px'}}>
+      <div className="sectionHeaderRow"><div><p className="kicker">Featured lecture • Hindi</p><h2 className="sectionTitle">Sandhyopāsanā, Saṃskāra & the Developing Brain</h2></div><a className="textLink" href="https://youtu.be/vArP8eE0ROU" target="_blank" rel="noopener noreferrer">Watch on YouTube →</a></div>
+      <div className="talkGrid">
+        <div className="videoEmbed"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/vArP8eE0ROU" title="Sandhyopasana, Samskara, brain development and modern science" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></div>
+        <div className="talkCopy"><span className="label">SANDHYĀ • GĀYATRĪ • NEUROSCIENCE</span><h3>How should a traditional daily practice be studied?</h3><p>This Hindi lecture examines Sandhyopāsanā as a multi-component discipline involving prāṇāyāma, Gāyatrī-japa, attention, meaning, imagery, self-regulation, and daily routine.</p><p>The scientific question is not whether tradition should be declared proven in advance, but how these components might be characterized faithfully and tested with appropriate behavioral, physiological, EEG, or future neuroimaging methods.</p><Link className="textLink" href="/questions#nityakarma-sandhya-daily-practice">Related research question →</Link><br/><Link className="textLink" href="/articles/gayatri-neuroplasticity">Read the related scholarly essay →</Link></div>
+      </div>
+    </section>
+
     <section className="resourceGrid" style={{marginTop:'28px'}}>
       <Link className="panel linkedCard" href="/articles/gayatri-neuroplasticity"><span className="label">SCHOLARLY ESSAY</span><h2>Gāyatrī & Neuroplasticity</h2><p>What attention, repetition, meaning, breath, and developmental neuroscience can — and cannot yet — tell us.</p><span>Read essay →</span></Link>
       <Link className="panel linkedCard" href="/speaking/gayatri-samskara-developing-brain"><span className="label">LECTURE</span><h2>Gāyatrī, Saṃskāra & the Developing Brain</h2><p>A public lecture framework for parents, educators, Sanskrit institutions, temples, and interdisciplinary audiences.</p><span>Explore lecture →</span></Link>
