@@ -41,7 +41,7 @@ const featuredInquiry = [
     id: '_U0YB0YVWxI',
     start: 214,
     label: 'INTERDISCIPLINARY INQUIRY',
-    title: 'Pitṛ-ṛṇa: The Science of Memory',
+    title: 'Pitṛ-ṛṇa: Memory, Ancestry & Identity',
     summary: 'An interdisciplinary reflection on ancestry, remembrance, gratitude, ritual, and memory, while distinguishing traditional meanings from scientific explanation.'
   },
   {
