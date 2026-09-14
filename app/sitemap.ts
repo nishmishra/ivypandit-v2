@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/sa', '/sa/iks', '/sa/shastra', '/sa/research', '/sa/sbkb', '/sa/prashna', '/sa/videos', '/sa/speaking', '/sa/sahayoga', '/sa/about',
     '/sa/publications', '/sa/articles', '/sa/repository', '/sa/support', '/sa/contact', '/sa/disclaimer',
     '/sa/articles/gayatri-neuroplasticity', '/sa/articles/gita-cognitive-resilience', '/sa/articles/garbhadhana-epigenetics',
+    '/speaking/speaker-sheet',
     '/speaking/gayatri-samskara-developing-brain',
     '/speaking/avadhana-indian-science-attention',
     '/speaking/bhagavad-gita-cognitive-reframing-resilience',
