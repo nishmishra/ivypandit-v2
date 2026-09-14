@@ -8,6 +8,14 @@ export default function About(){return <>
       <section className="panel"><h2>Built to grow beyond one person</h2><p>IvyPandit begins with the scholarship, teaching, and curation of its founder, but its long-term purpose is broader: a useful platform where colleagues can contribute perspectives, resources, criticism, scholarship, and dialogue.</p><p>Public material is intended to remain transparent about authorship, evidence status, uncertainty, and editorial responsibility.</p><Link className="textLink" href="/editorial-policy">Read the Editorial & Evidence Policy →</Link></section>
     </div>
 
+    <section className="featuredTalks" style={{marginTop:'34px',marginBottom:'38px'}}>
+      <div className="sectionHeaderRow"><div><p className="kicker">Platform launch</p><h2 className="sectionTitle">Why IvyPandit?</h2></div><a className="textLink" href="https://www.youtube.com/watch?v=XkEqWuym3dc" target="_blank" rel="noopener noreferrer">Watch on YouTube →</a></div>
+      <div className="talkGrid">
+        <div className="videoEmbed"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/XkEqWuym3dc" title="Introducing IvyPandit — platform launch video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></div>
+        <div className="talkCopy"><span className="label">INTRODUCING IVYPANDIT</span><h3>The idea behind the platform</h3><p>This launch video is a short introduction to why IvyPandit was created and how it approaches the meeting point of Sanskrit, Indian Knowledge Systems, neuroscience, medicine, and public scholarship.</p><p>It also explains the central discipline of the project: respect the source, distinguish interpretation from hypothesis, and reserve scientific claims for what evidence can actually support.</p><Link className="textLink" href="/research">Explore scientific work →</Link><br/><Link className="textLink" href="/collaborate">Collaborate with IvyPandit →</Link></div>
+      </div>
+    </section>
+
     <section id="founder" className="twoCol" style={{marginTop:'28px',alignItems:'center'}}>
       <div><img className="photo" src="/images/nishant-varanasi-boat.jpeg" alt="Nishant K. Mishra in Varanasi" loading="lazy"/></div>
       <div className="panel">
