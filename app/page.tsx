@@ -45,6 +45,7 @@ export default function Home() {
         <h2 className="sectionTitle">Tradition deserves understanding before judgment.<br/>Scientific claims deserve evidence before acceptance.</h2>
         <p>IvyPandit studies Sanskrit and Indian Knowledge Systems in their historical and intellectual contexts while asking new questions through neuroscience, medicine, cognitive science, behavioral science, and other modern disciplines.</p>
         <p>The aim is neither to declare that ancient texts anticipated modern science nor to dismiss traditional knowledge because it is old. It is to understand carefully, ask better questions, and distinguish evidence from interpretation.</p>
+        <p><Link className="textLink" href="/editorial-policy">Read the Editorial & Evidence Policy →</Link></p>
       </section>
 
       <section className={`${styles.gatewayRefined} gatewayGrid`} aria-label="Explore IvyPandit">
@@ -67,6 +68,7 @@ export default function Home() {
             <p className={styles.devanagari}>ऋतं च सत्यं चाभीद्धात्तपसोऽध्यजायत ।<br/>ततो रात्र्यजायत ततः समुद्रो अर्णवः ॥</p>
             <p className={styles.transliteration}>ṛtaṃ ca satyaṃ cābhīddhāt tapaso ’dhyajāyata | tato rātry ajāyata tataḥ samudro arṇavaḥ ||</p>
             <p className={styles.interpretation}>The hymn places <i>ṛta</i> (cosmic order), <i>satya</i> (truth), and <i>tapas</i> within a poetic account of cosmic emergence. The value of the verse here is not a claim that modern cosmology is hidden in Vedic poetry, but the invitation to examine how human beings have conceptualized order, causation, emergence, and reality.</p>
+            <p className={styles.verseLink}><a className="textLink" href="https://vedicheritage.gov.in/samhitas/rigveda/" target="_blank" rel="noopener noreferrer">Explore the Ṛgveda at the Vedic Heritage Portal →</a></p>
           </article>
 
           <article className={styles.verseCard}>
@@ -103,7 +105,7 @@ export default function Home() {
       <section className={`${styles.featuredRefined} featuredTalks`}>
         <div className="sectionHeaderRow"><div><p className="kicker">Featured talk</p><h2 className="sectionTitle">Hear the argument, then explore the evidence.</h2></div><Link className="textLink" href="/videos">Browse video collections →</Link></div>
         <div className="talkGrid">
-          <div className="videoEmbed"><iframe src="https://www.youtube-nocookie.com/embed/CbtzXqFRGKI" title="Featured IvyPandit talk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></div>
+          <div className="videoEmbed"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/CbtzXqFRGKI" title="Featured IvyPandit talk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></div>
           <div className="talkCopy"><span className="label">ACADEMIC / INTERDISCIPLINARY</span><h3>Sanskrit, Indian Knowledge Systems & Scientific Inquiry</h3><p>Engaging classical knowledge respectfully while distinguishing textual interpretation, research hypotheses, and scientific evidence.</p><a className="textLink" href="/videos#academic">Academic collection →</a><br/><a className="textLink" href="/videos#tradition">Tradition & Dharma collection →</a><br/><a className="textLink" href="https://www.youtube.com/@IvyPandit" target="_blank" rel="noopener noreferrer">YouTube channel →</a></div>
         </div>
       </section>
@@ -113,7 +115,7 @@ export default function Home() {
           <p className="kicker">Invite a speaker</p>
           <h2 className="sectionTitle">Invite Dr. Nishant K. Mishra to speak.</h2>
           <p>Live or virtual talks can be adapted for universities, Sanskrit institutions, temples, conferences, professional groups, youth programs, podcasts, and community audiences.</p>
-          <div className="buttons" style={{justifyContent:'flex-start'}}><Link className="btn primary" href="/speaking">View Speaking Topics</Link><a className="btn secondary" href="mailto:nishant.mishra@ivypandit.com?cc=nishmishra@gmail.com&subject=IvyPandit%20Lecture%20Invitation">Email an Invitation</a></div>
+          <div className="buttons" style={{justifyContent:'flex-start'}}><Link className="btn primary" href="/speaking">View Speaking Topics</Link><a className="btn secondary" href="mailto:nishant.mishra@ivypandit.com?subject=IvyPandit%20Lecture%20Invitation">Email an Invitation</a></div>
         </div>
         <div className="panel">
           <h3>Featured lecture themes</h3>
