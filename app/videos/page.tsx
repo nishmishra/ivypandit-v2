@@ -24,6 +24,13 @@ const featuredAcademic = [
 
 const featuredInquiry = [
   {
+    id: 'vArP8eE0ROU',
+    start: 0,
+    label: 'INTERDISCIPLINARY INQUIRY • HINDI',
+    title: 'Sandhyopāsanā: Saṃskāra, Brain Development & Modern Science',
+    summary: 'A Hindi lecture asking how the multi-component discipline of Sandhyopāsanā — including prāṇāyāma, Gāyatrī-japa, attention, imagery, meaning, and daily routine — might be studied scientifically without presuming benefit in advance.'
+  },
+  {
     id: 'CbtzXqFRGKI',
     start: 0,
     label: 'INTERDISCIPLINARY INQUIRY',
