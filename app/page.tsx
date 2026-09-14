@@ -111,10 +111,14 @@ export default function Home() {
       </section>
 
       <section className={`${styles.featuredRefined} featuredTalks`}>
-        <div className="sectionHeaderRow"><div><p className="kicker">Featured talk</p><h2 className="sectionTitle">Hear the argument, then explore the evidence.</h2></div><Link className="textLink" href="/videos">Browse video collections →</Link></div>
+        <div className="sectionHeaderRow"><div><p className="kicker">Featured talks</p><h2 className="sectionTitle">Hear the argument, then explore the evidence.</h2></div><Link className="textLink" href="/videos">Browse video collections →</Link></div>
         <div className="talkGrid">
-          <div className="videoEmbed"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/CbtzXqFRGKI" title="Featured IvyPandit talk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></div>
+          <div className="videoEmbed"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/CbtzXqFRGKI" title="Sanskrit, Indian Knowledge Systems and Scientific Inquiry" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></div>
           <div className="talkCopy"><span className="label">ACADEMIC / INTERDISCIPLINARY</span><h3>Sanskrit, Indian Knowledge Systems & Scientific Inquiry</h3><p>Engaging classical knowledge respectfully while distinguishing textual interpretation, research hypotheses, and scientific evidence.</p><a className="textLink" href="/videos#academic">Academic collection →</a><br/><a className="textLink" href="/videos#tradition">Tradition & Dharma collection →</a><br/><a className="textLink" href="https://www.youtube.com/@IvyPandit" target="_blank" rel="noopener noreferrer">YouTube channel →</a></div>
+        </div>
+        <div className="talkGrid" style={{marginTop:'28px'}}>
+          <div className="videoEmbed"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/vArP8eE0ROU" title="Sandhyopasana, samskara, brain development and modern science" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></div>
+          <div className="talkCopy"><span className="label">INTERDISCIPLINARY INQUIRY • HINDI</span><h3>Sandhyopāsanā, Saṃskāra & the Developing Brain</h3><p>A Hindi lecture examining Sandhyopāsanā as a multi-component daily practice involving prāṇāyāma, Gāyatrī-japa, attention, imagery, meaning, self-regulation, and routine — and asking which of these dimensions can be studied rigorously with modern neuroscience.</p><p>The lecture treats traditional meaning and scientific evidence as distinct, and argues for collaboration among Sanskrit scholars, practitioners, clinicians, psychologists, and neuroscientists.</p><Link className="textLink" href="/gayatri">Gāyatrī Study Hub →</Link><br/><Link className="textLink" href="/questions#nityakarma-sandhya-daily-practice">Related research question →</Link><br/><a className="textLink" href="https://youtu.be/vArP8eE0ROU" target="_blank" rel="noopener noreferrer">Watch on YouTube →</a></div>
         </div>
       </section>
 
