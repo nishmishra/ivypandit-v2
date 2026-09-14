@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { headers } from 'next/headers';
+import SiteHeader from '../components/SiteHeader';
 
 const baseUrl = 'https://www.ivypandit.com';
 
@@ -38,76 +39,32 @@ const pageMeta: Record<string, { title: string; description: string }> = {
 };
 
 const localizedRoutes: Record<string, { hi?: string; sa?: string }> = {
-  '/': { hi: '/hi', sa: '/sa' },
-  '/iks': { sa: '/sa/iks' },
-  '/shastra-study': { sa: '/sa/shastra' },
-  '/research': { hi: '/hi/research', sa: '/sa/research' },
-  '/sbkb': { sa: '/sa/sbkb' },
-  '/questions': { hi: '/hi/prashna', sa: '/sa/prashna' },
-  '/videos': { sa: '/sa/videos' },
-  '/speaking': { hi: '/hi/speaking', sa: '/sa/speaking' },
-  '/collaborate': { hi: '/hi/sahyog', sa: '/sa/sahayoga' },
-  '/about': { sa: '/sa/about' },
-  '/publications': { sa: '/sa/publications' },
-  '/articles': { sa: '/sa/articles' },
-  '/articles/gayatri-neuroplasticity': { sa: '/sa/articles/gayatri-neuroplasticity' },
-  '/articles/gita-cognitive-resilience': { sa: '/sa/articles/gita-cognitive-resilience' },
-  '/articles/garbhadhana-epigenetics': { sa: '/sa/articles/garbhadhana-epigenetics' },
-  '/repository': { sa: '/sa/repository' },
-  '/support': { sa: '/sa/support' },
-  '/contact': { sa: '/sa/contact' },
-  '/disclaimer': { sa: '/sa/disclaimer' }
+  '/': { hi: '/hi', sa: '/sa' }, '/iks': { sa: '/sa/iks' }, '/shastra-study': { sa: '/sa/shastra' }, '/research': { hi: '/hi/research', sa: '/sa/research' }, '/sbkb': { sa: '/sa/sbkb' }, '/questions': { hi: '/hi/prashna', sa: '/sa/prashna' }, '/videos': { sa: '/sa/videos' }, '/speaking': { hi: '/hi/speaking', sa: '/sa/speaking' }, '/collaborate': { hi: '/hi/sahyog', sa: '/sa/sahayoga' }, '/about': { sa: '/sa/about' }, '/publications': { sa: '/sa/publications' }, '/articles': { sa: '/sa/articles' }, '/articles/gayatri-neuroplasticity': { sa: '/sa/articles/gayatri-neuroplasticity' }, '/articles/gita-cognitive-resilience': { sa: '/sa/articles/gita-cognitive-resilience' }, '/articles/garbhadhana-epigenetics': { sa: '/sa/articles/garbhadhana-epigenetics' }, '/repository': { sa: '/sa/repository' }, '/support': { sa: '/sa/support' }, '/contact': { sa: '/sa/contact' }, '/disclaimer': { sa: '/sa/disclaimer' }
 };
 
 function cleanPath(pathname: string) { if (!pathname || pathname === '/') return '/'; return pathname.replace(/\/$/, ''); }
 function routeLanguage(pathname: string) { if (pathname === '/hi' || pathname.startsWith('/hi/')) return 'hi'; if (pathname === '/sa' || pathname.startsWith('/sa/')) return 'sa'; return 'en'; }
-function alternatePaths(pathname: string) {
-  const path = cleanPath(pathname);
-  if (localizedRoutes[path]) return { en: path, ...localizedRoutes[path] };
-  for (const [en, translations] of Object.entries(localizedRoutes)) if (translations.hi === path || translations.sa === path) return { en, ...translations };
-  return { en: path };
-}
+function alternatePaths(pathname: string) { const path = cleanPath(pathname); if (localizedRoutes[path]) return { en: path, ...localizedRoutes[path] }; for (const [en, translations] of Object.entries(localizedRoutes)) if (translations.hi === path || translations.sa === path) return { en, ...translations }; return { en: path }; }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const pathname = cleanPath(headers().get('x-current-path') || '/');
-  const lang = routeLanguage(pathname);
-  const alternates = alternatePaths(pathname);
-  const meta = pageMeta[pathname] || (lang === 'hi'
-    ? { title: 'आइवी पण्डित', description: 'भारतीय ज्ञान-परम्परा, संस्कृत, विज्ञान, चिकित्सा और सार्वजनिक शिक्षा के लिए स्वतंत्र विद्वत् मंच।' }
-    : lang === 'sa'
-      ? { title: 'आइवीपण्डितः', description: 'संस्कृतवाङ्मयस्य भारतीयज्ञानपरम्पराणां आधुनिकविज्ञानस्य च गम्भीराध्ययनाय स्वतन्त्रं विद्वत्-मञ्चम्।' }
-      : pageMeta['/']);
-  const languages: Record<string, string> = { en: alternates.en, 'x-default': alternates.en };
-  if (alternates.hi) languages.hi = alternates.hi;
-  if (alternates.sa) languages.sa = alternates.sa;
-  return {
-    metadataBase: new URL(baseUrl), title: meta.title, description: meta.description,
-    alternates: { canonical: pathname, languages },
-    openGraph: { type: 'website', url: `${baseUrl}${pathname === '/' ? '' : pathname}`, siteName: 'IvyPandit', title: meta.title, description: meta.description, images: [{ url: '/images/ivy-pandit-feature-banner.jpg', width: 1200, height: 630, alt: 'IvyPandit — Tradition, Curiosity, Science' }] },
-    twitter: { card: 'summary_large_image', title: meta.title, description: meta.description, images: ['/images/ivy-pandit-feature-banner.jpg'] }
-  };
+  const pathname = cleanPath(headers().get('x-current-path') || '/'); const lang = routeLanguage(pathname); const alternates = alternatePaths(pathname);
+  const meta = pageMeta[pathname] || (lang === 'hi' ? { title: 'आइवी पण्डित', description: 'भारतीय ज्ञान-परम्परा, संस्कृत, विज्ञान, चिकित्सा और सार्वजनिक शिक्षा के लिए स्वतंत्र विद्वत् मंच।' } : lang === 'sa' ? { title: 'आइवीपण्डितः', description: 'संस्कृतवाङ्मयस्य भारतीयज्ञानपरम्पराणां आधुनिकविज्ञानस्य च गम्भीराध्ययनाय स्वतन्त्रं विद्वत्-मञ्चम्।' } : pageMeta['/']);
+  const languages: Record<string, string> = { en: alternates.en, 'x-default': alternates.en }; if (alternates.hi) languages.hi = alternates.hi; if (alternates.sa) languages.sa = alternates.sa;
+  return { metadataBase: new URL(baseUrl), title: meta.title, description: meta.description, alternates: { canonical: pathname, languages }, openGraph: { type: 'website', url: `${baseUrl}${pathname === '/' ? '' : pathname}`, siteName: 'IvyPandit', title: meta.title, description: meta.description, images: [{ url: '/images/ivy-pandit-feature-banner.jpg', width: 1200, height: 630, alt: 'IvyPandit — Tradition, Curiosity, Science' }] }, twitter: { card: 'summary_large_image', title: meta.title, description: meta.description, images: ['/images/ivy-pandit-feature-banner.jpg'] } };
 }
 
-const navEn = [['IKS Hub','/iks'],['Śāstra','/shastra-study'],['Research','/research'],['Learn','/videos'],['Speaking','/speaking'],['Collaborate','/collaborate'],['About','/about']];
-const navHi = [['अनुसन्धान','/hi/research'],['प्रश्न','/hi/prashna'],['व्याख्यान','/hi/speaking'],['सहयोग','/hi/sahyog'],['English','/']];
-const navSa = [['ज्ञानप्रणाली','/sa/iks'],['शास्त्रम्','/sa/shastra'],['अनुसन्धानम्','/sa/research'],['व्याख्यानानि','/sa/videos'],['वक्तृत्वम्','/sa/speaking'],['सहकारः','/sa/sahayoga'],['परिचयः','/sa/about']];
+const navEn: Array<[string,string]> = [['IKS Hub','/iks'],['Śāstra','/shastra-study'],['Research','/research'],['Learn','/videos'],['Speaking','/speaking'],['Collaborate','/collaborate'],['About','/about']];
+const navHi: Array<[string,string]> = [['अनुसन्धान','/hi/research'],['प्रश्न','/hi/prashna'],['व्याख्यान','/hi/speaking'],['सहयोग','/hi/sahyog'],['English','/']];
+const navSa: Array<[string,string]> = [['ज्ञानप्रणाली','/sa/iks'],['शास्त्रम्','/sa/shastra'],['अनुसन्धानम्','/sa/research'],['व्याख्यानानि','/sa/videos'],['वक्तृत्वम्','/sa/speaking'],['सहकारः','/sa/sahayoga'],['परिचयः','/sa/about']];
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const pathname = cleanPath(headers().get('x-current-path') || '/');
-  const lang = routeLanguage(pathname);
-  const alternatives = alternatePaths(pathname);
-  const nav = lang === 'hi' ? navHi : lang === 'sa' ? navSa : navEn;
-  const brandHome = lang === 'hi' ? '/hi' : lang === 'sa' ? '/sa' : '/';
-  const hiHref = alternatives.hi || '/hi'; const saHref = alternatives.sa || '/sa'; const enHref = alternatives.en || '/';
-  const jsonLd = {'@context':'https://schema.org','@graph':[
-    {'@type':'WebSite','@id':`${baseUrl}/#website`,url:baseUrl,name:'IvyPandit',description:'Independent scholarly and educational platform connecting Sanskrit, Indian Knowledge Systems, neuroscience, medicine, and public scholarship.'},
-    {'@type':'Person','@id':`${baseUrl}/about#nishant-mishra`,name:'Nishant K. Mishra',honorificSuffix:'MD, PhD',url:`${baseUrl}/about`,jobTitle:'Neurologist and physician-scientist',sameAs:['https://scholar.google.com/citations?user=1n2JUc8AAAAJ&hl=en','https://www.linkedin.com/in/ivypandit/','https://www.youtube.com/@IvyPandit','https://x.com/IvyPandit']}
-  ]};
+  const pathname = cleanPath(headers().get('x-current-path') || '/'); const lang = routeLanguage(pathname); const alternatives = alternatePaths(pathname); const nav = lang === 'hi' ? navHi : lang === 'sa' ? navSa : navEn; const brandHome = lang === 'hi' ? '/hi' : lang === 'sa' ? '/sa' : '/'; const hiHref = alternatives.hi || '/hi'; const saHref = alternatives.sa || '/sa'; const enHref = alternatives.en || '/';
+  const jsonLd = {'@context':'https://schema.org','@graph':[{'@type':'WebSite','@id':`${baseUrl}/#website`,url:baseUrl,name:'IvyPandit',description:'Independent scholarly and educational platform connecting Sanskrit, Indian Knowledge Systems, neuroscience, medicine, and public scholarship.'},{'@type':'Person','@id':`${baseUrl}/about#nishant-mishra`,name:'Nishant K. Mishra',honorificSuffix:'MD, PhD',url:`${baseUrl}/about`,jobTitle:'Neurologist and physician-scientist',sameAs:['https://scholar.google.com/citations?user=1n2JUc8AAAAJ&hl=en','https://www.linkedin.com/in/ivypandit/','https://www.youtube.com/@IvyPandit','https://x.com/IvyPandit']} ]};
 
   return <html lang={lang}><body>
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(jsonLd)}} />
     <div className="topbar"><div className="topInner"><div><Link href={enHref}>English</Link><span>|</span><Link href={hiHref}>हिन्दी</Link><span>|</span><Link href={saHref}>संस्कृतम्</Link></div><div className="social"><a href="https://www.youtube.com/@IvyPandit" target="_blank" rel="noopener noreferrer">YouTube</a><a href="https://x.com/IvyPandit" target="_blank" rel="noopener noreferrer">X</a><a href="https://www.linkedin.com/in/ivypandit/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div></div></div>
-    <header className="header"><Link href={brandHome} className="brand"><span className="tree">☀</span><span><b>IVY PANDIT</b><small>{lang==='sa'?'परम्परा • जिज्ञासा • अनुसन्धानम्':lang==='hi'?'परम्परा • जिज्ञासा • अनुसन्धान':'Tradition • Curiosity • Science'}</small></span></Link><nav aria-label={lang==='sa'?'मुख्यसञ्चरणम्':lang==='hi'?'मुख्य नेविगेशन':'Primary navigation'}>{nav.map(([name,href])=><Link key={href} href={href}>{name}</Link>)}</nav></header>
+    <SiteHeader brandHome={brandHome} lang={lang} nav={nav} />
     {children}
     <footer className="footer"><div className="footerGrid">
       <div><div className="footBrand">☀ IVY PANDIT</div><p>{lang==='sa'?<>परम्परां सम्मानयतु।<br/>जिज्ञासां पोषयतु।<br/>अनुसन्धानं कठोरं भवतु।</>:lang==='hi'?<>परम्परा का सम्मान।<br/>जिज्ञासा को प्रोत्साहन।<br/>अनुसन्धान में कठोरता।</>:<>Respect tradition.<br/>Encourage curiosity.<br/>Demand rigor.</>}</p></div>
