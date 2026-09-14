@@ -1,4 +1,19 @@
-export default function Page() { return ( <main> <section className="final-page-banner"> <img src="/images/cultural-page-banner.jpg" alt="Ivy Pandit banner" /> </section> <section className="page-hero"> <h1>Bhagavad Gita Knowledge Center</h1> <p>Cognitive resilience, dharma, attention, and action under stress.</p> </section> <section className="section copy narrow"> <h2>English</h2> <p>Explore the Bhagavad Gita as a profound text on crisis, clarity, disciplined action, emotional regulation, and self-knowledge.</p> <h2>हिन्दी</h2> <p className="devanagari">भगवद्गीता संकट, स्पष्टता, कर्तव्य, ध्यान, भावनात्मक संतुलन और आत्मबोध का अद्भुत ग्रन्थ है।</p> <h2>संस्कृतम्</h2> <p className="devanagari">भगवद्गीता संकटे धैर्यम्, कर्तव्ये निष्ठाम्, मनसः संयमम्, आत्मबोधं च उपदिशति।</p> </section> <section className="section"> <div className="article-grid"> <div className="article-card"><span className="badge">Arjuna’s Crisis</span><h3>Stress & Decision Paralysis</h3><p>A framework for understanding cognitive overload and moral conflict.</p></div>
-<div className="article-card"><span className="badge">Krishna’s Teaching</span><h3>Attention & Action</h3><p>A vision of disciplined action rooted in clarity and dharma.</p></div>
-<div className="article-card"><span className="badge">Resilience</span><h3>Equanimity</h3><p>Psychological steadiness under uncertainty.</p></div> </div> </section> </main> );
-}
+import Link from 'next/link';
+
+export default function Page() { return <main>
+  <section className="pageHero"><div className="eyebrow">Study hub • Dharma • Action • Resilience</div><h1>Bhagavad Gītā Study Hub</h1><p>Text, interpretation, public lectures, essays, and questions about crisis, disciplined action, attention, and human resilience.</p></section>
+  <section className="content">
+    <div className="twoCol">
+      <section className="panel"><p className="kicker">Textual starting point</p><h2>Arjuna’s crisis</h2><p>The Gītā opens with grief, moral conflict, bodily distress, uncertainty, and paralysis of action. Any modern psychological comparison should begin by respecting the larger dharmic, philosophical, and theological setting of the dialogue.</p></section>
+      <section className="panel"><p className="kicker">Interpretive principle</p><h2>Do not reduce the Gītā to therapy</h2><p>Concepts such as cognitive reframing, values-based action, self-regulation, or resilience may illuminate parts of the dialogue, but they do not exhaust Krishna’s teaching. Modern psychology is one comparative lens, not the meaning of the text itself.</p></section>
+    </div>
+
+    <section className="resourceGrid" style={{marginTop:'28px'}}>
+      <Link className="panel linkedCard" href="/articles/gita-cognitive-resilience"><span className="label">SHORT REFLECTION</span><h2>Gītā & Cognitive Resilience</h2><p>A concise reflection on Arjuna’s crisis and questions for modern psychology.</p><span>Read →</span></Link>
+      <Link className="panel linkedCard" href="/speaking/bhagavad-gita-cognitive-reframing-resilience"><span className="label">LECTURE</span><h2>Cognitive Reframing & Human Resilience</h2><p>A fuller lecture framework for universities, temples, students, clinicians, and leadership audiences.</p><span>Explore lecture →</span></Link>
+      <a className="panel linkedCard" href="https://www.youtube.com/@IvyPandit/search?query=Bhagavad%20Gita" target="_blank" rel="noopener noreferrer"><span className="label">VIDEO COLLECTION</span><h2>Gītā on IvyPandit</h2><p>Talks and reflections on dharma, cognition, action, attention, and resilience.</p><span>Browse videos →</span></a>
+    </section>
+
+    <section className="panel"><p className="kicker">Questions for inquiry</p><h2>Where can interdisciplinary work be useful?</h2><ul><li>What changes in Arjuna’s appraisal of the situation over the course of the dialogue?</li><li>How do identity, duty, perspective, and control over outcomes shape action under stress?</li><li>Which modern psychological constructs illuminate the dialogue, and where do they distort it?</li></ul></section>
+  </section>
+</main> }
