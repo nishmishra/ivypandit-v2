@@ -1,4 +1,10 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Speaker Sheet | Nishant K. Mishra, MD, PhD',
+  description: 'Printable one-page speaker sheet for Nishant K. Mishra, MD, PhD: lecture topics, audiences, languages, formats, and contact information.',
+};
 
 const topics = [
   'Gāyatrī, Saṃskāra & the Developing Brain',
