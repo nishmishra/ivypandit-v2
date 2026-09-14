@@ -19,13 +19,6 @@ const featuredAcademic = [
     label: 'RESEARCH / ACADEMIC',
     title: 'IKS, Evidence & Research Method',
     summary: 'Philological and historical rigor alongside contemporary scientific methods, with emphasis on distinguishing interpretation, hypothesis, and evidence.'
-  },
-  {
-    id: 'XkEqWuym3dc',
-    start: 0,
-    label: 'RESEARCH / ACADEMIC',
-    title: 'Classical Knowledge as a Source of Research Questions',
-    summary: 'How careful study of classical sources can generate testable contemporary questions without treating traditional claims as established scientific findings.'
   }
 ];
 
@@ -82,7 +75,7 @@ export default function Videos(){return <>
     @media print {
       .topbar, .header { display: none !important; }
       .pageHero { break-after: avoid; }
-      .videoCard, .panel, .callout { break-inside: avoid; }
+      .videoCard, .panel, .callout, .talkGrid { break-inside: avoid; }
     }
   `}</style>
 
@@ -97,6 +90,14 @@ export default function Videos(){return <>
       <p className="kicker">Scholar & speaker</p>
       <h2 style={{marginBottom:'8px'}}>Nishant K. Mishra, MD, PhD</h2>
       <p style={{margin:'0'}}>Physician-scientist • Neurologist • Neuroscience researcher • Sanskrit & Indian Knowledge Systems scholar</p>
+    </section>
+
+    <section className="featuredTalks" style={{marginTop:'0',marginBottom:'52px'}}>
+      <div className="sectionHeaderRow"><div><p className="kicker">Start here • Platform launch</p><h2 className="sectionTitle">Introducing IvyPandit</h2></div><a className="textLink" href="https://www.youtube.com/watch?v=XkEqWuym3dc" target="_blank" rel="noopener noreferrer">Watch on YouTube →</a></div>
+      <div className="talkGrid">
+        <div className="videoEmbed"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/XkEqWuym3dc" title="Introducing IvyPandit — platform launch video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></div>
+        <div className="talkCopy"><span className="label">PLATFORM LAUNCH</span><h3>Why IvyPandit?</h3><p>This launch video introduces the purpose of the platform and the kind of conversation IvyPandit is trying to build across Sanskrit, Indian Knowledge Systems, neuroscience, medicine, and public scholarship.</p><p>Watch this first for the clearest overview of the platform&apos;s mission, method, and invitation to scholars, learners, scientists, and communities.</p><a className="textLink" href="/about">About the platform →</a><br/><a className="textLink" href="/editorial-policy">Editorial & Evidence Policy →</a></div>
+      </div>
     </section>
 
     <section id="academic">
