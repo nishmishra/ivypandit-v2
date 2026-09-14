@@ -47,6 +47,11 @@ export default function Collaborate(){
         <div className="outcomeCloud"><span>Textual studies</span><span>Critical bibliographies</span><span>Lexicons</span><span>Pilot experiments</span><span>Digital corpora</span><span>Research questions</span><span>Workshops</span><span>Datasets</span><span>Multicentre networks</span><span>Grant proposals</span><span>Public lectures</span><span>Scholarly publications</span></div>
       </section>
 
+      <section className="twoCol" style={{marginTop:'26px'}}>
+        <div className="panel"><h2>Before sending material</h2><p>Please do not send identifiable patient information, protected health information, passwords, confidential datasets, or sensitive personal records through ordinary email. If a project involves unpublished material that requires confidentiality, discuss the terms before transmitting the material.</p></div>
+        <div className="panel"><h2>Authorship & expectations</h2><p>An initial conversation does not guarantee funding, authorship, publication, supervision, or institutional partnership. Where a project develops, authorship and credit should follow substantive contribution and the norms of the relevant scholarly field.</p></div>
+      </section>
+
       <section className="contactInvitation">
         <div>
           <p className="kicker">Begin with a note</p>
