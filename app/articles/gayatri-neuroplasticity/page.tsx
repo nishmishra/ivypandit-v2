@@ -1,6 +1,19 @@
 import Link from 'next/link';
 
-export default function Article() { return <main>
+export default function Article() {
+  const articleLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ScholarlyArticle',
+    headline: 'धियो यो नः प्रचोदयात् — Gāyatrī Mantra, Enlightened Intellect, and Questions for Human Flourishing',
+    author: { '@type': 'Person', name: 'Nishant K. Mishra', honorificSuffix: 'MD, PhD', url: 'https://www.ivypandit.com/about' },
+    publisher: { '@type': 'Organization', name: 'IvyPandit', url: 'https://www.ivypandit.com' },
+    dateModified: '2026-09-13',
+    inLanguage: 'en',
+    mainEntityOfPage: 'https://www.ivypandit.com/articles/gayatri-neuroplasticity',
+    about: ['Gāyatrī Mantra','attention','neuroplasticity','Sanskrit','Indian Knowledge Systems']
+  };
+  return <main>
+  <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(articleLd)}} />
   <section className="pageHero"><div className="eyebrow">Scholarly essay • Gāyatrī • Attention • Neuroplasticity</div><h1>धियो यो नः प्रचोदयात्</h1><p>Gāyatrī Mantra, enlightened intellect, and questions for the science of human flourishing.</p></section>
   <section className="content"><article className="article-body">
     <p className="article-byline"><b>Nishant K. Mishra, MD, PhD</b> · Scholarly essay · Revised September 2026</p>
