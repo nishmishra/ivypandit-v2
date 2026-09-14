@@ -40,6 +40,14 @@ export default function Home() {
         <p className={styles.identityLine}>Public scholarship connecting brain science, Sanskrit, and Indian Knowledge Systems with intellectual rigor.</p>
       </section>
 
+      <section className="featuredTalks" style={{marginTop:'34px',marginBottom:'48px'}}>
+        <div className="sectionHeaderRow"><div><p className="kicker">Start here</p><h2 className="sectionTitle">Introducing IvyPandit</h2></div><a className="textLink" href="https://www.youtube.com/watch?v=XkEqWuym3dc" target="_blank" rel="noopener noreferrer">Watch on YouTube →</a></div>
+        <div className="talkGrid">
+          <div className="videoEmbed"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/XkEqWuym3dc" title="Introducing IvyPandit — platform launch video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></div>
+          <div className="talkCopy"><span className="label">PLATFORM LAUNCH</span><h3>Why IvyPandit?</h3><p>In this launch video, Dr. Nishant K. Mishra introduces the purpose of IvyPandit: to create a serious public space where Sanskrit, Indian Knowledge Systems, neuroscience, medicine, and contemporary scholarship can meet without confusing tradition, interpretation, hypothesis, and scientific evidence.</p><p>It is the best short introduction to the platform before exploring its research, study resources, lectures, and collaborative projects.</p><Link className="textLink" href="/about">About IvyPandit →</Link><br/><Link className="textLink" href="/editorial-policy">Editorial & Evidence Policy →</Link></div>
+        </div>
+      </section>
+
       <section className="manifesto">
         <p className="kicker">The IvyPandit approach</p>
         <h2 className="sectionTitle">Tradition deserves understanding before judgment.<br/>Scientific claims deserve evidence before acceptance.</h2>
