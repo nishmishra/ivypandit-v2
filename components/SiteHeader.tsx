@@ -24,6 +24,8 @@ export default function SiteHeader({
     <button className={styles.menuButton} type="button" aria-expanded={open} aria-controls="primary-navigation" onClick={() => setOpen(!open)}>{label}</button>
     <nav id="primary-navigation" className={`${styles.nav} ${open ? styles.navOpen : ''}`} aria-label={lang === 'sa' ? 'मुख्यसञ्चरणम्' : lang === 'hi' ? 'मुख्य नेविगेशन' : 'Primary navigation'}>
       {nav.map(([name, href]) => <Link key={href} href={href} onClick={() => setOpen(false)}>{name}</Link>)}
+      {lang === 'en' && <Link href="/evidence" onClick={() => setOpen(false)}>Evidence</Link>}
+      <a className={styles.contactLink} href="mailto:nishant.mishra@ivypandit.com?subject=IvyPandit%20inquiry" onClick={() => setOpen(false)}>{lang === 'sa' ? 'सम्पर्कः' : lang === 'hi' ? 'सम्पर्क' : 'Contact'}</a>
     </nav>
   </header>;
 }
