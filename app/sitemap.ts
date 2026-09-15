@@ -6,7 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/', '/iks', '/shastra-study', '/research', '/sbkb', '/questions', '/videos', '/speaking', '/collaborate', '/about',
     '/repository', '/evidence', '/publications', '/articles', '/support', '/contact', '/disclaimer', '/editorial-policy', '/privacy', '/terms',
     '/gayatri', '/gita', '/garbhadhana', '/mahabharata', '/bhagavatam', '/principles', '/perspectives',
-    '/research/consciousness/avadhana', '/articles/gayatri-neuroplasticity', '/articles/gita-cognitive-resilience', '/articles/garbhadhana-epigenetics',
+    '/research/consciousness/avadhana', '/articles/sandhyopasana-neuroscience', '/articles/vedic-recitation-developing-brain', '/articles/sanskrit-hindi-bilingualism-neuroplasticity', '/articles/shastra-to-scientific-discovery', '/articles/pitrapaksha-memory-grief', '/articles/ekadashi-fasting-brain-health', '/articles/purusha-sukta-gita-vedic-cosmos', '/articles/gayatri-neuroplasticity', '/articles/gita-cognitive-resilience', '/articles/garbhadhana-epigenetics',
     '/hi', '/hi/research', '/hi/prashna', '/hi/sahyog', '/hi/speaking',
     '/sa', '/sa/iks', '/sa/shastra', '/sa/research', '/sa/sbkb', '/sa/prashna', '/sa/videos', '/sa/speaking', '/sa/sahayoga', '/sa/about',
     '/sa/publications', '/sa/articles', '/sa/repository', '/sa/support', '/sa/contact', '/sa/disclaimer',
