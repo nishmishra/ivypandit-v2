@@ -26,7 +26,7 @@ export default function Home() {
         </div>
         <div className="buttons">
           <Link className="btn primary" href="/iks">Explore IKS</Link>
-          <Link className="btn secondary" href="/research">Explore Research</Link>
+          <Link className="btn secondary" href="/evidence">Examine Evidence</Link>
           <Link className="btn secondary" href="/speaking">Invite Dr. Mishra to Speak</Link>
         </div>
       </div>
@@ -53,7 +53,7 @@ export default function Home() {
         <h2 className="sectionTitle">Tradition deserves understanding before judgment.<br/>Scientific claims deserve evidence before acceptance.</h2>
         <p>IvyPandit studies Sanskrit and Indian Knowledge Systems in their historical and intellectual contexts while asking new questions through neuroscience, medicine, cognitive science, behavioral science, and other modern disciplines.</p>
         <p>The aim is neither to declare that ancient texts anticipated modern science nor to dismiss traditional knowledge because it is old. It is to understand carefully, ask better questions, and distinguish evidence from interpretation.</p>
-        <p><Link className="textLink" href="/editorial-policy">Read the Editorial & Evidence Policy →</Link></p>
+        <p><Link className="textLink" href="/editorial-policy">Read the Editorial & Evidence Policy →</Link><Link className="textLink" href="/evidence">Explore the Evidence Library →</Link></p>
       </section>
 
       <section className={`${styles.gatewayRefined} gatewayGrid`} aria-label="Explore IvyPandit">
