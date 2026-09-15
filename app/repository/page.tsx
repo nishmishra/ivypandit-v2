@@ -39,7 +39,7 @@ export default function Repository(){return <>
     </section>
 
     <div className="resourceGrid">
-      <section className="panel"><h2>Indexed Literature</h2><p>Modern papers, books, reviews, translations, commentaries, and bibliographic records organized by theme, source tradition, scientific domain, and project.</p><span className="statusBadge">Catalogue being prepared</span></section>
+      <section className="panel"><h2>Evidence Library</h2><p>Critically annotated scientific and scholarly records organized by theme, study type, evidence strength, and whether their relationship to an IKS topic is direct, component-based, or analogical.</p><Link className="textLink" href="/evidence">Explore the Evidence Library →</Link></section>
       <section className="panel"><h2>Texts & Passages</h2><p>Structured references to Sanskrit texts and passages, with room for editions, translations, notes, traditional context, themes, and links to related research.</p><span className="statusBadge">Schema established</span></section>
       <section className="panel"><h2>Research Questions</h2><p>Questions generated from textual study and interdisciplinary scholarship, linked to evidence status, feasibility, related literature, projects, and future studies.</p><span className="statusBadge">Repository scaffolded</span></section>
       <section className="panel"><h2>IKS Resources</h2><p>Curated institutions, journals, archives, digital tools, educational pathways, conferences, fellowships, and other resources useful to the IKS community.</p><span className="statusBadge">Curation in progress</span></section>
