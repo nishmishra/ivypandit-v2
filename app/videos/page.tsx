@@ -24,6 +24,13 @@ const featuredAcademic = [
 
 const featuredInquiry = [
   {
+    id: 'leQ_SDvEE3g',
+    start: 273,
+    label: 'ŚĀSTRA / PHILOSOPHY / COSMOS',
+    title: 'Puruṣa Sūkta, Gītā Chapters 10–11 & the Vedic Cosmos',
+    summary: 'The cosmic Puruṣa, Kṛṣṇa’s vibhūtis, the Viśvarūpa, creation, and divine immanence and transcendence—presented as theological and philosophical inquiry, not modern astrophysics.'
+  },
+  {
     id: 'vArP8eE0ROU',
     start: 0,
     label: 'INTERDISCIPLINARY INQUIRY • HINDI',
