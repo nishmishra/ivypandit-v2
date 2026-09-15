@@ -111,7 +111,7 @@ export default function Home() {
           <p><a className="textLink" href="https://www.youtube.com/watch?v=leQ_SDvEE3g&t=273s" target="_blank" rel="noopener noreferrer">Watch: Puruṣa Sūkta, Bhagavad Gītā Chapters 10–11 & the Vedic vision of the cosmos →</a></p>
         </div>
 
-        <div className={styles.methodNote}><b>Methodological note:</b> scriptural meaning, traditional theology, philosophical interpretation, research questions, and empirical scientific evidence are distinct categories. IvyPandit keeps them separate while allowing each to sharpen the questions we ask.<br/><br/><Link className="textLink" href="/articles/purusha-sukta-gita-vedic-cosmos">Read and watch: Puruṣa Sūkta, Bhagavad Gītā Chapters 10–11 & the Vedic Cosmos →</Link></div>
+        <div className={styles.methodNote}><b>Methodological note:</b> scriptural meaning, traditional theology, philosophical interpretation, research questions, and empirical scientific evidence are distinct categories. IvyPandit keeps them separate while allowing each to sharpen the questions we ask.<br/><br/><Link className="textLink" href="/articles/purusha-sukta-gita-vedic-cosmos">Read: From Puruṣa to Viśvarūpa to Govinda →</Link></div>
       </section>
 
       <section className="initiativeSection">
