@@ -24,6 +24,13 @@ const featuredAcademic = [
 
 const featuredInquiry = [
   {
+    id: 'yylfBDXc5CY',
+    start: 0,
+    label: 'INTERDISCIPLINARY INQUIRY',
+    title: 'Garbhādhāna, Preconception Health & Epigenetics',
+    summary: 'Traditional responsibility before conception placed in careful conversation with preconception medicine, parental health, and epigenetics—without treating scientific analogy as proof of ritual or theological claims.'
+  },
+  {
     id: 'leQ_SDvEE3g',
     start: 273,
     label: 'ŚĀSTRA / PHILOSOPHY / COSMOS',
