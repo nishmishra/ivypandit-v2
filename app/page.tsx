@@ -108,6 +108,7 @@ export default function Home() {
           <p className="kicker">A theological vision of creation</p>
           <h3>The divine as source, support, and indwelling presence</h3>
           <p>Hindu traditions offer multiple ways of speaking about the relation between the divine and <i>jagat</i>. The Puruṣa Sūkta provides one powerful cosmic vision: creation is understood in relation to a reality that exceeds any single created object while also pervading the whole. IvyPandit approaches this as theology and philosophy first, and then asks what questions such ideas may inspire for the study of mind, meaning, human experience, and the history of ideas.</p>
+          <p><a className="textLink" href="https://www.youtube.com/watch?v=leQ_SDvEE3g&t=273s" target="_blank" rel="noopener noreferrer">Watch: Puruṣa Sūkta, Bhagavad Gītā Chapters 10–11 & the Vedic vision of the cosmos →</a></p>
         </div>
 
         <div className={styles.methodNote}><b>Methodological note:</b> scriptural meaning, traditional theology, philosophical interpretation, research questions, and empirical scientific evidence are distinct categories. IvyPandit keeps them separate while allowing each to sharpen the questions we ask.<br/><br/><Link className="textLink" href="/articles/purusha-sukta-gita-vedic-cosmos">Read and watch: Puruṣa Sūkta, Bhagavad Gītā Chapters 10–11 & the Vedic Cosmos →</Link></div>
