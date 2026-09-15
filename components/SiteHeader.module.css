@@ -18,6 +18,8 @@
 .nav{display:flex;gap:22px;align-items:center;flex-wrap:wrap;font-family:Arial,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:.04em}
 .nav a{padding:8px 0;border-bottom:2px solid transparent;text-decoration:none;color:inherit}
 .nav a:hover,.nav a:focus-visible{color:#d45a18;border-bottom-color:#d45a18}
+.nav .contactLink{background:#5a140e;color:#fff8e9;border:1px solid #5a140e;border-radius:7px;padding:9px 12px}
+.nav .contactLink:hover,.nav .contactLink:focus-visible{background:#7a2016;color:#fff;border-bottom-color:#5a140e}
 .menuButton{display:none;border:1px solid #5a140e;background:#fff8e9;color:#5a140e;border-radius:8px;padding:9px 12px;font:700 13px Arial,sans-serif;letter-spacing:.05em;text-transform:uppercase;cursor:pointer}
 .menuButton:focus-visible,.brand:focus-visible{outline:3px solid #c8912e;outline-offset:3px}
 @media(max-width:850px){
@@ -27,4 +29,5 @@
   .nav{display:none;grid-column:1/-1;flex-direction:column;align-items:stretch;gap:0;padding:8px 0 2px}
   .navOpen{display:flex}
   .nav a{padding:12px 6px;border-bottom:1px solid #ead9bf}
+  .nav .contactLink{margin-top:9px;text-align:center;padding:12px}
 }
