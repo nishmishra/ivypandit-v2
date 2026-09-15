@@ -4,7 +4,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://www.ivypandit.com';
   const routes = [
     '/', '/iks', '/shastra-study', '/research', '/sbkb', '/questions', '/videos', '/speaking', '/collaborate', '/about',
-    '/repository', '/publications', '/articles', '/support', '/contact', '/disclaimer', '/editorial-policy', '/privacy', '/terms',
+    '/repository', '/evidence', '/publications', '/articles', '/support', '/contact', '/disclaimer', '/editorial-policy', '/privacy', '/terms',
     '/gayatri', '/gita', '/garbhadhana', '/mahabharata', '/bhagavatam', '/principles', '/perspectives',
     '/articles/gayatri-neuroplasticity', '/articles/gita-cognitive-resilience', '/articles/garbhadhana-epigenetics',
     '/hi', '/hi/research', '/hi/prashna', '/hi/sahyog', '/hi/speaking',
@@ -20,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/speaking/brain-culture-human-neuroplasticity'
   ];
 
-  const highPriority = new Set(['/', '/research', '/iks', '/shastra-study', '/videos', '/speaking', '/questions', '/sbkb']);
+  const highPriority = new Set(['/', '/research', '/iks', '/shastra-study', '/videos', '/speaking', '/questions', '/sbkb', '/evidence']);
   return routes.map((route) => ({
     url: `${base}${route}`,
     changeFrequency: route === '/' || route === '/speaking' || route === '/videos' ? 'weekly' : 'monthly',
