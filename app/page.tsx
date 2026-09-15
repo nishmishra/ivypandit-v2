@@ -40,6 +40,22 @@ export default function Home() {
         <p className={styles.identityLine}>Public scholarship connecting brain science, Sanskrit, and Indian Knowledge Systems with intellectual rigor.</p>
       </section>
 
+      <section className="initiativeSection" style={{marginTop:'34px',marginBottom:'48px'}}>
+        <div>
+          <p className="kicker">Definitive guide</p>
+          <h2 className="sectionTitle">Avadhāna and the Indian Science of Attention</h2>
+          <p>What can a living Indian tradition of structured multi-stream performance teach us about attention, working memory, language, improvisation, and long-duration expertise?</p>
+          <p>This evidence-aware article explains what Avadhāna is, why “multitasking” is an incomplete label, which cognitive mechanisms can be tested, and what responsible neuroscience research should do next.</p>
+          <Link className="btn primary" href="/research/consciousness/avadhana">Read the definitive article</Link>
+        </div>
+        <div className="panel">
+          <span className="label">AVADHĀNA • ATTENTION • MEMORY</span>
+          <h3>Tradition understood. Hypotheses tested.</h3>
+          <p>Historical practice, Indian conceptual vocabulary, cognitive task analysis, research safeguards, scholarly references, and a staged behavioral–EEG–MRI–longitudinal program.</p>
+          <Link className="textLink" href="/speaking/avadhana-indian-science-attention">Explore the related lecture →</Link>
+        </div>
+      </section>
+
       <section className="featuredTalks" style={{marginTop:'34px',marginBottom:'48px'}}>
         <div className="sectionHeaderRow"><div><p className="kicker">Start here</p><h2 className="sectionTitle">Introducing IvyPandit</h2></div><a className="textLink" href="https://www.youtube.com/watch?v=XkEqWuym3dc" target="_blank" rel="noopener noreferrer">Watch on YouTube →</a></div>
         <div className="talkGrid">
