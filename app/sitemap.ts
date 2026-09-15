@@ -6,7 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/', '/iks', '/shastra-study', '/research', '/sbkb', '/questions', '/videos', '/speaking', '/collaborate', '/about',
     '/repository', '/evidence', '/publications', '/articles', '/support', '/contact', '/disclaimer', '/editorial-policy', '/privacy', '/terms',
     '/gayatri', '/gita', '/garbhadhana', '/mahabharata', '/bhagavatam', '/principles', '/perspectives',
-    '/articles/gayatri-neuroplasticity', '/articles/gita-cognitive-resilience', '/articles/garbhadhana-epigenetics',
+    '/research/consciousness/avadhana', '/articles/gayatri-neuroplasticity', '/articles/gita-cognitive-resilience', '/articles/garbhadhana-epigenetics',
     '/hi', '/hi/research', '/hi/prashna', '/hi/sahyog', '/hi/speaking',
     '/sa', '/sa/iks', '/sa/shastra', '/sa/research', '/sa/sbkb', '/sa/prashna', '/sa/videos', '/sa/speaking', '/sa/sahayoga', '/sa/about',
     '/sa/publications', '/sa/articles', '/sa/repository', '/sa/support', '/sa/contact', '/sa/disclaimer',
@@ -20,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/speaking/brain-culture-human-neuroplasticity'
   ];
 
-  const highPriority = new Set(['/', '/research', '/iks', '/shastra-study', '/videos', '/speaking', '/questions', '/sbkb', '/evidence']);
+  const highPriority = new Set(['/', '/research', '/iks', '/shastra-study', '/videos', '/speaking', '/questions', '/sbkb', '/evidence', '/research/consciousness/avadhana']);
   return routes.map((route) => ({
     url: `${base}${route}`,
     changeFrequency: route === '/' || route === '/speaking' || route === '/videos' ? 'weekly' : 'monthly',
