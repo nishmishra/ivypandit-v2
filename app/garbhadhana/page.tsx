@@ -8,6 +8,12 @@ export default function Page() { return <main>
       <section className="panel"><p className="kicker">Modern scientific frame</p><h2>Preconception health</h2><p>Modern medicine can ask evidence-based questions about parental health, nutrition, toxins, medications, stress, sleep, metabolic disease, reproductive biology, and other exposures before conception. These findings do not establish the scientific validity of every ritual or theological claim.</p></section>
     </div>
 
+    <section className="featuredTalks" style={{marginTop:'30px',marginBottom:'34px'}}>
+      <div className="sectionHeaderRow"><div><p className="kicker">Featured lecture</p><h2 className="sectionTitle">Garbhādhāna, Preparation & Modern Science</h2></div><a className="textLink" href="https://www.youtube.com/watch?v=yylfBDXc5CY" target="_blank" rel="noopener noreferrer">Watch on YouTube →</a></div>
+      <div className="talkGrid"><div className="videoEmbed"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/yylfBDXc5CY" title="Garbhādhāna, preconception health, and epigenetics" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></div>
+      <div className="talkCopy"><span className="label">SAṂSKĀRA • PRECONCEPTION HEALTH • EVIDENCE</span><h3>Where tradition and medicine can enter conversation</h3><p>The lecture asks how preparation, parental health, intention, behavior, and biology can be discussed responsibly without using epigenetics as a universal explanation for ritual or theology.</p><Link className="textLink" href="/articles/garbhadhana-epigenetics">Read the companion article →</Link></div></div>
+    </section>
+
     <section className="resourceGrid" style={{marginTop:'28px'}}>
       <Link className="panel linkedCard" href="/articles/garbhadhana-epigenetics"><span className="label">SHORT REFLECTION</span><h2>Garbhādhāna & Epigenetics</h2><p>A cautious introduction to where traditional ideas of preparation and modern biology can enter conversation.</p><span>Read →</span></Link>
       <a className="panel linkedCard" href="https://www.youtube.com/@IvyPandit/search?query=Garbhadhana" target="_blank" rel="noopener noreferrer"><span className="label">VIDEO COLLECTION</span><h2>Related IvyPandit talks</h2><p>Public-facing discussion of saṃskāra, family preparation, health, and intergenerational questions.</p><span>Browse videos →</span></a>
