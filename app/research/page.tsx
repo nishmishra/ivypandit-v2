@@ -97,6 +97,13 @@ export default function Research(){
         </div>
       </section>
 
+      <section className="panel" style={{marginBottom:'28px'}} id="post-stroke-epilepsy-media">
+        <p className="kicker">External expert commentary • Neurology Advisor • AES 2025</p>
+        <h2>Video: Post-Stroke Epilepsy — AES 2025 Expert Insights</h2>
+        <p>This external Neurology Advisor feature is included as professional scientific communication about post-stroke epilepsy. It is presented separately from the peer-reviewed publication record so that media commentary and scientific evidence remain clearly distinguished.</p>
+        <a className="textLink" href="https://www.neurologyadvisor.com/reports/video-post-stroke-epilepsy-aes-2025-expert-insights/" target="_blank" rel="noopener noreferrer">View the Neurology Advisor feature →</a>
+      </section>
+
       <section className={`panel ${styles.trajectory}`}>
         <p className="kicker">Scientific trajectory</p>
         <h2>Questions that connect the work</h2>
