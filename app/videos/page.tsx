@@ -79,7 +79,12 @@ const traditionHighlights = [
     id: 'AxObzgp-WBw',
     start: 19,
     title: 'What Is Hindu Sanātanī Saṃskṛti?',
-    summary: 'A cultural and traditional reflection on the meaning and character of Hindu Sanātanī saṃskṛti.'
+    summary: 'What is Hindu culture? Dharma, karma, rebirth, āśrama, and the Hindu way of life — presented in Hindi, Sanskrit, and English.',
+    versions: [
+      { label: 'हिन्दी — हिंदी में देखें', id: '1Slii7rgPSI', start: 0 },
+      { label: 'संस्कृतम् — संस्कृते पश्यतु', id: 'AxObzgp-WBw', start: 19 },
+      { label: 'English — Watch in English', id: 'hfvkAeV5whc', start: 0 }
+    ]
   }
 ];
 
@@ -155,7 +160,7 @@ export default function Videos(){return <>
       <p>This collection is explicitly traditional and cultural. It includes discussions of Hindu identity and saṃskṛti, Purāṇic and scriptural themes, vrata and festivals, ancestral traditions, mantra, Sandhyā, Sanskrit recitation, and lived Hindu practice.</p>
 
       <div className="curatedVideoGrid" style={{marginBottom:'32px'}}>
-        {traditionHighlights.map((talk)=><a key={talk.id} className="videoCard" href={`https://www.youtube.com/watch?v=${talk.id}&t=${talk.start}s`} target="_blank" rel="noopener noreferrer"><img src={`https://i.ytimg.com/vi/${talk.id}/hqdefault.jpg`} alt={talk.title} loading="lazy"/><div><span className="label">TRADITION / ŚĀSTRA / CULTURE</span><h2>{talk.title}</h2><p>{talk.summary}</p><strong>Watch on YouTube →</strong></div></a>)}
+        {traditionHighlights.map((talk)=><div key={talk.id} className="videoCard"><a href={`https://www.youtube.com/watch?v=${talk.id}&t=${talk.start}s`} target="_blank" rel="noopener noreferrer"><img src={`https://i.ytimg.com/vi/${talk.id}/hqdefault.jpg`} alt={talk.title} loading="lazy"/></a><div><span className="label">TRADITION / ŚĀSTRA / CULTURE</span><h2>{talk.title}</h2><p>{talk.summary}</p><div className="buttons" style={{marginTop:'16px',flexWrap:'wrap'}}>{talk.versions.map((version)=><a key={version.id} className="btn secondary" href={`https://www.youtube.com/watch?v=${version.id}${version.start ? `&t=${version.start}s` : ''}`} target="_blank" rel="noopener noreferrer">{version.label}</a>)}</div></div></div>)}
       </div>
 
       <div className="resourceGrid">
