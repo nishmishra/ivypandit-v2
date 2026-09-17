@@ -8,7 +8,8 @@ const baseUrl = 'https://www.ivypandit.com';
 
 const pageMeta: Record<string, { title: string; description: string }> = {
   '/': { title: 'IvyPandit | Neuroscience, Sanskrit & Indian Knowledge Systems', description: 'Independent scholarly platform led by neurologist and physician-scientist Nishant K. Mishra, exploring neuroscience, Sanskrit, Indian Knowledge Systems, cognition, brain health, and public scholarship.' },
-  '/explore': { title: 'Explore IvyPandit | Knowledge Navigator', description: 'Search IvyPandit by topic, text, practice, scientific domain, content type, language, and scholarly pathway.' },\n  '/iks': { title: 'Indian Knowledge Systems Hub | IvyPandit', description: 'Curated pathways into Indian Knowledge Systems: texts, scholarship, institutions, archives, journals, opportunities, and research resources.' },
+  '/explore': { title: 'Explore IvyPandit | Knowledge Navigator', description: 'Search IvyPandit by topic, text, practice, scientific domain, content type, language, and scholarly pathway.' },
+  '/iks': { title: 'Indian Knowledge Systems Hub | IvyPandit', description: 'Curated pathways into Indian Knowledge Systems: texts, scholarship, institutions, archives, journals, opportunities, and research resources.' },
   '/shastra-study': { title: 'Śāstra & Sanskrit Study | IvyPandit', description: 'Study pathways for Veda, Upaniṣad, Bhagavad Gītā, Mahābhārata, Purāṇa, mantra, Sanskrit, and traditional learning.' },
   '/research': { title: 'Scientific Work | Nishant K. Mishra, MD, PhD', description: 'Scientific work across stroke, reperfusion, neuroimaging, post-stroke epilepsy, biomarkers, clinical trials, cognition, language, neuroplasticity, and cultural neuroscience.' },
   '/sbkb': { title: 'Sanskrit Biomedical Knowledge Base | IvyPandit', description: 'A source-conscious framework for moving from Sanskrit biomedical observations to transparent, testable research questions.' },
