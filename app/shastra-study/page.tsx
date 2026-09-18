@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ContinueExploring from '../../components/ContinueExploring';
 
 export default function ShastraStudyPage() {
   const internalHubs = [
@@ -72,6 +73,17 @@ export default function ShastraStudyPage() {
           <p><b>Ṛgveda 10.190.1:</b> ṛta — cosmic order — and satya — truth — appear together in a Vedic reflection on emergence and reality.</p>
           <p><a className="textLink" href="https://vedicheritage.gov.in/samhitas/rigveda/" target="_blank" rel="noopener noreferrer">Explore the Ṛgveda at the Vedic Heritage Portal →</a></p>
         </section>
+
+        <ContinueExploring
+          title="Choose your next study pathway"
+          intro="Move from the broad Śāstra gateway into a focused text hub, or use the Knowledge Navigator to search across texts and formats."
+          items={[
+            {title:'Mahābhārata Study Hub',href:'/mahabharata',label:'ITIHĀSA',text:'A structured path through reading progress, characters, themes, videos, and interdisciplinary questions.'},
+            {title:'Bhagavad Gītā Study Hub',href:'/gita',label:'GĪTĀ',text:'Crisis, dharma, action, resilience, Vibhūti, and Viśvarūpa.'},
+            {title:'Gāyatrī Study Hub',href:'/gayatri',label:'MANTRA & PRACTICE',text:'Primary source, Sandhyā, recitation, contemplative practice, and evidence-aware inquiry.'},
+            {title:'Search the full knowledge index',href:'/explore',label:'EXPLORE',text:'Find a person, text, practice, scientific domain, article, video, or research question.'}
+          ]}
+        />
 
         <section className="missionBox">
           <h2>वसुधैव कुटुम्बकम्</h2>
