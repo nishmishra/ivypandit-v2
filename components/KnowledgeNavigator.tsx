@@ -7,8 +7,8 @@ const allTypes = ['All', ...Array.from(new Set(contentItems.map(x => x.type))).s
 const allTracks = ['All', ...Array.from(new Set(contentItems.map(x => x.track))).sort()];
 const allLanguages = ['All', ...Array.from(new Set(contentItems.map(x => x.language))).sort()];
 
-export default function KnowledgeNavigator(){
-  const [query,setQuery]=useState('');
+export default function KnowledgeNavigator({initialQuery=''}:{initialQuery?:string}){
+  const [query,setQuery]=useState(initialQuery);
   const [type,setType]=useState('All');
   const [track,setTrack]=useState('All');
   const [language,setLanguage]=useState('All');
