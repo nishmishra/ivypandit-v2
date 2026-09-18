@@ -25,7 +25,7 @@ export default function Home() {
           <span className="quotePill"><b>अनुसन्धानम्</b><span>Demand rigor.</span></span>
         </div>
         <div className="buttons">
-          <Link className="btn primary" href="/iks">Explore IKS</Link>
+          <Link className="btn primary" href="/explore">Explore IvyPandit</Link>
           <Link className="btn secondary" href="/evidence">Examine Evidence</Link>
           <Link className="btn secondary" href="/speaking">Invite Dr. Mishra to Speak</Link>
         </div>
@@ -33,6 +33,23 @@ export default function Home() {
     </section>
 
     <main className="main">
+      <section className="panel" style={{marginBottom:'34px',padding:'28px'}} aria-label="Knowledge Navigator">
+        <p className="kicker">Find anything on IvyPandit</p>
+        <h2 className="sectionTitle">What would you like to explore?</h2>
+        <p>Search by text, person, practice, scientific topic, content type, or language. You do not need to know which section of the website contains it.</p>
+        <form action="/explore" method="get" style={{display:'flex',gap:'10px',flexWrap:'wrap',marginTop:'18px'}}>
+          <input name="q" aria-label="Search IvyPandit" placeholder="Mahābhārata, Gāyatrī, Sanskrit, stroke, memory, karma…" style={{flex:'1 1 360px',padding:'14px 16px',border:'1px solid #d7c5a5',borderRadius:'10px',fontSize:'17px',background:'#fffdf8'}} />
+          <button className="btn primary" type="submit">Search IvyPandit</button>
+        </form>
+        <div className="buttons" style={{justifyContent:'flex-start',marginTop:'16px',flexWrap:'wrap'}}>
+          <Link className="btn secondary" href="/explore?q=Mah%C4%81bh%C4%81rata">Mahābhārata</Link>
+          <Link className="btn secondary" href="/explore?q=G%C4%81yatr%C4%AB">Gāyatrī</Link>
+          <Link className="btn secondary" href="/explore?q=Sanskrit">Sanskrit</Link>
+          <Link className="btn secondary" href="/explore?q=Post-Stroke%20Epilepsy">Post-Stroke Epilepsy</Link>
+          <Link className="btn secondary" href="/explore">Browse everything →</Link>
+        </div>
+      </section>
+
       <section className={styles.identityCard}>
         <p className="kicker">Founder & public scholar</p>
         <h2>Nishant K. Mishra, MD, PhD</h2>
