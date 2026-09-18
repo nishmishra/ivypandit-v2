@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ContinueExploring from '../../components/ContinueExploring';
 
 export default function Page() { return <main>
   <section className="pageHero"><div className="eyebrow">Study hub • Dharma • Action • Resilience</div><h1>Bhagavad Gītā Study Hub</h1><p>Text, interpretation, public lectures, essays, and questions about crisis, disciplined action, attention, and human resilience.</p></section>
@@ -21,5 +22,12 @@ export default function Page() { return <main>
     </section>
 
     <section className="panel"><p className="kicker">Questions for inquiry</p><h2>Where can interdisciplinary work be useful?</h2><ul><li>What changes in Arjuna’s appraisal of the situation over the course of the dialogue?</li><li>How do identity, duty, perspective, and control over outcomes shape action under stress?</li><li>Which modern psychological constructs illuminate the dialogue, and where do they distort it?</li></ul></section>
+
+    <ContinueExploring items={[
+      {title:'Mahābhārata Study Hub',href:'/mahabharata',label:'WIDER ITIHĀSA',text:'Return to the epic around the Gītā and explore its characters, family conflict, dharma, leadership, grief, and research questions.'},
+      {title:'Gītā & Cognitive Resilience',href:'/articles/gita-cognitive-resilience',label:'ARTICLE',text:'A concise evidence-aware reflection on Arjuna’s crisis and modern psychological comparison.'},
+      {title:'Puruṣa, Vibhūti & Viśvarūpa',href:'/articles/purusha-sukta-gita-vedic-cosmos',label:'CHAPTERS 10–11',text:'Explore the cosmic vision across the Puruṣa Sūkta and Bhagavad Gītā.'},
+      {title:'Search all Gītā resources',href:'/explore?q=Bhagavad%20G%C4%ABt%C4%81',label:'KNOWLEDGE NAVIGATOR',text:'Find videos, articles, lectures, and related themes across IvyPandit.'}
+    ]} />
   </section>
 </main> }
