@@ -26,9 +26,9 @@ export default function Home() {
         </div>
         <div className="buttons">
           <Link className="btn primary" href="/explore">Explore IvyPandit</Link>
-          <Link className="btn secondary" href="/evidence">Examine Evidence</Link>
-          <Link className="btn secondary" href="/speaking">Invite Dr. Mishra to Speak</Link>
+          <Link className="btn secondary" href="/research/consciousness/avadhana">Start with Featured Scholarship</Link>
         </div>
+        <p style={{marginTop:'14px'}}><Link className="textLink" href="/evidence">Examine the evidence behind IvyPandit’s interdisciplinary work →</Link></p>
       </div>
     </section>
 
@@ -50,11 +50,17 @@ export default function Home() {
         </div>
       </section>
 
+      <section className={`${styles.gatewayRefined} gatewayGrid`} aria-label="Explore IvyPandit">
+        <Link className="gatewayCard" href="/shastra-study"><span>01</span><h3>Śāstra & Sanskrit</h3><p>Texts, recitations, commentaries, study pathways, Indian Knowledge Systems resources, and direct engagement with classical knowledge traditions.</p><strong>Explore tradition & texts →</strong></Link>
+        <Link className="gatewayCard" href="/research"><span>02</span><h3>Science & Research</h3><p>Neuroscience, cognition, brain health, cultural expertise, publications, methods, and research questions.</p><strong>Explore research →</strong></Link>
+        <Link className="gatewayCard" href="/videos"><span>03</span><h3>Learn & Watch</h3><p>Curated academic, interdisciplinary, and traditional lectures, with clear pathways for newcomers and returning learners.</p><strong>Watch & learn →</strong></Link>
+      </section>
+
       <section className={styles.identityCard}>
-        <p className="kicker">Founder & public scholar</p>
+        <p className="kicker">Founder</p>
         <h2>Nishant K. Mishra, MD, PhD</h2>
-        <p>Physician-scientist • Neurologist • Neuroscience researcher • Sanskrit & Indian Knowledge Systems scholar</p>
-        <p className={styles.identityLine}>Public scholarship connecting brain science, Sanskrit, and Indian Knowledge Systems with intellectual rigor.</p>
+        <p>Physician-scientist • Neurologist • Neuroscience researcher • Student of Sanskrit and Indian Knowledge Systems</p>
+        <p className={styles.identityLine}>IvyPandit brings together brain science, Sanskrit, and Indian Knowledge Systems through careful scholarship, open inquiry, and clear distinctions between tradition, interpretation, hypothesis, and evidence.</p>
       </section>
 
       <section className="initiativeSection" style={{marginTop:'34px',marginBottom:'48px'}}>
@@ -89,47 +95,9 @@ export default function Home() {
         <p><Link className="textLink" href="/editorial-policy">Read the Editorial & Evidence Policy →</Link><Link className="textLink" href="/evidence">Explore the Evidence Library →</Link></p>
       </section>
 
-      <section className={`${styles.gatewayRefined} gatewayGrid`} aria-label="Explore IvyPandit">
-        <Link className="gatewayCard" href="/iks"><span>01</span><h3>IKS Hub</h3><p>A curated gateway to scholars, institutions, resources, learning opportunities, and the IvyPandit Knowledge Repository.</p><strong>Explore the hub →</strong></Link>
-        <Link className="gatewayCard" href="/shastra-study"><span>02</span><h3>Śāstra & Sanskrit</h3><p>Texts, recitations, commentaries, study pathways, and direct engagement with classical knowledge traditions.</p><strong>Enter the library →</strong></Link>
-        <Link className="gatewayCard" href="/research"><span>03</span><h3>Science & Research</h3><p>Neuroscience, cognition, brain health, cultural expertise, publications, methods, and research questions.</p><strong>View research →</strong></Link>
-        <Link className="gatewayCard" href="/videos"><span>04</span><h3>Learn & Watch</h3><p>Curated academic, interdisciplinary, and traditional lecture collections, clearly distinguished by purpose.</p><strong>Explore video collections →</strong></Link>
-      </section>
 
-      <section className={styles.vedicSection}>
-        <div className={styles.vedicHeader}>
-          <p className="kicker">Vedic visions of creation</p>
-          <h2>Ṛta, Satya, Puruṣa, and the Cosmos</h2>
-          <p>Vedic poetry asks enduring questions about order, truth, creation, and the relationship between the cosmos and the divine. These verses are presented here as scriptural and philosophical visions that can deepen reflection and inspire inquiry without being treated as substitutes for empirical science.</p>
-        </div>
 
-        <div className={styles.verseGrid}>
-          <article className={styles.verseCard}>
-            <div className={styles.sourceLabel}>Ṛgveda 10.190.1 • Ṛta and cosmic emergence</div>
-            <p className={styles.devanagari}>ऋतं च सत्यं चाभीद्धात्तपसोऽध्यजायत ।<br/>ततो रात्र्यजायत ततः समुद्रो अर्णवः ॥</p>
-            <p className={styles.transliteration}>ṛtaṃ ca satyaṃ cābhīddhāt tapaso ’dhyajāyata | tato rātry ajāyata tataḥ samudro arṇavaḥ ||</p>
-            <p className={styles.interpretation}>The hymn places <i>ṛta</i> (cosmic order), <i>satya</i> (truth), and <i>tapas</i> within a poetic account of cosmic emergence. The value of the verse here is not a claim that modern cosmology is hidden in Vedic poetry, but the invitation to examine how human beings have conceptualized order, causation, emergence, and reality.</p>
-            <p className={styles.verseLink}><a className="textLink" href="https://vedicheritage.gov.in/samhitas/rigveda/" target="_blank" rel="noopener noreferrer">Explore the Ṛgveda at the Vedic Heritage Portal →</a></p>
-          </article>
 
-          <article className={styles.verseCard}>
-            <div className={styles.sourceLabel}>Puruṣa Sūkta • Ṛgveda 10.90.2</div>
-            <p className={styles.devanagari}>पुरुष एवेदं सर्वं यद्भूतं यच्च भव्यम् ।<br/>उतामृतत्वस्येशानो यदन्नेनातिरोहति ॥</p>
-            <p className={styles.transliteration}>puruṣa evedaṃ sarvaṃ yad bhūtaṃ yac ca bhavyam | utāmṛtatvasyeśāno yad annenātirohati ||</p>
-            <p className={styles.interpretation}>The Puruṣa is presented as encompassing all that has been and all that will be. In later Vaiṣṇava traditions, the cosmic Puruṣa is identified with Nārāyaṇa/Viṣṇu. This is a theological vision in which the divine is not merely an object within the universe, but its source, ground, and pervasive presence.</p>
-            <p className={styles.verseLink}><a className="textLink" href="https://vedicheritage.gov.in/hi/samhitas/rigveda/shakala-samhita/rigveda-shakala-samhita-mandal-10-sukta-090/" target="_blank" rel="noopener noreferrer">Read the Puruṣa Sūkta at the Vedic Heritage Portal →</a></p>
-          </article>
-        </div>
-
-        <div className={styles.theologyBand}>
-          <p className="kicker">A theological vision of creation</p>
-          <h3>The divine as source, support, and indwelling presence</h3>
-          <p>Hindu traditions offer multiple ways of speaking about the relation between the divine and <i>jagat</i>. The Puruṣa Sūkta provides one powerful cosmic vision: creation is understood in relation to a reality that exceeds any single created object while also pervading the whole. IvyPandit approaches this as theology and philosophy first, and then asks what questions such ideas may inspire for the study of mind, meaning, human experience, and the history of ideas.</p>
-          <p><a className="textLink" href="https://www.youtube.com/watch?v=leQ_SDvEE3g&t=273s" target="_blank" rel="noopener noreferrer">Watch: Puruṣa Sūkta, Bhagavad Gītā Chapters 10–11 & the Vedic vision of the cosmos →</a></p>
-        </div>
-
-        <div className={styles.methodNote}><b>Methodological note:</b> scriptural meaning, traditional theology, philosophical interpretation, research questions, and empirical scientific evidence are distinct categories. IvyPandit keeps them separate while allowing each to sharpen the questions we ask.<br/><br/><Link className="textLink" href="/articles/purusha-sukta-gita-vedic-cosmos">Read: From Puruṣa to Viśvarūpa to Govinda →</Link></div>
-      </section>
 
       <section className="initiativeSection">
         <div>
@@ -162,10 +130,10 @@ export default function Home() {
 
       <section className="initiativeSection">
         <div>
-          <p className="kicker">Invite a speaker</p>
-          <h2 className="sectionTitle">Invite Dr. Nishant K. Mishra to speak.</h2>
-          <p>Live or virtual talks can be adapted for universities, Sanskrit institutions, temples, conferences, professional groups, youth programs, podcasts, and community audiences.</p>
-          <div className="buttons" style={{justifyContent:'flex-start'}}><Link className="btn primary" href="/speaking">View Speaking Topics</Link><a className="btn secondary" href="mailto:nishant.mishra@ivypandit.com?subject=IvyPandit%20Lecture%20Invitation">Email an Invitation</a></div>
+          <p className="kicker">Lectures & speaking</p>
+          <h2 className="sectionTitle">Bring IvyPandit to your institution or community.</h2>
+          <p>Dr. Nishant K. Mishra offers live and virtual lectures at the intersection of Sanskrit, Indian Knowledge Systems, neuroscience, medicine, and scientific inquiry. Talks can be adapted for universities, Sanskrit institutions, temples, conferences, professional groups, youth programs, podcasts, and community audiences.</p>
+          <div className="buttons" style={{justifyContent:'flex-start'}}><Link className="btn primary" href="/speaking">Explore Speaking Topics</Link><a className="btn secondary" href="mailto:nishant.mishra@ivypandit.com?subject=IvyPandit%20Lecture%20Invitation">Invite Dr. Mishra</a></div>
         </div>
         <div className="panel">
           <h3>Featured lecture themes</h3>
