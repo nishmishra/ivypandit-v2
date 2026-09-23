@@ -12,6 +12,7 @@ export type ContentItem = {
 };
 
 export const contentItems: ContentItem[] = [
+  {id:'IP-EVT-001',title:'Ancestors, Memory, and the Brain — HCC Stratford',summary:'Upcoming community lecture on Pitṛpakṣa, ancestral remembrance, memory, grief, family ritual, and the limits of scientific explanation. Sunday, October 4, 2026 at 5:30 PM.',href:'/news',type:'Event',track:'Public Scholarship',topics:['Pitṛpakṣa','Ancestors','Memory','Grief','Śrāddha','Community Lecture','HCC Stratford'],language:'English',level:'General'},
   {id:'IP-NAV-001',title:'Indian Knowledge Systems Hub',summary:'Curated pathways into texts, scholars, institutions, archives, journals, opportunities, and research resources.',href:'/iks',type:'Hub',track:'Platform / Infrastructure',topics:['Indian Knowledge Systems','Resources','Institutions'],language:'English',level:'Start Here'},
   {id:'IP-SAS-001',title:'Śāstra & Sanskrit Study',summary:'Study pathways for Veda, Upaniṣad, Bhagavad Gītā, Mahābhārata, Purāṇa, mantra, Sanskrit, and traditional learning.',href:'/shastra-study',type:'Hub',track:'Tradition / Śāstra',topics:['Sanskrit','Śāstra','Veda','Upaniṣad','Purāṇa'],language:'English',level:'Start Here'},
   {id:'IP-SCI-001',title:'Scientific Work',summary:'Stroke, reperfusion, neuroimaging, post-stroke epilepsy, biomarkers, trials, cognition, language, and neuroplasticity.',href:'/research',type:'Hub',track:'Scientific Research',topics:['Stroke','Post-Stroke Epilepsy','Neuroimaging','Brain Health','Neuroplasticity'],language:'English',level:'Start Here'},
