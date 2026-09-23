@@ -3,7 +3,7 @@ import type { MetadataRoute } from 'next';
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://www.ivypandit.com';
   const routes = [
-    '/', '/iks', '/shastra-study', '/research', '/sbkb', '/questions', '/videos', '/speaking', '/collaborate', '/about',
+    '/', '/iks', '/shastra-study', '/research', '/sbkb', '/questions', '/videos', '/news', '/speaking', '/collaborate', '/about',
     '/repository', '/evidence', '/publications', '/articles', '/support', '/contact', '/disclaimer', '/editorial-policy', '/privacy', '/terms',
     '/gayatri', '/gita', '/garbhadhana', '/mahabharata', '/bhagavatam', '/principles', '/perspectives',
     '/research/consciousness/avadhana', '/articles/sandhyopasana-neuroscience', '/articles/vedic-recitation-developing-brain', '/articles/sanskrit-hindi-bilingualism-neuroplasticity', '/articles/shastra-to-scientific-discovery', '/articles/pitrapaksha-memory-grief', '/articles/ekadashi-fasting-brain-health', '/articles/purusha-sukta-gita-vedic-cosmos', '/hi/articles/purusha-sukta-gita-vedic-cosmos', '/articles/gayatri-neuroplasticity', '/articles/gita-cognitive-resilience', '/articles/garbhadhana-epigenetics',
