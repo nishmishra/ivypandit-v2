@@ -50,6 +50,27 @@ export default function Home() {
         </div>
       </section>
 
+
+      <section className="initiativeSection" style={{marginTop:'34px',marginBottom:'48px'}}>
+        <div>
+          <p className="kicker">Current event • Sunday, October 4, 2026 • 5:30 PM</p>
+          <h2 className="sectionTitle">Ancestors, Memory, and the Brain</h2>
+          <p><b>Understanding Pitṛpakṣa through Hindu tradition and neuroscience</b></p>
+          <p>Join a community conversation at HCC Stratford on ancestral remembrance, memory, grief, family ritual, and the limits of scientific explanation. Open to the community; 30–40 minute talk followed by discussion.</p>
+          <div className="buttons" style={{justifyContent:'flex-start'}}>
+            <Link className="btn primary" href="/news">Event details</Link>
+            <Link className="btn secondary" href="/articles/pitrapaksha-memory-grief">Related essay</Link>
+          </div>
+        </div>
+        <div className="panel">
+          <span className="label">COMMUNITY LECTURE • HCC STRATFORD</span>
+          <h3>Sunday, October 4, 2026 • 5:30 PM</h3>
+          <p><b>HCC Stratford</b><br/>96 Chapel Street, Stratford, CT 06614</p>
+          <p><b>Nishant K. Mishra, MD, PhD</b><br/>Neurologist • Physician-scientist • Founder, IvyPandit</p>
+          <Link className="textLink" href="/news">View current news & events →</Link>
+        </div>
+      </section>
+
       <section className={`${styles.gatewayRefined} gatewayGrid`} aria-label="Explore IvyPandit">
         <Link className="gatewayCard" href="/shastra-study"><span>01</span><h3>Śāstra & Sanskrit</h3><p>Texts, recitations, commentaries, study pathways, Indian Knowledge Systems resources, and direct engagement with classical knowledge traditions.</p><strong>Explore tradition & texts →</strong></Link>
         <Link className="gatewayCard" href="/research"><span>02</span><h3>Science & Research</h3><p>Neuroscience, cognition, brain health, cultural expertise, publications, methods, and research questions.</p><strong>Explore research →</strong></Link>
