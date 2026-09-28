@@ -36,3 +36,8 @@
 
 /* Curated video collection */
 .curatedVideoGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.25rem;margin-top:1.5rem}.videoCard{display:block;background:#fff;border:1px solid rgba(110,55,28,.16);border-radius:18px;overflow:hidden;text-decoration:none;color:inherit;box-shadow:0 10px 30px rgba(83,48,28,.07);transition:transform .18s ease,box-shadow .18s ease}.videoCard:hover{transform:translateY(-3px);box-shadow:0 15px 34px rgba(83,48,28,.12)}.videoCard img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}.videoCard div{padding:1rem 1.1rem 1.2rem}.videoCard h2{font-size:1.12rem;margin:.35rem 0}.videoCard p{font-size:.94rem;margin:.35rem 0 .75rem}.externalTalkBox{margin:3rem 0;padding:2rem;border-radius:18px;background:linear-gradient(135deg,rgba(255,246,227,.95),rgba(248,237,218,.85));border:1px solid rgba(110,55,28,.14)}
+
+/* Make the reading and video links distinct from surrounding article copy. */
+.pitrapaksha-video-guide a{color:#0754a5;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1.5px;font-weight:600}
+.pitrapaksha-video-guide a:hover{color:#003a78;text-decoration-thickness:2.5px}
+.pitrapaksha-video-guide a:focus-visible{outline:3px solid #c45818;outline-offset:3px;border-radius:2px}
