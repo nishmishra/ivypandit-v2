@@ -50,6 +50,13 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="panel" aria-label="Pitṛpakṣa remembrance" style={{marginBottom:'34px',padding:'28px',borderLeft:'5px solid #9b3a17',background:'#fff7e7'}}>
+        <p className="kicker">Ongoing Pitṛpakṣa • An invitation to remember</p>
+        <h2 className="sectionTitle">Remembering those who came before us</h2>
+        <p>During Pitṛpakṣa, families make time for śrāddha, tarpaṇa, stories, and gratitude. Our guide explores the tradition alongside careful questions about memory, grief, and intergenerational identity, with a curated path through IvyPandit’s related videos.</p>
+        <Link className="btn primary" href="/articles/pitrapaksha-memory-grief">Read the Pitṛpakṣa article and watch the videos →</Link>
+      </section>
+
 
       <section className="initiativeSection" style={{marginTop:'34px',marginBottom:'48px'}}>
         <div>
