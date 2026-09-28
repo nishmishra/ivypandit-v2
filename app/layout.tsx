@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { headers } from 'next/headers';
 import SiteHeader from '../components/SiteHeader';
+import { Analytics } from '@vercel/analytics/next';
 
 const baseUrl = 'https://www.ivypandit.com';
 
@@ -81,5 +82,6 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       {lang==='sa'?<><div><h4>अन्वेषणम्</h4><Link href="/sa/iks">भारतीयज्ञानप्रणाली</Link><Link href="/sa/shastra">शास्त्रम्</Link><Link href="/sa/research">अनुसन्धानम्</Link><Link href="/sa/repository">ज्ञानसंग्रहः</Link></div><div><h4>विद्वत्कार्यम्</h4><Link href="/sa/prashna">अनुसन्धानप्रश्नाः</Link><Link href="/sa/videos">व्याख्यानानि</Link><Link href="/sa/speaking">वक्तृत्वम्</Link><Link href="/sa/sahayoga">सहकारः</Link></div></>:lang==='hi'?<><div><h4>अन्वेषण</h4><Link href="/hi/research">अनुसन्धान</Link><Link href="/hi/prashna">अनुसन्धान-प्रश्न</Link><Link href="/hi/speaking">व्याख्यान</Link><Link href="/hi/sahyog">सहयोग</Link></div><div><h4>अधिक</h4><Link href="/iks">IKS Hub (English)</Link><Link href="/shastra-study">शास्त्र (English)</Link><Link href="/articles">लेख (English)</Link><Link href="/about">परिचय (English)</Link></div></>:<><div><h4>Explore</h4><Link href="/iks">IKS Hub</Link><Link href="/shastra-study">Śāstra</Link><Link href="/research">Science & Research</Link><Link href="/evidence">Evidence Library</Link><Link href="/repository">Knowledge Repository</Link></div><div><h4>Scholarship</h4><Link href="/questions">Research Questions</Link><Link href="/publications">Publications</Link><Link href="/videos">Talks & Learning</Link><Link href="/news">News & Events</Link><Link href="/speaking">Lectures & Speaking</Link><Link href="/articles">Articles</Link><Link href="/collaborate">Collaborate</Link></div></>}
       <div><h4>{lang==='sa'?'सम्पर्कः':lang==='hi'?'सम्पर्क':'Connect'}</h4><a href="mailto:nishant.mishra@ivypandit.com">nishant.mishra@ivypandit.com</a><a href="https://www.youtube.com/@IvyPandit" target="_blank" rel="noopener noreferrer">YouTube @IvyPandit</a><a href="https://www.linkedin.com/in/ivypandit/" target="_blank" rel="noopener noreferrer">LinkedIn / IvyPandit</a><a href="https://x.com/IvyPandit" target="_blank" rel="noopener noreferrer">X / Twitter @IvyPandit</a>{lang==='en'&&<><Link href="/editorial-policy">Editorial & Evidence Policy</Link><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link><Link href="/disclaimer">Disclaimer</Link></>}</div>
     </div><div className="footerBottom">{lang==='sa'?'आइवीपण्डितः स्वतन्त्रः विद्वत्-शैक्षिकमञ्चः।':lang==='hi'?'आइवी पण्डित एक स्वतंत्र विद्वत् एवं शैक्षिक मंच है।':'IvyPandit is independent. Traditional sources, interpretations, research questions, scientific evidence, and public commentary are distinguished wherever possible. Nothing on this site constitutes medical advice.'}<span>© 2026 IvyPandit.</span></div></footer>
+    <Analytics />
   </body></html>;
 }
