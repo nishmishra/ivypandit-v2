@@ -8,8 +8,9 @@ export default function Privacy(){return <>
       <p>IvyPandit is not a clinical portal. Please do not use the site or its contact addresses to seek individual medical diagnosis or treatment advice. If you have a medical concern, contact an appropriate healthcare professional or emergency service.</p>
       <h2>External services</h2>
       <p>The site links to external services such as YouTube, LinkedIn, X, Google Scholar, and scholarly resources. Those services have their own privacy policies and data practices.</p>
-      <h2>Analytics and future services</h2>
-      <p>If analytics, mailing lists, forms, payment systems, or other data-collecting services are added in the future, this notice should be updated to describe what is collected and why.</p>
+      <h2>Site analytics</h2>
+      <p>IvyPandit uses Vercel Web Analytics to understand aggregate visits, popular pages, and referring sources so that we can improve the site. Vercel Web Analytics does not use third-party cookies. We do not use the site as a patient portal or intentionally collect identifiable medical information through analytics.</p>
+      <p>If mailing lists, forms, payment systems, or other data-collecting services are added, this notice will be updated to describe them.</p>
       <h2>Questions</h2>
       <p>Privacy-related questions may be sent to <a className="textLink" href="mailto:nishant.mishra@ivypandit.com">nishant.mishra@ivypandit.com</a>.</p>
     </section>
