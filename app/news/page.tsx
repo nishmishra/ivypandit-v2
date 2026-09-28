@@ -84,9 +84,10 @@ export default function NewsAndEvents() {
           </blockquote>
 
           <div className="buttons" style={{justifyContent:'flex-start'}}>
-            <Link className="btn primary" href="/articles/pitrapaksha-memory-grief">Read the related Pitṛpakṣa essay</Link>
-            <Link className="btn secondary" href="/speaking/ancestors-memory-brain-pitrapaksha">Explore the lecture topic</Link>
+            <a className="btn primary" href="mailto:nishant.mishra@ivypandit.com?subject=October%204%20Pitrapaksha%20lecture%20attendance">Ask about attending</a>
+            <Link className="btn secondary" href="/articles/pitrapaksha-memory-grief">Read the essay and watch the videos</Link>
           </div>
+          <p style={{fontSize:'.95rem',marginTop:'16px'}}>Planning to come? The talk is open to the community. The email link is for questions; no registration requirement has been announced here.</p>
         </div>
 
         <aside className="panel">
@@ -103,6 +104,25 @@ export default function NewsAndEvents() {
           <p>This is an educational community program. It is not medical advice, diagnosis, treatment, or religious instruction. Traditional and scriptural interpretations are distinguished from scientific evidence. Views are the speaker’s own.</p>
           <p style={{marginBottom:0}}><a className="textLink" href="mailto:nishant.mishra@ivypandit.com?subject=Ancestors%2C%20Memory%2C%20and%20the%20Brain">Contact IvyPandit →</a></p>
         </aside>
+      </section>
+
+      <section className="panel" style={{marginTop:'36px',padding:'28px'}} aria-label="Recent IvyPandit lectures">
+        <p className="kicker">Recent lectures</p>
+        <h2 className="sectionTitle">From śāstra to research questions</h2>
+        <div style={{display:'grid',gap:'26px'}}>
+          <article>
+            <p className="label">September 25, 2026 • Online lecture • Yājñavalkya Sevārtha Saṃsthānam, Varanasi</p>
+            <h3>Śāstra se Śodh Tak: Scientific Research Methods in Sanskrit Study</h3>
+            <p>Dr. Mishra discussed how careful reading of texts, traditional interpretation, and lived practice can generate precise research questions. The lecture considered study design, evidence, editorial responsibility, and collaboration between Sanskrit scholars and scientists. The discussion included interest in studying values and daily Sandhyopāsanā with methods appropriate to the questions.</p>
+            <Link className="textLink" href="/articles/shastra-to-scientific-discovery">Read the related research framework →</Link>
+          </article>
+          <article>
+            <p className="label">July 25, 2026 • Sanskrit group lecture • Devashayani Ekādaśī</p>
+            <h3>The Mahābhārata as a Source of Research Questions</h3>
+            <p>In a lecture delivered on Devashayani Ekādaśī, Dr. Mishra used episodes from the Mahābhārata to show how a literary or philosophical observation might inspire a testable question. The talk distinguished the text’s own meaning from a modern hypothesis and warned against treating the epic as a neuroscience textbook.</p>
+            <Link className="textLink" href="/mahabharata">Explore the Mahābhārata study hub →</Link>
+          </article>
+        </div>
       </section>
 
       <section className="missionBox" style={{marginTop:'44px'}}>
