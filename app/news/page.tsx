@@ -20,6 +20,7 @@ export default function NewsAndEvents() {
     name: 'Ancestors, Memory, and the Brain',
     description: 'A community lecture exploring Pitṛpakṣa, ancestral remembrance, memory, grief, attachment, ritual, and the limits of scientific explanation.',
     startDate: '2026-10-04T17:30:00-04:00',
+    image: 'https://www.ivypandit.com/images/ancestors-memory-brain-oct4-2026.jpeg',
     eventStatus: 'https://schema.org/EventScheduled',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     location: {
@@ -91,6 +92,12 @@ export default function NewsAndEvents() {
         </div>
 
         <aside className="panel">
+          <figure style={{margin:'0 0 28px'}}>
+            <a href="/images/ancestors-memory-brain-oct4-2026.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Open the full-size October 4 community lecture flyer">
+              <Image src="/images/ancestors-memory-brain-oct4-2026.jpeg" alt="Ancestors, Memory, and the Brain: community lecture by Nishant K. Mishra, MD, PhD, Sunday, October 4, 2026 at 5:30 PM, HCC Stratford, 96 Chapel Street, Stratford, CT. Open to the community; 30–40 minute talk followed by discussion." width={1055} height={1491} style={{width:'100%',height:'auto',display:'block',borderRadius:'8px'}} />
+            </a>
+            <figcaption style={{marginTop:'12px'}}><a className="textLink" href="/images/ancestors-memory-brain-oct4-2026.jpeg" target="_blank" rel="noopener noreferrer">Open the full-size event flyer</a></figcaption>
+          </figure>
           <div style={{display:'grid',gridTemplateColumns:'96px 1fr',gap:'16px',alignItems:'center'}}>
             <Image src="/images/dr-nishant-mishra.jpeg" alt="Nishant K. Mishra, MD, PhD" width={192} height={240} style={{width:'96px',height:'120px',objectFit:'cover',borderRadius:'10px'}} />
             <div>
