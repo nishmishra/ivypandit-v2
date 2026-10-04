@@ -1,6 +1,18 @@
 export default function Articles(){return <>
   <section className="pageHero"><div className="eyebrow">Definitive guides • Scholarly essays • Evidence-aware inquiry</div><h1>Articles</h1><p>Canonical, source-conscious articles connecting Indian Knowledge Systems, neuroscience, learning, culture, health, and public scholarship.</p></section>
   <main className="content">
+      <section className="panel" aria-label="Yogvani October 2026 featured article" style={{marginBottom:'34px',padding:'28px',borderLeft:'5px solid #c7932d',background:'#fff7e7'}}>
+        <p className="kicker">New publication • Yogvani • October 2026</p>
+        <h2 className="sectionTitle">From Śāstra to the Laboratory</h2>
+        <p lang="hi"><b>शास्त्र से प्रयोगशाला तक — संस्कृत वाङ्मय का वैज्ञानिक अनुसन्धान</b></p>
+        <p>Read Dr. Nishant Kumar Mishra’s Hindi article on transforming insights from Sanskrit literature into testable research questions. Published in <i>Yogvani</i>, October 2026, pages 24–27.</p>
+        <div className="buttons" style={{justifyContent:'flex-start',flexWrap:'wrap'}}>
+          <a className="btn primary" href="/articles/yogvani-october-2026">Explore the featured article</a>
+          <a className="btn secondary" href="/library/yogvani-october-2026-nishant-mishra.pdf" target="_blank" rel="noopener noreferrer">Read the original Hindi article</a>
+          <a className="btn secondary" href="/library/yogvani-october-2026.pdf" target="_blank" rel="noopener noreferrer">Read the complete October issue</a>
+        </div>
+      </section>
+
     <section className="callout" style={{marginBottom:'28px'}}><span className="label">FEATURED SCHOLARLY ESSAY</span><h2>From Puruṣa to Viśvarūpa to Govinda</h2><p>Why the Infinite Divine is worshipped through sacred forms—a respectful reading of the Puruṣa Sūkta, Bhagavad Gītā Chapters 10–11, and <i>Bhaja Govindam</i>.</p><a className="textLink" href="/articles/purusha-sukta-gita-vedic-cosmos">Read in English →</a><br/><a className="textLink" href="/hi/articles/purusha-sukta-gita-vedic-cosmos">हिन्दी में पढ़ें →</a></section>
     <div className="resourceGrid">
       <div className="panel"><span className="label">DEFINITIVE GUIDE</span><h3>Avadhāna and the Indian Science of Attention</h3><p>A comprehensive framework for Avadhāna, attention, working memory, cognitive expertise, neuroplasticity, and future research.</p><a className="textLink" href="/research/consciousness/avadhana">Read →</a></div>

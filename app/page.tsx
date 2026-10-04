@@ -33,6 +33,18 @@ export default function Home() {
     </section>
 
     <main className="main">
+      <section className="panel" aria-label="Yogvani October 2026 featured article" style={{marginBottom:'34px',padding:'28px',borderLeft:'5px solid #c7932d',background:'#fff7e7'}}>
+        <p className="kicker">New publication • Yogvani • October 2026</p>
+        <h2 className="sectionTitle">From Śāstra to the Laboratory</h2>
+        <p lang="hi"><b>शास्त्र से प्रयोगशाला तक — संस्कृत वाङ्मय का वैज्ञानिक अनुसन्धान</b></p>
+        <p>Read Dr. Nishant Kumar Mishra’s Hindi article on transforming insights from Sanskrit literature into testable research questions. Published in <i>Yogvani</i>, October 2026, pages 24–27.</p>
+        <div className="buttons" style={{justifyContent:'flex-start',flexWrap:'wrap'}}>
+          <Link className="btn primary" href="/articles/yogvani-october-2026">Explore the featured article</Link>
+          <a className="btn secondary" href="/library/yogvani-october-2026-nishant-mishra.pdf" target="_blank" rel="noopener noreferrer">Read the original Hindi article</a>
+          <a className="btn secondary" href="/library/yogvani-october-2026.pdf" target="_blank" rel="noopener noreferrer">Read the complete October issue</a>
+        </div>
+      </section>
+
       <section className="panel" style={{marginBottom:'34px',padding:'28px'}} aria-label="Knowledge Navigator">
         <p className="kicker">Find anything on IvyPandit</p>
         <h2 className="sectionTitle">What would you like to explore?</h2>
