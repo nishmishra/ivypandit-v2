@@ -70,23 +70,11 @@ export default function Home() {
       </section>
 
 
-      <section className="initiativeSection" style={{marginTop:'34px',marginBottom:'48px'}}>
-        <div>
-          <p className="kicker">Current event • Sunday, October 4, 2026 • 5:30 PM</p>
-          <h2 className="sectionTitle">Ancestors, Memory, and the Brain</h2>
-          <p><b>Understanding Pitṛpakṣa through Hindu tradition and neuroscience</b></p>
-          <p>Join a community conversation at HCC Stratford on ancestral remembrance, memory, grief, family ritual, and the limits of scientific explanation. Open to the community; 30–40 minute talk followed by discussion.</p>
-          <div className="buttons" style={{justifyContent:'flex-start'}}>
-            <Link className="btn primary" href="/news">Event details</Link>
-            <Link className="btn secondary" href="/articles/pitrapaksha-memory-grief">Related essay</Link>
-          </div>
-        </div>
-        <div className="panel">
-          <span className="label">COMMUNITY LECTURE • HCC STRATFORD</span>
-          <h3>Sunday, October 4, 2026 • 5:30 PM</h3>
-          <p><b>HCC Stratford</b><br/>96 Chapel Street, Stratford, CT 06614</p>
-          <p><b>Nishant K. Mishra, MD, PhD</b><br/>Neurologist • Physician-scientist • Founder, IvyPandit</p>
-          <Link className="textLink" href="/news">View current news & events →</Link>
+      <section className="featuredTalks" id="tarpana-sandhyopasana" style={{marginTop:'34px',marginBottom:'48px'}}>
+        <div className="sectionHeaderRow"><div><p className="kicker">New lecture • Hindi • 50 minutes</p><h2 className="sectionTitle">Tarpaṇa, Sandhyopāsanā & Cognitive Science</h2></div><a className="textLink" href="https://www.youtube.com/watch?v=kyvyYmwIpJg" target="_blank" rel="noopener noreferrer">Watch on YouTube</a></div>
+        <div className="talkGrid">
+          <div className="videoEmbed"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/kyvyYmwIpJg" title="तर्पण और संध्योपासना के पीछे का विज्ञान | The Hidden Cognitive Science of Vedic Rituals" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></div>
+          <div className="talkCopy"><span className="label">INTERDISCIPLINARY INQUIRY • HINDI</span><h3 lang="hi">तर्पण और संध्योपासना के पीछे का विज्ञान</h3><p><b>The Hidden Cognitive Science of Vedic Rituals</b></p><p>Dr. Nishant K. Mishra explores ancestral remembrance, tarpaṇa, Sandhyopāsanā, attention, memory, gratitude, and the place of daily ritual in contemporary life.</p><p>The lecture opens questions for neuroscience and psychology while keeping traditional meaning, scientific analogy, and testable hypotheses distinct.</p><Link className="textLink" href="/articles/pitrapaksha-memory-grief">Explore memory, grief & ancestral remembrance</Link><br/><Link className="textLink" href="/gayatri">Gāyatrī & Sandhyopāsanā Study Hub</Link><br/><Link className="textLink" href="/videos#inquiry">More interdisciplinary lectures</Link></div>
         </div>
       </section>
 

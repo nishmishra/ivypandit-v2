@@ -24,6 +24,13 @@ const featuredAcademic = [
 
 const featuredInquiry = [
   {
+    id: 'kyvyYmwIpJg',
+    start: 0,
+    label: 'NEW LECTURE • INTERDISCIPLINARY INQUIRY • HINDI',
+    title: 'तर्पण और संध्योपासना के पीछे का विज्ञान | The Hidden Cognitive Science of Vedic Rituals',
+    summary: 'Dr. Nishant K. Mishra explores tarpaṇa, Sandhyopāsanā, ancestral remembrance, attention, memory, gratitude, and daily practice through questions from neuroscience and psychology. Traditional meaning, scientific analogy, and testable hypotheses remain distinct.'
+  },
+  {
     id: 'yylfBDXc5CY',
     start: 0,
     label: 'INTERDISCIPLINARY INQUIRY',
