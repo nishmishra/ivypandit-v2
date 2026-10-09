@@ -71,8 +71,9 @@ export default function NewsAndEvents() {
 
       <section className="initiativeSection" style={{alignItems:'start'}}>
         <div>
-          <p className="kicker">Upcoming community lecture • October 4, 2026</p>
+          <p className="kicker">Community lecture delivered • October 4, 2026</p>
           <h2 className="sectionTitle">Ancestors, Memory, and the Brain</h2>
+          <p>The HCC Stratford lecture was delivered on October 4. A follow-up lecture on memory is in preparation as part of <Link className="textLink" href="/brain-health">Brain Health &amp; Indian Traditions</Link>. Its date remains to be confirmed.</p>
           <p style={{fontSize:'1.12rem'}}><b>Understanding Pitṛpakṣa through Hindu tradition and neuroscience</b></p>
           <p>Pitṛpakṣa invites reflection on forebears, family ties, gratitude, and rituals of remembrance. This community lecture places the traditional practice in conversation with what contemporary neuroscience and psychology can tell us about memory, grief, attachment, family narrative, and human connection—while keeping religious interpretation and scientific evidence clearly distinct.</p>
 

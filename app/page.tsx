@@ -46,6 +46,13 @@ export default function Home() {
         <p style={{marginTop:'18px'}}><Link className="btn primary" href="/start-here">First visit? Take the guided tour →</Link></p>
       </section>
 
+      <section className="panel" aria-label="Brain Health and Indian Traditions" style={{marginBottom:'30px',padding:'24px'}}>
+        <p className="kicker">Community lecture series in development</p>
+        <h2 className="sectionTitle">Brain Health &amp; Indian Traditions</h2>
+        <p>Accessible conversations with neurologist Nishant K. Mishra about memory, attention, and the aging brain, enriched by Indian intellectual traditions. The first planned lecture explores how we remember, why we forget, and when to seek help.</p>
+        <Link className="btn primary" href="/brain-health">Explore the series</Link>
+      </section>
+
       <section className="panel" aria-label="Browse Śāstra themes" style={{marginBottom:'30px',padding:'24px'}}>
         <p className="kicker">Browse by text or tradition</p>
         <h2 className="sectionTitle">Śāstra pathways</h2>

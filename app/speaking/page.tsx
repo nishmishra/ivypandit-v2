@@ -19,6 +19,13 @@ export default function Speaking() { return <>
     <div className="callout"><b>Nishant K. Mishra, MD, PhD</b> offers public lectures, invited talks, workshops, panels, podcasts, and conversations at the meeting point of neuroscience, medicine, Sanskrit, Indian Knowledge Systems, cognition, and human experience. Lectures can be delivered in <b>English, Hindi, or Sanskrit</b> and adapted for universities, temples, medical and scientific audiences, schools, conferences, and community organizations.</div>
     <div className="buttons" style={{justifyContent:'flex-start',marginTop:'-8px',marginBottom:'28px'}}><Link className="btn secondary" href="/speaking/speaker-sheet">View / Print One-Page Speaker Sheet</Link></div>
 
+    <section className="panel" style={{marginTop:'28px'}}>
+      <p className="kicker">Community education</p>
+      <h2>Brain Health &amp; Indian Traditions</h2>
+      <p>A developing lecture series beginning with memory, drawing on clinical neurology and careful engagement with Indian traditions. The HCC Stratford follow-up lecture is in preparation; its date is to be confirmed.</p>
+      <Link className="textLink" href="/brain-health">Explore the series and planned memory lecture</Link>
+    </section>
+
     <section className="featuredTalks" style={{marginTop:'34px'}}>
       <div className="sectionHeaderRow"><div><p className="kicker">Selected invited appearance</p><h2 className="sectionTitle">Mahābhārata & Neuroscience at a Sanskrit Forum</h2></div><a className="textLink" href="https://www.youtube.com/watch?v=dr-H6IToGx4&t=1104s" target="_blank" rel="noopener noreferrer">Watch the forum recording →</a></div>
       <div className="talkGrid">
