@@ -3,7 +3,7 @@ import type { MetadataRoute } from 'next';
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://www.ivypandit.com';
   const routes = [
-    '/', '/iks', '/shastra-study', '/research', '/sbkb', '/questions', '/videos', '/news', '/speaking', '/collaborate', '/about',
+    '/', '/start-here', '/iks', '/shastra-study', '/research', '/sbkb', '/questions', '/videos', '/news', '/speaking', '/collaborate', '/about',
     '/repository', '/evidence', '/publications', '/articles', '/support', '/contact', '/disclaimer', '/editorial-policy', '/privacy', '/terms',
     '/gayatri', '/gita', '/garbhadhana', '/mahabharata', '/bhagavatam', '/principles', '/perspectives',
     '/research/consciousness/avadhana', '/articles/sandhyopasana-neuroscience', '/articles/vedic-recitation-developing-brain', '/articles/sanskrit-hindi-bilingualism-neuroplasticity', '/articles/shastra-to-scientific-discovery', '/articles/yogvani-october-2026', '/articles/pitrapaksha-memory-grief', '/articles/ekadashi-fasting-brain-health', '/articles/purusha-sukta-gita-vedic-cosmos', '/hi/articles/purusha-sukta-gita-vedic-cosmos', '/articles/gayatri-neuroplasticity', '/articles/gita-cognitive-resilience', '/articles/garbhadhana-epigenetics',
@@ -20,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/speaking/brain-culture-human-neuroplasticity'
   ];
 
-  const highPriority = new Set(['/', '/research', '/iks', '/shastra-study', '/videos', '/speaking', '/questions', '/sbkb', '/evidence', '/research/consciousness/avadhana']);
+  const highPriority = new Set(['/', '/start-here', '/research', '/iks', '/shastra-study', '/videos', '/speaking', '/questions', '/sbkb', '/evidence', '/research/consciousness/avadhana']);
   return routes.map((route) => ({
     url: `${base}${route}`,
     changeFrequency: route === '/' || route === '/speaking' || route === '/videos' ? 'weekly' : 'monthly',
