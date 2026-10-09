@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import GuidedStudyPath from '../../components/GuidedStudyPath';
 import ContinueExploring from '../../components/ContinueExploring';
 
 const videos = [
@@ -34,6 +35,8 @@ export default function Page() { return <main>
   </section>
 
   <section className="content">
+    <GuidedStudyPath title="Mahābhārata: a five-step pathway" intro="Build narrative familiarity first, then move to characters, dilemmas, and interdisciplinary questions." steps={[{"title":"Why study the Mahābhārata?","description":"Begin with the epic's scope, narrative form, and questions about dharma.","href":"/mahabharata#featured-videos","action":"Find introductory videos","format":"Orientation"},{"title":"Follow the narrative","description":"Read the hub's accounts of characters and important narrative episodes.","href":"/mahabharata","action":"Explore the study hub","format":"Text & context"},{"title":"Examine competing duties","description":"Compare obligations, counsel, kinship, social identity, and consequences.","href":"/mahabharata#themes","action":"Explore recurring themes","format":"Interpretation"},{"title":"Connect with the Gītā","description":"Place Arjuna's crisis within the larger epic and explore the dialogue without reducing it to psychology.","href":"/gita","action":"Continue to the Gītā","format":"Connected text"},{"title":"Develop research questions carefully","description":"Differentiate narrative insights and contemporary analogies from evidence.","href":"/questions","action":"Explore open questions","format":"Critical inquiry"}]} />
+
     <section id="start" className="manifesto compactManifesto">
       <p className="kicker">Start with the epic, not with a modern theory</p>
       <h2 className="sectionTitle">Why study the Mahābhārata?</h2>
