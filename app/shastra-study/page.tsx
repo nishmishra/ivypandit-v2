@@ -41,6 +41,28 @@ export default function ShastraStudyPage() {
       </section>
 
       <section className="content">
+        <section aria-label="Browse Śāstra categories" style={{marginBottom:'32px'}}>
+          <p className="kicker">Find a text or tradition</p>
+          <h2 className="sectionTitle">Browse by Śāstra</h2>
+          <p>These thematic tabs are starting points, not separate silos. Where a dedicated study hub is not yet available, the link opens our searchable knowledge collection.</p>
+          <nav aria-label="Śāstra thematic tabs" className="buttons" style={{justifyContent:'flex-start',flexWrap:'wrap',gap:'10px'}}>
+            {[
+              ['Vedas','#vedas'],['Upaniṣads','#upanishads'],['Gītā','/gita'],['Itihāsa','#itihasa'],['Purāṇas','#puranas'],['Sanskrit & Sāhitya','#sanskrit'],['Ritual & Practice','#practice'],['Darśana','#darshana']
+            ].map(([title,href])=><Link key={title} href={href} className="btn secondary">{title}</Link>)}
+          </nav>
+        </section>
+        <section className="resourceGrid" aria-label="Traditions and topic destinations">
+          {[
+            {id:'vedas',name:'Vedas • वेदाः',desc:'Saṃhitās, Vedic recitation, mantra, and traditions of interpretation.',href:'https://youtube.com/playlist?list=PLwQYDVEShtUoo8AoWn-6jYqbu0bk425h5&si=tJFxbnC9VvDjbGCW'},
+            {id:'upanishads',name:'Upaniṣads • उपनिषदः',desc:'Ātman, Brahman, self-knowledge, and the traditions of philosophical interpretation.',href:'https://youtube.com/playlist?list=PLwQYDVEShtUpeuJKGxSnFepXer-BY0GVy&si=MRZe8jWsRq67Lnrw'},
+            {id:'itihasa',name:'Itihāsa • इतिहासः',desc:'Mahābhārata, Rāmāyaṇa, dharma, narrative, and interpretation.',href:'/mahabharata'},
+            {id:'puranas',name:'Purāṇas • पुराणानि',desc:'Bhāgavata and other Purāṇic narratives, bhakti, theology, and cultural history.',href:'/bhagavatam'},
+            {id:'sanskrit',name:'Sanskrit & Sāhitya • संस्कृतसाहित्यम्',desc:'Language learning, grammar, poetics, literary analysis, and classical texts.',href:'/explore?q=Sanskrit'},
+            {id:'practice',name:'Mantra, Ritual & Practice • उपासना',desc:'Gāyatrī, Sandhyopāsanā, recitation, and related living practices.',href:'/gayatri'},
+            {id:'darshana',name:'Darśana & Philosophy • दर्शनानि',desc:'Vedānta, Nyāya, Sāṃkhya, Yoga, and philosophical questions.',href:'/explore?q=Vedanta'}
+          ].map(item=><div className="panel" id={item.id} key={item.id} style={{scrollMarginTop:'100px'}}><h3>{item.name}</h3><p>{item.desc}</p><a className="textLink" href={item.href}>Explore resources →</a></div>)}
+        </section>
+
         <section className="manifesto">
           <h2 className="sectionTitle">Primary text → traditional interpretation → contemporary question</h2>
           <p>A scientific analogy should never replace the work of reading the source. The study pathway begins with the text, its language and interpretive tradition, then asks what — if anything — may responsibly enter conversation with modern scholarship.</p>

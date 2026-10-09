@@ -33,6 +33,36 @@ export default function Home() {
     </section>
 
     <main className="main">
+      <section className="panel" aria-label="Start Here" style={{marginBottom:'28px',padding:'28px',background:'#fffaf1'}}>
+        <p className="kicker">New to IvyPandit?</p>
+        <h2 className="sectionTitle">What would you like to discover?</h2>
+        <p>Choose a guided route into texts, lectures, science, or interdisciplinary ideas. Each destination explains what you will find and where to go next.</p>
+        <div className={`${styles.gatewayRefined} gatewayGrid`} style={{marginTop:'20px'}}>
+          <Link className="gatewayCard" href="/shastra-study"><span>01</span><h3>Śāstra & Sanskrit</h3><p>Primary texts, traditional interpretation, Sanskrit learning, and study hubs.</p><strong>Explore texts and traditions →</strong></Link>
+          <Link className="gatewayCard" href="/videos"><span>02</span><h3>Learn & Watch</h3><p>Lectures, videos, and curated introductions organized by theme.</p><strong>Choose a learning resource →</strong></Link>
+          <Link className="gatewayCard" href="/research"><span>03</span><h3>Science & Research</h3><p>Stroke, epilepsy, cognition, scientific publications, and evidence.</p><strong>Explore scientific work →</strong></Link>
+          <Link className="gatewayCard" href="/questions"><span>04</span><h3>Tradition Meets Science</h3><p>Avadhāna, Sandhyopāsanā, recitation, and carefully framed research questions.</p><strong>Explore interdisciplinary inquiry →</strong></Link>
+        </div>
+        <p style={{marginTop:'18px'}}><Link className="btn primary" href="/start-here">First visit? Take the guided tour →</Link></p>
+      </section>
+
+      <section className="panel" aria-label="Browse Śāstra themes" style={{marginBottom:'30px',padding:'24px'}}>
+        <p className="kicker">Browse by text or tradition</p>
+        <h2 className="sectionTitle">Śāstra pathways</h2>
+        <p>Go directly to a familiar text or discover a wider tradition.</p>
+        <div className="buttons" style={{justifyContent:'flex-start',flexWrap:'wrap',gap:'10px'}}>
+          {[
+            ['Vedas','/shastra-study#vedas'],
+            ['Upaniṣads','/shastra-study#upanishads'],
+            ['Bhagavad Gītā','/gita'],
+            ['Mahābhārata','/mahabharata'],
+            ['Purāṇas','/shastra-study#puranas'],
+            ['Gāyatrī & Sandhyā','/gayatri'],
+            ['Sanskrit & Sāhitya','/shastra-study#sanskrit']
+          ].map(([name,href]) => <Link key={name} className="btn secondary" href={href}>{name} →</Link>)}
+        </div>
+      </section>
+
       <section className="panel" aria-label="Yogvani October 2026 featured article" style={{marginBottom:'34px',padding:'28px',borderLeft:'5px solid #c7932d',background:'#fff7e7'}}>
         <p className="kicker">New publication • Yogvani • October 2026</p>
         <h2 className="sectionTitle">From Śāstra to the Laboratory</h2>
@@ -63,7 +93,7 @@ export default function Home() {
       </section>
 
       <section className="panel" aria-label="Pitṛpakṣa remembrance" style={{marginBottom:'34px',padding:'28px',borderLeft:'5px solid #9b3a17',background:'#fff7e7'}}>
-        <p className="kicker">Ongoing Pitṛpakṣa • An invitation to remember</p>
+        <p className="kicker">From our archive • Ancestors and remembrance</p>
         <h2 className="sectionTitle">Remembering those who came before us</h2>
         <p>During Pitṛpakṣa, families make time for śrāddha, tarpaṇa, stories, and gratitude. Our guide explores the tradition alongside careful questions about memory, grief, and intergenerational identity, with a curated path through IvyPandit’s related videos.</p>
         <Link className="btn primary" href="/articles/pitrapaksha-memory-grief">Read the Pitṛpakṣa article and watch the videos →</Link>
@@ -76,12 +106,6 @@ export default function Home() {
           <div className="videoEmbed"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/kyvyYmwIpJg" title="तर्पण और संध्योपासना के पीछे का विज्ञान | The Hidden Cognitive Science of Vedic Rituals" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></div>
           <div className="talkCopy"><span className="label">INTERDISCIPLINARY INQUIRY • HINDI</span><h3 lang="hi">तर्पण और संध्योपासना के पीछे का विज्ञान</h3><p><b>The Hidden Cognitive Science of Vedic Rituals</b></p><p>Dr. Nishant K. Mishra explores ancestral remembrance, tarpaṇa, Sandhyopāsanā, attention, memory, gratitude, and the place of daily ritual in contemporary life.</p><p>The lecture opens questions for neuroscience and psychology while keeping traditional meaning, scientific analogy, and testable hypotheses distinct.</p><Link className="textLink" href="/articles/pitrapaksha-memory-grief">Explore memory, grief & ancestral remembrance</Link><br/><Link className="textLink" href="/gayatri">Gāyatrī & Sandhyopāsanā Study Hub</Link><br/><Link className="textLink" href="/videos#inquiry">More interdisciplinary lectures</Link></div>
         </div>
-      </section>
-
-      <section className={`${styles.gatewayRefined} gatewayGrid`} aria-label="Explore IvyPandit">
-        <Link className="gatewayCard" href="/shastra-study"><span>01</span><h3>Śāstra & Sanskrit</h3><p>Texts, recitations, commentaries, study pathways, Indian Knowledge Systems resources, and direct engagement with classical knowledge traditions.</p><strong>Explore tradition & texts →</strong></Link>
-        <Link className="gatewayCard" href="/research"><span>02</span><h3>Science & Research</h3><p>Neuroscience, cognition, brain health, cultural expertise, publications, methods, and research questions.</p><strong>Explore research →</strong></Link>
-        <Link className="gatewayCard" href="/videos"><span>03</span><h3>Learn & Watch</h3><p>Curated academic, interdisciplinary, and traditional lectures, with clear pathways for newcomers and returning learners.</p><strong>Watch & learn →</strong></Link>
       </section>
 
       <section className={styles.identityCard}>
