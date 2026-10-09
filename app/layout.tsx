@@ -9,6 +9,7 @@ const baseUrl = 'https://www.ivypandit.com';
 
 const pageMeta: Record<string, { title: string; description: string }> = {
   '/': { title: 'IvyPandit | Neuroscience, Sanskrit & Indian Knowledge Systems', description: 'Independent scholarly platform led by neurologist and physician-scientist Nishant K. Mishra, exploring neuroscience, Sanskrit, Indian Knowledge Systems, cognition, brain health, and public scholarship.' },
+  '/start-here': { title: 'Start Here | Your Guide to IvyPandit', description: 'Find your way through IvyPandit: Śāstra, Sanskrit, guided learning, scientific research, and interdisciplinary inquiry.' },
   '/explore': { title: 'Explore IvyPandit | Knowledge Navigator', description: 'Search IvyPandit by topic, text, practice, scientific domain, content type, language, and scholarly pathway.' },
   '/iks': { title: 'Indian Knowledge Systems Hub | IvyPandit', description: 'Curated pathways into Indian Knowledge Systems: texts, scholarship, institutions, archives, journals, opportunities, and research resources.' },
   '/shastra-study': { title: 'Śāstra & Sanskrit Study | IvyPandit', description: 'Study pathways for Veda, Upaniṣad, Bhagavad Gītā, Mahābhārata, Purāṇa, mantra, Sanskrit, and traditional learning.' },
@@ -64,7 +65,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return { metadataBase: new URL(baseUrl), title: meta.title, description: meta.description, alternates: { canonical: pathname, languages }, openGraph: { type: 'website', url: `${baseUrl}${pathname === '/' ? '' : pathname}`, siteName: 'IvyPandit', title: meta.title, description: meta.description, images: [{ url: '/images/ivy-pandit-feature-banner.jpg', width: 1200, height: 630, alt: 'IvyPandit — Tradition, Curiosity, Science' }] }, twitter: { card: 'summary_large_image', title: meta.title, description: meta.description, images: ['/images/ivy-pandit-feature-banner.jpg'] } };
 }
 
-const navEn: Array<[string,string]> = [['Explore','/explore'],['Śāstra','/shastra-study'],['Research','/research'],['Learn','/videos'],['News & Events','/news'],['Speaking','/speaking'],['Collaborate','/collaborate'],['About','/about']];
+const navEn: Array<[string,string]> = [['Start Here','/start-here'],['Śāstra & Sanskrit','/shastra-study'],['Science & Research','/research'],['Learn & Watch','/videos'],['Articles & Insights','/articles'],['About & Collaborate','/collaborate'],['Explore All','/explore']];
 const navHi: Array<[string,string]> = [['अनुसन्धान','/hi/research'],['प्रश्न','/hi/prashna'],['व्याख्यान','/hi/speaking'],['सहयोग','/hi/sahyog'],['English','/']];
 const navSa: Array<[string,string]> = [['ज्ञानप्रणाली','/sa/iks'],['शास्त्रम्','/sa/shastra'],['अनुसन्धानम्','/sa/research'],['व्याख्यानानि','/sa/videos'],['वक्तृत्वम्','/sa/speaking'],['सहकारः','/sa/sahayoga'],['परिचयः','/sa/about']];
 
