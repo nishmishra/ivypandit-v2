@@ -26,13 +26,43 @@ export default function Home() {
         </div>
         <div className="buttons">
           <Link className="btn primary" href="/explore">Explore IvyPandit</Link>
-          <Link className="btn secondary" href="/research/consciousness/avadhana">Start with Featured Scholarship</Link>
+          <Link className="btn secondary" href="https://www.youtube.com/watch?v=XkEqWuym3dc">Watch Introduction</Link>
         </div>
         <p style={{marginTop:'14px'}}><Link className="textLink" href="/evidence">Examine the evidence behind IvyPandit’s interdisciplinary work →</Link></p>
       </div>
     </section>
 
     <main className="main">
+      <section className={styles.identityCard}>
+        <p className="kicker">Founder</p>
+        <h2>Nishant K. Mishra, MD, PhD</h2>
+        <p>Physician-scientist • Neurologist • Neuroscience researcher • Student of Sanskrit and Indian Knowledge Systems</p>
+        <p className={styles.identityLine}>IvyPandit brings together brain science, Sanskrit, and Indian Knowledge Systems through careful scholarship, open inquiry, and clear distinctions between tradition, interpretation, hypothesis, and evidence.</p>
+      </section>
+
+
+      <section className="featuredTalks" style={{marginTop:'34px',marginBottom:'48px'}}>
+        <div className="sectionHeaderRow"><div><p className="kicker">Start here</p><h2 className="sectionTitle">Introducing IvyPandit</h2></div><a className="textLink" href="https://www.youtube.com/watch?v=XkEqWuym3dc" target="_blank" rel="noopener noreferrer">Watch on YouTube →</a></div>
+        <div className="talkGrid">
+          <div className="videoEmbed"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/XkEqWuym3dc" title="Introducing IvyPandit — platform launch video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></div>
+          <div className="talkCopy"><span className="label">PLATFORM LAUNCH</span><h3>Why IvyPandit?</h3><p>In this launch video, Dr. Nishant K. Mishra introduces the purpose of IvyPandit: to create a serious public space where Sanskrit, Indian Knowledge Systems, neuroscience, medicine, and contemporary scholarship can meet without confusing tradition, interpretation, hypothesis, and scientific evidence.</p><p>It is the best short introduction to the platform before exploring its research, study resources, lectures, and collaborative projects.</p><Link className="textLink" href="/about">About IvyPandit →</Link><br/><Link className="textLink" href="/editorial-policy">Editorial & Evidence Policy →</Link></div>
+        </div>
+      </section>
+
+
+      <section className="manifesto">
+        <p className="kicker">The IvyPandit approach</p>
+        <h2 className="sectionTitle">Tradition deserves understanding before judgment.<br/>Scientific claims deserve evidence before acceptance.</h2>
+        <p>IvyPandit studies Sanskrit and Indian Knowledge Systems in their historical and intellectual contexts while asking new questions through neuroscience, medicine, cognitive science, behavioral science, and other modern disciplines.</p>
+        <p>The aim is neither to declare that ancient texts anticipated modern science nor to dismiss traditional knowledge because it is old. It is to understand carefully, ask better questions, and distinguish evidence from interpretation.</p>
+        <p><Link className="textLink" href="/editorial-policy">Read the Editorial & Evidence Policy →</Link><Link className="textLink" href="/evidence">Explore the Evidence Library →</Link></p>
+      </section>
+
+
+
+
+
+
       <section className="panel" aria-label="Start Here" style={{marginBottom:'28px',padding:'28px',background:'#fffaf1'}}>
         <p className="kicker">New to IvyPandit?</p>
         <h2 className="sectionTitle">What would you like to discover?</h2>
@@ -45,6 +75,23 @@ export default function Home() {
         </div>
         <p style={{marginTop:'18px'}}><Link className="btn primary" href="/start-here">First visit? Take the guided tour →</Link></p>
       </section>
+
+      <section className="initiativeSection" style={{marginTop:'34px',marginBottom:'48px'}}>
+        <div>
+          <p className="kicker">Definitive guide</p>
+          <h2 className="sectionTitle">Avadhāna and the Indian Science of Attention</h2>
+          <p>What can a living Indian tradition of structured multi-stream performance teach us about attention, working memory, language, improvisation, and long-duration expertise?</p>
+          <p>This evidence-aware article explains what Avadhāna is, why “multitasking” is an incomplete label, which cognitive mechanisms can be tested, and what responsible neuroscience research should do next.</p>
+          <Link className="btn primary" href="/research/consciousness/avadhana">Read the definitive article</Link>
+        </div>
+        <div className="panel">
+          <span className="label">AVADHĀNA • ATTENTION • MEMORY</span>
+          <h3>Tradition understood. Hypotheses tested.</h3>
+          <p>Historical practice, Indian conceptual vocabulary, cognitive task analysis, research safeguards, scholarly references, and a staged behavioral–EEG–MRI–longitudinal program.</p>
+          <Link className="textLink" href="/speaking/avadhana-indian-science-attention">Explore the related lecture →</Link>
+        </div>
+      </section>
+
 
       <section className="panel" aria-label="Brain Health and Indian Traditions" style={{marginBottom:'30px',padding:'24px'}}>
         <p className="kicker">Community lecture series in development</p>
@@ -114,49 +161,6 @@ export default function Home() {
           <div className="talkCopy"><span className="label">INTERDISCIPLINARY INQUIRY • HINDI</span><h3 lang="hi">तर्पण और संध्योपासना के पीछे का विज्ञान</h3><p><b>The Hidden Cognitive Science of Vedic Rituals</b></p><p>Dr. Nishant K. Mishra explores ancestral remembrance, tarpaṇa, Sandhyopāsanā, attention, memory, gratitude, and the place of daily ritual in contemporary life.</p><p>The lecture opens questions for neuroscience and psychology while keeping traditional meaning, scientific analogy, and testable hypotheses distinct.</p><Link className="textLink" href="/articles/pitrapaksha-memory-grief">Explore memory, grief & ancestral remembrance</Link><br/><Link className="textLink" href="/gayatri">Gāyatrī & Sandhyopāsanā Study Hub</Link><br/><Link className="textLink" href="/videos#inquiry">More interdisciplinary lectures</Link></div>
         </div>
       </section>
-
-      <section className={styles.identityCard}>
-        <p className="kicker">Founder</p>
-        <h2>Nishant K. Mishra, MD, PhD</h2>
-        <p>Physician-scientist • Neurologist • Neuroscience researcher • Student of Sanskrit and Indian Knowledge Systems</p>
-        <p className={styles.identityLine}>IvyPandit brings together brain science, Sanskrit, and Indian Knowledge Systems through careful scholarship, open inquiry, and clear distinctions between tradition, interpretation, hypothesis, and evidence.</p>
-      </section>
-
-      <section className="initiativeSection" style={{marginTop:'34px',marginBottom:'48px'}}>
-        <div>
-          <p className="kicker">Definitive guide</p>
-          <h2 className="sectionTitle">Avadhāna and the Indian Science of Attention</h2>
-          <p>What can a living Indian tradition of structured multi-stream performance teach us about attention, working memory, language, improvisation, and long-duration expertise?</p>
-          <p>This evidence-aware article explains what Avadhāna is, why “multitasking” is an incomplete label, which cognitive mechanisms can be tested, and what responsible neuroscience research should do next.</p>
-          <Link className="btn primary" href="/research/consciousness/avadhana">Read the definitive article</Link>
-        </div>
-        <div className="panel">
-          <span className="label">AVADHĀNA • ATTENTION • MEMORY</span>
-          <h3>Tradition understood. Hypotheses tested.</h3>
-          <p>Historical practice, Indian conceptual vocabulary, cognitive task analysis, research safeguards, scholarly references, and a staged behavioral–EEG–MRI–longitudinal program.</p>
-          <Link className="textLink" href="/speaking/avadhana-indian-science-attention">Explore the related lecture →</Link>
-        </div>
-      </section>
-
-      <section className="featuredTalks" style={{marginTop:'34px',marginBottom:'48px'}}>
-        <div className="sectionHeaderRow"><div><p className="kicker">Start here</p><h2 className="sectionTitle">Introducing IvyPandit</h2></div><a className="textLink" href="https://www.youtube.com/watch?v=XkEqWuym3dc" target="_blank" rel="noopener noreferrer">Watch on YouTube →</a></div>
-        <div className="talkGrid">
-          <div className="videoEmbed"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/XkEqWuym3dc" title="Introducing IvyPandit — platform launch video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></div>
-          <div className="talkCopy"><span className="label">PLATFORM LAUNCH</span><h3>Why IvyPandit?</h3><p>In this launch video, Dr. Nishant K. Mishra introduces the purpose of IvyPandit: to create a serious public space where Sanskrit, Indian Knowledge Systems, neuroscience, medicine, and contemporary scholarship can meet without confusing tradition, interpretation, hypothesis, and scientific evidence.</p><p>It is the best short introduction to the platform before exploring its research, study resources, lectures, and collaborative projects.</p><Link className="textLink" href="/about">About IvyPandit →</Link><br/><Link className="textLink" href="/editorial-policy">Editorial & Evidence Policy →</Link></div>
-        </div>
-      </section>
-
-      <section className="manifesto">
-        <p className="kicker">The IvyPandit approach</p>
-        <h2 className="sectionTitle">Tradition deserves understanding before judgment.<br/>Scientific claims deserve evidence before acceptance.</h2>
-        <p>IvyPandit studies Sanskrit and Indian Knowledge Systems in their historical and intellectual contexts while asking new questions through neuroscience, medicine, cognitive science, behavioral science, and other modern disciplines.</p>
-        <p>The aim is neither to declare that ancient texts anticipated modern science nor to dismiss traditional knowledge because it is old. It is to understand carefully, ask better questions, and distinguish evidence from interpretation.</p>
-        <p><Link className="textLink" href="/editorial-policy">Read the Editorial & Evidence Policy →</Link><Link className="textLink" href="/evidence">Explore the Evidence Library →</Link></p>
-      </section>
-
-
-
-
 
       <section className="initiativeSection">
         <div>
