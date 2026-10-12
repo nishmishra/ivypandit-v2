@@ -41,6 +41,13 @@ export default function Home() {
       </section>
 
 
+      <section className="panel" aria-label="Latest IvyPandit newsletter" style={{marginTop:'34px',marginBottom:'34px',padding:'28px',borderLeft:'5px solid #7f6a3a',background:'#f8f5ee'}}>
+        <p className="kicker">The IvyPandit Letter • October 2026</p>
+        <h2 className="sectionTitle">From Śāstra to Science: Attention, Memory & New Conversations</h2>
+        <p>Read the latest four-week digest: Avadhāna and attention, Sanskrit research methods, Pitṛpakṣa and memory, recent public scholarship, and open interdisciplinary questions.</p>
+        <Link className="btn primary" href="/articles/ivypandit-letter-october-2026">Read the October letter</Link>
+      </section>
+
       <section className="featuredTalks" style={{marginTop:'34px',marginBottom:'48px'}}>
         <div className="sectionHeaderRow"><div><p className="kicker">Start here</p><h2 className="sectionTitle">Introducing IvyPandit</h2></div><a className="textLink" href="https://www.youtube.com/watch?v=XkEqWuym3dc" target="_blank" rel="noopener noreferrer">Watch on YouTube →</a></div>
         <div className="talkGrid">
