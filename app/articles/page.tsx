@@ -1,6 +1,13 @@
 export default function Articles(){return <>
   <section className="pageHero"><div className="eyebrow">Definitive guides • Scholarly essays • Evidence-aware inquiry</div><h1>Articles</h1><p>Canonical, source-conscious articles connecting Indian Knowledge Systems, neuroscience, learning, culture, health, and public scholarship.</p></section>
   <main className="content">
+    <section className="panel" aria-label="IvyPandit October 2026 newsletter" style={{marginBottom:'34px',padding:'28px',borderLeft:'5px solid #7f6a3a',background:'#f8f5ee'}}>
+      <p className="kicker">The IvyPandit Letter • October 2026</p>
+      <h2 className="sectionTitle">From Śāstra to Science: Attention, Memory & New Conversations</h2>
+      <p>A four-week digest of IvyPandit scholarship: Avadhāna and attention, Sanskrit research methods, Pitṛpakṣa and memory, public lectures, and open interdisciplinary questions.</p>
+      <a className="btn primary" href="/articles/ivypandit-letter-october-2026">Read the October letter</a>
+    </section>
+
       <section className="panel" aria-label="Yogvani October 2026 featured article" style={{marginBottom:'34px',padding:'28px',borderLeft:'5px solid #c7932d',background:'#fff7e7'}}>
         <p className="kicker">New publication • Yogvani • October 2026</p>
         <h2 className="sectionTitle">From Śāstra to the Laboratory</h2>
