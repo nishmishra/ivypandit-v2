@@ -3,10 +3,11 @@ import ContinueExploring from '../../components/ContinueExploring';
 
 export default function ShastraStudyPage() {
   const internalHubs = [
-    { title: 'Gāyatrī & Sandhyā', href: '/gayatri', text: 'Mantra, meaning, recitation, daily practice, attention, breath, and questions for modern research.' },
-    { title: 'Bhagavad Gītā', href: '/gita', text: 'Dharma, crisis, action, self-knowledge, resilience, and careful interdisciplinary interpretation.' },
+    { title: 'Devī Bhāgavata — Current Study', href: '/devi-bhagavata', text: 'Sequential full readings, chapter guides, vocabulary and shorter reviews in the Śākta tradition.' },
+    { title: 'Gāyatrī & Sandhyā', href: '/gayatri', text: 'Mantra, traditional meaning, recitation, Sandhyā and daily devotional practice.' },
+    { title: 'Bhagavad Gītā', href: '/gita', text: 'Dharma, disciplined action, self-knowledge and traditional interpretation of the Gītā.' },
     { title: 'Mahābhārata', href: '/mahabharata', text: 'Leadership, conflict, memory, moral complexity, narrative, and human experience.' },
-    { title: 'Bhāgavata', href: '/bhagavatam', text: 'Bhakti, sacred narrative, meaning, memory, surrender, and spiritual psychology.' },
+    { title: 'Bhāgavata', href: '/bhagavatam', text: 'Bhakti, sacred narrative, surrender and the text’s devotional theology.' },
   ];
 
   const collections = [
@@ -35,9 +36,9 @@ export default function ShastraStudyPage() {
   return (
     <main className="pageShell">
       <section className="pageHero compact">
-        <p className="eyebrow">Śāstra Study</p>
-        <h1>Explore the Tradition</h1>
-        <p>IvyPandit approaches Sanskrit literature first as a living intellectual and spiritual tradition — with attention to source, commentary, context, language, and only then to modern interdisciplinary questions.</p>
+        <p className="eyebrow">Religious Study • Śāstra & Sanskrit</p>
+        <h1>Śāstra, Dharma & Devotion</h1>
+        <p>Study Hindu scriptures, traditional commentary, philosophy, devotion and religious practice, with attention to language, context and the tradition’s own understanding.</p>
       </section>
 
       <section className="content">

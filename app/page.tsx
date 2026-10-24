@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import SectionPathways from '../components/SectionPathways';
 import styles from './home.module.css';
 
 export default function Home() {
@@ -17,22 +18,23 @@ export default function Home() {
       <div className="heroInner">
         <div className="eyebrow">Sanskrit • Indian Knowledge Systems • Science • Public Scholarship</div>
         <h1>IVY PANDIT</h1>
-        <h2>Ancient Wisdom. Modern Neuroscience.</h2>
-        <p>A scholarly and educational platform for respectful engagement with tradition, scientific curiosity, and rigorous interdisciplinary inquiry.</p>
+        <h2>Religious Study & Scientific Research</h2>
+        <p>Explore Hindu scriptures and religious practice, or enter the world of neuroscience and medicine. Interdisciplinary questions have their own clearly labeled space.</p>
         <div className="heroQuotes">
           <span className="quotePill"><b>परम्परा</b><span>Respect tradition.</span></span>
           <span className="quotePill"><b>जिज्ञासा</b><span>Encourage curiosity.</span></span>
           <span className="quotePill"><b>अनुसन्धानम्</b><span>Demand rigor.</span></span>
         </div>
         <div className="buttons">
-          <Link className="btn primary" href="/explore">Explore IvyPandit</Link>
-          <Link className="btn secondary" href="https://www.youtube.com/watch?v=XkEqWuym3dc">Watch Introduction</Link>
+          <Link className="btn primary" href="/shastra-study">Religious Study</Link>
+          <Link className="btn secondary" href="/research">Science & Research</Link>
         </div>
         <p style={{marginTop:'14px'}}><Link className="textLink" href="/evidence">Examine the evidence behind IvyPandit’s interdisciplinary work →</Link></p>
       </div>
     </section>
 
     <main className="main">
+      <SectionPathways/>
       <section className={styles.identityCard}>
         <p className="kicker">Founder</p>
         <h2>Nishant K. Mishra, MD, PhD</h2>
@@ -184,10 +186,10 @@ export default function Home() {
       </section>
 
       <section className={`${styles.featuredRefined} featuredTalks`}>
-        <div className="sectionHeaderRow"><div><p className="kicker">Featured talks</p><h2 className="sectionTitle">Hear the argument, then explore the evidence.</h2></div><Link className="textLink" href="/videos">Browse video collections →</Link></div>
+        <div className="sectionHeaderRow"><div><p className="kicker">Interdisciplinary Inquiry • Featured talks</p><h2 className="sectionTitle">Questions at the meeting point of disciplines.</h2></div><Link className="textLink" href="/videos">Browse video collections →</Link></div>
         <div className="talkGrid">
-          <div className="videoEmbed"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/CbtzXqFRGKI" title="Sanskrit, Indian Knowledge Systems and Scientific Inquiry" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></div>
-          <div className="talkCopy"><span className="label">ACADEMIC / INTERDISCIPLINARY</span><h3>Sanskrit, Indian Knowledge Systems & Scientific Inquiry</h3><p>Engaging classical knowledge respectfully while distinguishing textual interpretation, research hypotheses, and scientific evidence.</p><a className="textLink" href="/videos#academic">Academic collection →</a><br/><a className="textLink" href="/videos#tradition">Tradition & Dharma collection →</a><br/><a className="textLink" href="https://www.youtube.com/@IvyPandit" target="_blank" rel="noopener noreferrer">YouTube channel →</a></div>
+          <div className="videoEmbed"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/CTgAsLs4IUY" title="Indian Knowledge Systems and New Directions for Neuroscience" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></div>
+          <div className="talkCopy"><span className="label">ACADEMIC / INTERDISCIPLINARY</span><h3>Indian Knowledge Systems & New Directions for Neuroscience</h3><p>Engaging classical knowledge respectfully while distinguishing textual interpretation, research hypotheses, and scientific evidence.</p><a className="textLink" href="/videos#inquiry">Interdisciplinary collection →</a><br/><a className="textLink" href="/videos#tradition">Tradition & Dharma collection →</a><br/><a className="textLink" href="https://www.youtube.com/@IvyPandit" target="_blank" rel="noopener noreferrer">YouTube channel →</a></div>
         </div>
         <div className="talkGrid" style={{marginTop:'28px'}}>
           <div className="videoEmbed"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/vArP8eE0ROU" title="Sandhyopasana, samskara, brain development and modern science" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></div>

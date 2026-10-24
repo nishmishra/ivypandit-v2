@@ -37,7 +37,7 @@ export default function KnowledgeNavigator({initialQuery=''}:{initialQuery?:stri
       {results.map(item=>{
         const external=item.external || item.href.startsWith('http');
         const props=external?{target:'_blank',rel:'noopener noreferrer'}:{};
-        return <a key={item.id} className="panel linkedCard" href={item.href} {...props}>
+        return <a key={item.id} className={`panel linkedCard navigatorDomain ${item.track==='Scientific Research'?'scientificDomain':item.track==='Tradition / Śāstra'?'religiousDomain':item.track==='Interdisciplinary Inquiry'?'inquiryDomain':''}`} href={item.href} {...props}>
           <span className="label">{item.type} • {item.language}</span>
           <h2>{item.title}</h2>
           <p>{item.summary}</p>

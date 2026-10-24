@@ -31,3 +31,5 @@
   .nav a{padding:12px 6px;border-bottom:1px solid #ead9bf}
   .nav .contactLink{margin-top:9px;text-align:center;padding:12px}
 }
+
+.nav a[href="/shastra-study"]{color:#8b3b16;border-bottom-color:#a44c20}.nav a[href="/research"]{color:#124a70;border-bottom-color:#2c6c9c}

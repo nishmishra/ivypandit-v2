@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { headers } from 'next/headers';
 import SiteHeader from '../components/SiteHeader';
+import { SectionNavigation } from '../components/SectionPathways';
+import { sectionForPath } from '../data/sections';
 import { Analytics } from '@vercel/analytics/next';
 
 const baseUrl = 'https://www.ivypandit.com';
@@ -14,7 +16,7 @@ const pageMeta: Record<string, { title: string; description: string }> = {
   '/start-here': { title: 'Start Here | Your Guide to IvyPandit', description: 'Find your way through IvyPandit: Śāstra, Sanskrit, guided learning, scientific research, and interdisciplinary inquiry.' },
   '/explore': { title: 'Explore IvyPandit | Knowledge Navigator', description: 'Search IvyPandit by topic, text, practice, scientific domain, content type, language, and scholarly pathway.' },
   '/iks': { title: 'Indian Knowledge Systems Hub | IvyPandit', description: 'Curated pathways into Indian Knowledge Systems: texts, scholarship, institutions, archives, journals, opportunities, and research resources.' },
-  '/shastra-study': { title: 'Śāstra & Sanskrit Study | IvyPandit', description: 'Study pathways for Veda, Upaniṣad, Bhagavad Gītā, Mahābhārata, Purāṇa, mantra, Sanskrit, and traditional learning.' },
+  '/shastra-study': { title: 'Religious Study | Śāstra, Dharma & Devotion | IvyPandit', description: 'Study pathways for Veda, Upaniṣad, Bhagavad Gītā, Mahābhārata, Purāṇa, mantra, Sanskrit, and traditional learning.' },
   '/research': { title: 'Scientific Work | Nishant K. Mishra, MD, PhD', description: 'Scientific work across stroke, reperfusion, neuroimaging, post-stroke epilepsy, biomarkers, clinical trials, cognition, language, neuroplasticity, and cultural neuroscience.' },
   '/sbkb': { title: 'Sanskrit Biomedical Knowledge Base | IvyPandit', description: 'A source-conscious framework for moving from Sanskrit biomedical observations to transparent, testable research questions.' },
   '/questions': { title: 'Research Questions & Invitations | IvyPandit', description: 'Open interdisciplinary questions inviting Sanskritists, scientists, physicians, philosophers, practitioners, and institutions into rigorous collaboration.' },
@@ -67,7 +69,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return { metadataBase: new URL(baseUrl), title: meta.title, description: meta.description, alternates: { canonical: pathname, languages }, openGraph: { type: 'website', url: `${baseUrl}${pathname === '/' ? '' : pathname}`, siteName: 'IvyPandit', title: meta.title, description: meta.description, images: [{ url: '/images/ivy-pandit-feature-banner.jpg', width: 1200, height: 630, alt: 'IvyPandit — Tradition, Curiosity, Science' }] }, twitter: { card: 'summary_large_image', title: meta.title, description: meta.description, images: ['/images/ivy-pandit-feature-banner.jpg'] } };
 }
 
-const navEn: Array<[string,string]> = [['Start Here','/start-here'],['Śāstra & Sanskrit','/shastra-study'],['Science & Research','/research'],['Learn & Watch','/videos'],['Articles & Insights','/articles'],['About & Collaborate','/collaborate'],['Explore All','/explore']];
+const navEn: Array<[string,string]> = [['Start Here','/start-here'],['Religious Study','/shastra-study'],['Science & Research','/research'],['Learn & Watch','/videos'],['Articles & Insights','/articles'],['About & Collaborate','/collaborate'],['Explore All','/explore']];
 const navHi: Array<[string,string]> = [['अनुसन्धान','/hi/research'],['प्रश्न','/hi/prashna'],['व्याख्यान','/hi/speaking'],['सहयोग','/hi/sahyog'],['English','/']];
 const navSa: Array<[string,string]> = [['ज्ञानप्रणाली','/sa/iks'],['शास्त्रम्','/sa/shastra'],['अनुसन्धानम्','/sa/research'],['व्याख्यानानि','/sa/videos'],['वक्तृत्वम्','/sa/speaking'],['सहकारः','/sa/sahayoga'],['परिचयः','/sa/about']];
 
@@ -75,10 +77,11 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const pathname = cleanPath(headers().get('x-current-path') || '/'); const lang = routeLanguage(pathname); const alternatives = alternatePaths(pathname); const nav = lang === 'hi' ? navHi : lang === 'sa' ? navSa : navEn; const brandHome = lang === 'hi' ? '/hi' : lang === 'sa' ? '/sa' : '/'; const hiHref = alternatives.hi || '/hi'; const saHref = alternatives.sa || '/sa'; const enHref = alternatives.en || '/';
   const jsonLd = {'@context':'https://schema.org','@graph':[{'@type':'WebSite','@id':`${baseUrl}/#website`,url:baseUrl,name:'IvyPandit',description:'Independent scholarly and educational platform connecting Sanskrit, Indian Knowledge Systems, neuroscience, medicine, and public scholarship.'},{'@type':'Person','@id':`${baseUrl}/about#nishant-mishra`,name:'Nishant K. Mishra',honorificSuffix:'MD, PhD',url:`${baseUrl}/about`,jobTitle:'Neurologist and physician-scientist',sameAs:['https://scholar.google.com/citations?user=1n2JUc8AAAAJ&hl=en','https://www.linkedin.com/in/ivypandit/','https://www.youtube.com/@IvyPandit','https://x.com/IvyPandit']} ]};
 
-  return <html lang={lang}><body>
+  return <html lang={lang}><body data-section={sectionForPath(pathname)}>
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(jsonLd)}} />
     <div className="topbar"><div className="topInner"><div><Link href={enHref}>English</Link><span>|</span><Link href={hiHref}>हिन्दी</Link><span>|</span><Link href={saHref}>संस्कृतम्</Link></div><div className="social" style={{ flexWrap: 'wrap' }}><a href={whatsappChannelUrl} target="_blank" rel="noopener noreferrer" style={{ fontWeight: 700 }}>Join our WhatsApp channel</a><a href={youtubeChannelUrl} target="_blank" rel="noopener noreferrer">Watch on YouTube</a><a href="https://x.com/IvyPandit" target="_blank" rel="noopener noreferrer">X</a><a href="https://www.linkedin.com/in/ivypandit/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div></div></div>
     <SiteHeader brandHome={brandHome} lang={lang} nav={nav} />
+    {lang==='en'&&<SectionNavigation pathname={pathname}/>}
     {children}
     <footer className="footer"><div className="footerGrid">
       <div><div className="footBrand">☀ IVY PANDIT</div><p>{lang==='sa'?<>परम्परां सम्मानयतु।<br/>जिज्ञासां पोषयतु।<br/>अनुसन्धानं कठोरं भवतु।</>:lang==='hi'?<>परम्परा का सम्मान।<br/>जिज्ञासा को प्रोत्साहन।<br/>अनुसन्धान में कठोरता।</>:<>Respect tradition.<br/>Encourage curiosity.<br/>Demand rigor.</>}</p></div>

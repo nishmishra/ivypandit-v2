@@ -7,7 +7,7 @@ export default function Research(){
       <div className={styles.heroInner}>
         <div className={styles.heroCopy}>
           <div className={styles.heroEyebrow}>Research & Scientific Work</div>
-          <h1>Scientific Work</h1>
+          <h1>Science & Research</h1>
           <p className={styles.heroLead}>Research across stroke, reperfusion, neuroimaging, post-stroke epilepsy, biomarkers, clinical trials, cognition, language, neuroplasticity, and emerging cultural neuroscience.</p>
           <div className={styles.heroTags}>
             <span>Stroke</span><span>Perfusion Imaging</span><span>Post-Stroke Epilepsy</span><span>Precision Neuroscience</span>

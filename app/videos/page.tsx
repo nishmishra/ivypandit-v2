@@ -3,21 +3,21 @@ const featuredAcademic = [
   {
     id: 'dr-H6IToGx4',
     start: 1104,
-    label: 'RESEARCH / ACADEMIC',
+    label: 'ACADEMIC / INTERDISCIPLINARY',
     title: 'Mahābhārata & Neuroscience — Invited Sanskrit Forum Talk',
     summary: 'An invited scholarly appearance exploring how questions from the Mahābhārata can be placed in disciplined conversation with neuroscience, while keeping textual interpretation and scientific evidence distinct.'
   },
   {
     id: 'cNz4HNv5LdI',
     start: 0,
-    label: 'RESEARCH / ACADEMIC',
+    label: 'ACADEMIC / INTERDISCIPLINARY',
     title: 'Attention, Memory & Cultural Expertise',
     summary: 'Attention, memory, recitation, learning, and long-duration cultural expertise considered through the lens of contemporary cognitive and neuroscience research.'
   },
   {
     id: 'FIZ5jzLfbxQ',
     start: 0,
-    label: 'RESEARCH / ACADEMIC',
+    label: 'ACADEMIC / INTERDISCIPLINARY',
     title: 'IKS, Evidence & Research Method',
     summary: 'Philological and historical rigor alongside contemporary scientific methods, with emphasis on distinguishing interpretation, hypothesis, and evidence.'
   }
@@ -115,11 +115,11 @@ export default function Videos(){return <>
 
   <section className="pageHero inquiryHero" style={{padding:'54px 22px'}}>
     <div className="eyebrow">IvyPandit Learning</div>
-    <h1>Talks, Lectures & Traditional Learning</h1>
+    <h1>Lectures: Religion, Science & Inquiry</h1>
     <p>Three clearly marked pathways: research and academic scholarship, interdisciplinary inquiry, and explicitly traditional Hindu learning.</p>
   </section>
 
-  <main className="content"><section className="panel" style={{marginBottom:28}}><p className="kicker">Watch • Read • Continue</p><h2>Choose a guided learning pathway</h2><p>Start with five introductory conversations, or join the current Devī Bhāgavata study. Full lectures and shorter discussions are clearly separated in the lesson guides.</p><div className="buttons"><a className="btn primary" href="/start-here">Start Here: 5 videos →</a><a className="btn secondary" href="/devi-bhagavata">Devī Bhāgavata: sequential study →</a></div></section><LearningCollections/>
+  <main className="content"><section className="panel" style={{marginBottom:28}}><p className="kicker">Watch • Read • Continue</p><h2>Choose a section or a guided learning pathway</h2><nav className="videoDomainLinks" aria-label="Video categories"><a className="religiousTab" href="#tradition">Religious Study ↓</a><a className="scientificTab" href="#academic">Science & Research ↓</a><a className="inquiryTab" href="#inquiry">Interdisciplinary Inquiry ↓</a></nav><p>Start with five introductory conversations, or join the current Devī Bhāgavata study. Full lectures and shorter discussions are clearly separated in the lesson guides.</p><div className="buttons"><a className="btn primary" href="/start-here">Start Here: 5 videos →</a><a className="btn secondary" href="/devi-bhagavata">Devī Bhāgavata: sequential study →</a></div></section><LearningCollections/>
     <section className="panel" style={{marginBottom:'34px',padding:'22px 26px'}}>
       <p className="kicker">Scholar & speaker</p>
       <h2 style={{marginBottom:'8px'}}>Nishant K. Mishra, MD, PhD</h2>
@@ -134,22 +134,19 @@ export default function Videos(){return <>
       </div>
     </section>
 
-    <section id="academic">
-      <p className="kicker">Collection I • Research / Academic</p>
-      <h2 className="sectionTitle">Neuroscience, medicine, cognition, Sanskrit & Indian Knowledge Systems</h2>
-      <p>This collection presents IvyPandit&apos;s academic and research-oriented work across neuroscience, medicine, cognition, Sanskrit, and Indian Knowledge Systems. Some talks present established evidence and scholarly work; others focus on research method and the disciplined generation of testable questions from classical sources.</p>
-
-      <div className="sectionHeaderRow" style={{marginTop:'30px'}}>
-        <div><p className="kicker">Selected talks</p><h2 className="sectionTitle">Research & academic scholarship</h2></div>
-        <a className="textLink" href="https://www.youtube.com/@IvyPandit/videos" target="_blank" rel="noopener noreferrer">View all talks →</a>
-      </div>
-      <div className="curatedVideoGrid">
-        {featuredAcademic.map((talk)=><a key={talk.id} className="videoCard" href={`https://www.youtube.com/watch?v=${talk.id}${talk.start ? `&t=${talk.start}s` : ''}`} target="_blank" rel="noopener noreferrer"><img src={`https://i.ytimg.com/vi/${talk.id}/hqdefault.jpg`} alt={talk.title} loading="lazy"/><div><span className="label">{talk.label}</span><h2>{talk.title}</h2><p>{talk.summary}</p><strong>Watch on YouTube →</strong></div></a>)}
+    <section id="academic" className="videoDomain scientificDomain">
+      <p className="kicker">Science & Research • Evidence & Clinical Work</p>
+      <h2 className="sectionTitle">Clinical neuroscience, publications & evidence</h2>
+      <p>Begin with the scientific record, clinical research and evidence reviews. Research proposals and conversations prompted by classical texts are labeled separately under Interdisciplinary Inquiry below.</p>
+      <div className="resourceGrid">
+        <a className="panel linkedCard" href="/research"><span className="label">Scientific work</span><h3>Neuroscience & Medicine</h3><p>Stroke, reperfusion, neuroimaging, post-stroke epilepsy, cognition and language.</p><span>Explore scientific work →</span></a>
+        <a className="panel linkedCard" href="/publications"><span className="label">Scientific publications</span><h3>Read the papers</h3><p>Published studies and reviews with links to their journal sources.</p><span>View publications →</span></a>
+        <a className="panel linkedCard" href="/evidence"><span className="label">Evidence reviews</span><h3>Examine the evidence</h3><p>Annotated literature, methods, limitations and the strength of support for a claim.</p><span>Open evidence library →</span></a>
       </div>
     </section>
 
-    <section id="inquiry" style={{marginTop:'54px'}}>
-      <p className="kicker">Collection II • Interdisciplinary Inquiry</p>
+    <section id="inquiry" className="videoDomain inquiryDomain" style={{marginTop:'54px'}}>
+      <p className="kicker">Interdisciplinary Inquiry • Hypotheses & Interpretation</p>
       <h2 className="sectionTitle">Classical sources as questions, not shortcuts to evidence</h2>
       <p>These talks are exploratory and hypothesis-generating. They place Sanskrit texts, Indian Knowledge Systems, cultural practices, psychology, and neuroscience in conversation while keeping textual interpretation, analogy, research questions, and established scientific evidence distinct.</p>
 
@@ -158,12 +155,12 @@ export default function Videos(){return <>
         <a className="textLink" href="https://www.youtube.com/@IvyPandit/videos" target="_blank" rel="noopener noreferrer">View all talks →</a>
       </div>
       <div className="curatedVideoGrid">
-        {featuredInquiry.map((talk)=><a key={talk.id} className="videoCard" href={`https://www.youtube.com/watch?v=${talk.id}${talk.start ? `&t=${talk.start}s` : ''}`} target="_blank" rel="noopener noreferrer"><img src={`https://i.ytimg.com/vi/${talk.id}/hqdefault.jpg`} alt={talk.title} loading="lazy"/><div><span className="label">{talk.label}</span><h2>{talk.title}</h2><p>{talk.summary}</p><strong>Watch on YouTube →</strong></div></a>)}
+        {[...featuredAcademic,...featuredInquiry].map((talk)=><a key={talk.id} className="videoCard" href={`https://www.youtube.com/watch?v=${talk.id}${talk.start ? `&t=${talk.start}s` : ''}`} target="_blank" rel="noopener noreferrer"><img src={`https://i.ytimg.com/vi/${talk.id}/hqdefault.jpg`} alt={talk.title} loading="lazy"/><div><span className="label">{talk.label}</span><h2>{talk.title}</h2><p>{talk.summary}</p><strong>Watch on YouTube →</strong></div></a>)}
       </div>
     </section>
 
-    <section id="tradition" style={{marginTop:'58px'}}>
-      <p className="kicker">Collection III • Tradition / Śāstra / Culture</p>
+    <section id="tradition" className="videoDomain religiousDomain" style={{marginTop:'58px'}}>
+      <p className="kicker">Religious Study • Tradition / Śāstra / Culture</p>
       <h2 className="sectionTitle">Hindu traditions, Purāṇa, ritual, festivals, recitation & lived practice</h2>
       <p>This collection is explicitly traditional and cultural. It includes discussions of Hindu identity and saṃskṛti, Purāṇic and scriptural themes, vrata and festivals, ancestral traditions, mantra, Sandhyā, Sanskrit recitation, and lived Hindu practice.</p>
 
