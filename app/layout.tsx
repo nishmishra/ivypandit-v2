@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { headers } from 'next/headers';
 import SiteHeader from '../components/SiteHeader';
-import { SectionNavigation } from '../components/SectionPathways';
+import SectionNavigation from '../components/SectionNavigation';
 import { sectionForPath } from '../data/sections';
 import { Analytics } from '@vercel/analytics/next';
 
@@ -81,7 +81,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(jsonLd)}} />
     <div className="topbar"><div className="topInner"><div><Link href={enHref}>English</Link><span>|</span><Link href={hiHref}>हिन्दी</Link><span>|</span><Link href={saHref}>संस्कृतम्</Link></div><div className="social" style={{ flexWrap: 'wrap' }}><a href={whatsappChannelUrl} target="_blank" rel="noopener noreferrer" style={{ fontWeight: 700 }}>Join our WhatsApp channel</a><a href={youtubeChannelUrl} target="_blank" rel="noopener noreferrer">Watch on YouTube</a><a href="https://x.com/IvyPandit" target="_blank" rel="noopener noreferrer">X</a><a href="https://www.linkedin.com/in/ivypandit/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div></div></div>
     <SiteHeader brandHome={brandHome} lang={lang} nav={nav} />
-    {lang==='en'&&<SectionNavigation pathname={pathname}/>}
+    {lang==='en'&&<SectionNavigation/>}
     {children}
     <footer className="footer"><div className="footerGrid">
       <div><div className="footBrand">☀ IVY PANDIT</div><p>{lang==='sa'?<>परम्परां सम्मानयतु।<br/>जिज्ञासां पोषयतु।<br/>अनुसन्धानं कठोरं भवतु।</>:lang==='hi'?<>परम्परा का सम्मान।<br/>जिज्ञासा को प्रोत्साहन।<br/>अनुसन्धान में कठोरता।</>:<>Respect tradition.<br/>Encourage curiosity.<br/>Demand rigor.</>}</p></div>
