@@ -4,235 +4,69 @@ import styles from './home.module.css';
 
 export default function Home() {
   return <>
-    <style>{`
-      @media print {
-        .topbar, .header, .footer { display: none !important; }
-        .hero { min-height: auto !important; break-after: avoid; }
-        .heroInner { padding-top: 42px !important; padding-bottom: 42px !important; }
-        .gatewayCard, .initiativeSection, .initiativeCard, .talkGrid, .panel, .evidenceGrid > div, .missionBox { break-inside: avoid; page-break-inside: avoid; }
-        .main { padding-top: 28px !important; padding-bottom: 20px !important; }
-      }
-    `}</style>
-
-    <section className="hero">
+    <section className={`hero ${styles.compactHero}`}>
       <div className="heroInner">
-        <div className="eyebrow">Sanskrit • Indian Knowledge Systems • Science • Public Scholarship</div>
+        <div className="eyebrow">Sanskrit • Indian Knowledge Systems • Neuroscience</div>
         <h1>IVY PANDIT</h1>
-        <h2>Religious Study & Scientific Research</h2>
-        <p>Explore Hindu scriptures and religious practice, or enter the world of neuroscience and medicine. Interdisciplinary questions have their own clearly labeled space.</p>
-        <div className="heroQuotes">
-          <span className="quotePill"><b>परम्परा</b><span>Respect tradition.</span></span>
-          <span className="quotePill"><b>जिज्ञासा</b><span>Encourage curiosity.</span></span>
-          <span className="quotePill"><b>अनुसन्धानम्</b><span>Demand rigor.</span></span>
-        </div>
-        <div className="buttons">
-          <Link className="btn primary" href="/shastra-study">Religious Study</Link>
-          <Link className="btn secondary" href="/research">Science & Research</Link>
-        </div>
-        <p style={{marginTop:'14px'}}><Link className="textLink" href="/evidence">Examine the evidence behind IvyPandit’s interdisciplinary work →</Link></p>
+        <h2>Religious Study &amp; Scientific Research</h2>
+        <p>Study Hindu texts and traditions, explore neuroscience and medicine, or follow clearly labelled interdisciplinary questions.</p>
       </div>
     </section>
-
     <main className="main">
-      <SectionPathways/>
-      <section className={styles.identityCard}>
+      <SectionPathways />
+      <section className={`panel ${styles.welcome}`} aria-labelledby="welcome-title">
+        <div>
+          <p className="kicker">Start here</p>
+          <h2 id="welcome-title">Welcome to IvyPandit</h2>
+          <p>Religious Study begins with texts, commentary and practice. Science &amp; Research presents scientific work, publications and evidence. Interdisciplinary Inquiry explores connections as interpretations and questions for investigation.</p>
+          <p>Choose a subject above, or begin with our five-video introduction. Each lecture links to notes, sources and a next step.</p>
+        </div>
+        <div className={styles.welcomeLinks}>
+          <Link className="btn primary" href="/start-here">Start Here: five videos →</Link>
+          <Link className="textLink" href="/learn/introducing-ivypandit">Original introduction • Sanskrit →</Link>
+          <Link className="textLink" href="/editorial-policy">Our editorial &amp; evidence policy →</Link>
+        </div>
+      </section>
+      <section className={styles.currentStudy} aria-labelledby="current-study-title">
+        <div>
+          <p className="kicker">Current study • Religious Study • Hindi</p>
+          <h2 className="sectionTitle" id="current-study-title">Devī Bhāgavata: read, listen and reflect</h2>
+          <p>Begin with the Māhātmya, then follow the First Skandha in order. Full readings and shorter summaries have separate playlists, with chapter guides and vocabulary on IvyPandit.</p>
+          <div className="buttons" style={{justifyContent:'flex-start'}}>
+            <Link className="btn primary" href="/devi-bhagavata">Begin the study →</Link>
+            <Link className="btn secondary" href="/videos#tradition">More religious learning →</Link>
+          </div>
+        </div>
+        <aside className="panel">
+          <h3>Continue from your last lesson</h3>
+          <ol>
+            <li><Link href="/devi-bhagavata/mahatmya">Māhātmya</Link></li>
+            <li><Link href="/devi-bhagavata/skandha-1-chapters-1-3">First Skandha, chapters 1–3</Link></li>
+            <li><Link href="/devi-bhagavata/skandha-1-chapters-4-5">First Skandha, chapters 4–5</Link></li>
+          </ol>
+        </aside>
+      </section>
+      <section className={`panel ${styles.featuredArticle}`} aria-labelledby="featured-article-title">
+        <p className="kicker">Featured review • Interdisciplinary Inquiry</p>
+        <h2 className="sectionTitle" id="featured-article-title">Avadhāna: attention, memory &amp; expertise</h2>
+        <p>What does this living Indian performance tradition demand of attention, working memory, language and improvisation? Explore its traditional context, current literature and questions for future research.</p>
+        <p><strong>Research status:</strong> a scholarly review and proposed research agenda; proposed studies are not completed findings.</p>
+        <Link className="btn primary" href="/research/consciousness/avadhana">Read the review →</Link>
+        <p><Link className="textLink" href="/articles">Browse articles &amp; essays →</Link></p>
+      </section>
+      <section className={styles.identityCard} aria-labelledby="founder-title">
         <p className="kicker">Founder</p>
-        <h2>Nishant K. Mishra, MD, PhD</h2>
-        <p>Physician-scientist • Neurologist • Neuroscience researcher • Student of Sanskrit and Indian Knowledge Systems</p>
-        <p className={styles.identityLine}>IvyPandit brings together brain science, Sanskrit, and Indian Knowledge Systems through careful scholarship, open inquiry, and clear distinctions between tradition, interpretation, hypothesis, and evidence.</p>
-      </section>
-
-
-      <section className="panel" aria-label="Latest IvyPandit newsletter" style={{marginTop:'34px',marginBottom:'34px',padding:'28px',borderLeft:'5px solid #7f6a3a',background:'#f8f5ee'}}>
-        <p className="kicker">The IvyPandit Letter • October 2026</p>
-        <h2 className="sectionTitle">From Śāstra to Science: Attention, Memory & New Conversations</h2>
-        <p>Read the latest four-week digest: Avadhāna and attention, Sanskrit research methods, Pitṛpakṣa and memory, recent public scholarship, and open interdisciplinary questions.</p>
-        <Link className="btn primary" href="/articles/ivypandit-letter-october-2026">Read the October letter</Link>
-      </section>
-
-      <section className="featuredTalks" style={{marginTop:'34px',marginBottom:'48px'}}>
-        <div className="sectionHeaderRow"><div><p className="kicker">Start here</p><h2 className="sectionTitle">Introducing IvyPandit</h2></div><a className="textLink" href="https://www.youtube.com/watch?v=XkEqWuym3dc" target="_blank" rel="noopener noreferrer">Watch on YouTube →</a></div>
-        <div className="talkGrid">
-          <div className="videoEmbed"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/XkEqWuym3dc" title="Introducing IvyPandit — platform launch video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></div>
-          <div className="talkCopy"><span className="label">PLATFORM LAUNCH</span><h3>Why IvyPandit?</h3><p>In this launch video, Dr. Nishant K. Mishra introduces the purpose of IvyPandit: to create a serious public space where Sanskrit, Indian Knowledge Systems, neuroscience, medicine, and contemporary scholarship can meet without confusing tradition, interpretation, hypothesis, and scientific evidence.</p><p>It is the best short introduction to the platform before exploring its research, study resources, lectures, and collaborative projects.</p><Link className="textLink" href="/about">About IvyPandit →</Link><br/><Link className="textLink" href="/editorial-policy">Editorial & Evidence Policy →</Link></div>
+        <h2 id="founder-title">Nishant K. Mishra, MD, PhD</h2>
+        <p>Neurologist, physician-scientist and student of Sanskrit and Indian Knowledge Systems.</p>
+        <p className={styles.identityLine}>Respect tradition. Encourage curiosity. Demand rigor.</p>
+        <div className="buttons">
+          <Link className="btn secondary" href="/about">About the founder →</Link>
+          <Link className="btn secondary" href="/publications">Scientific publications →</Link>
+          <Link className="btn secondary" href="/speaking">Invite a lecture →</Link>
+          <Link className="btn secondary" href="/collaborate">Collaborate →</Link>
         </div>
+        <p><Link className="textLink" href="/articles/ivypandit-letter-october-2026">Read the October IvyPandit Letter →</Link></p>
       </section>
-
-
-      <section className="panel" aria-label="Guided learning" style={{marginBottom:34,padding:28,background:'#fff7e7'}}><p className="kicker">Watch on YouTube • Study on IvyPandit</p><h2 className="sectionTitle">A clear next step after every lecture</h2><p>New here? Begin with five introductory videos. Ready for sustained study? Follow the Devī Bhāgavata readings with notes, vocabulary and links to the next lesson.</p><div className="buttons"><Link className="btn primary" href="/start-here">Start Here: 5 videos →</Link><Link className="btn secondary" href="/devi-bhagavata">Current study: Devī Bhāgavata →</Link><Link className="btn secondary" href="/videos#collections">Browse the collections →</Link></div></section>
-<section className="manifesto">
-        <p className="kicker">The IvyPandit approach</p>
-        <h2 className="sectionTitle">Tradition deserves understanding before judgment.<br/>Scientific claims deserve evidence before acceptance.</h2>
-        <p>IvyPandit studies Sanskrit and Indian Knowledge Systems in their historical and intellectual contexts while asking new questions through neuroscience, medicine, cognitive science, behavioral science, and other modern disciplines.</p>
-        <p>The aim is neither to declare that ancient texts anticipated modern science nor to dismiss traditional knowledge because it is old. It is to understand carefully, ask better questions, and distinguish evidence from interpretation.</p>
-        <p><Link className="textLink" href="/editorial-policy">Read the Editorial & Evidence Policy →</Link><Link className="textLink" href="/evidence">Explore the Evidence Library →</Link></p>
-      </section>
-
-
-
-
-
-
-      <section className="panel" aria-label="Start Here" style={{marginBottom:'28px',padding:'28px',background:'#fffaf1'}}>
-        <p className="kicker">New to IvyPandit?</p>
-        <h2 className="sectionTitle">What would you like to discover?</h2>
-        <p>Choose a guided route into texts, lectures, science, or interdisciplinary ideas. Each destination explains what you will find and where to go next.</p>
-        <div className={`${styles.gatewayRefined} gatewayGrid`} style={{marginTop:'20px'}}>
-          <Link className="gatewayCard" href="/shastra-study"><span>01</span><h3>Śāstra & Sanskrit</h3><p>Primary texts, traditional interpretation, Sanskrit learning, and study hubs.</p><strong>Explore texts and traditions →</strong></Link>
-          <Link className="gatewayCard" href="/videos"><span>02</span><h3>Learn & Watch</h3><p>Lectures, videos, and curated introductions organized by theme.</p><strong>Choose a learning resource →</strong></Link>
-          <Link className="gatewayCard" href="/research"><span>03</span><h3>Science & Research</h3><p>Stroke, epilepsy, cognition, scientific publications, and evidence.</p><strong>Explore scientific work →</strong></Link>
-          <Link className="gatewayCard" href="/questions"><span>04</span><h3>Tradition Meets Science</h3><p>Avadhāna, Sandhyopāsanā, recitation, and carefully framed research questions.</p><strong>Explore interdisciplinary inquiry →</strong></Link>
-        </div>
-        <p style={{marginTop:'18px'}}><Link className="btn primary" href="/start-here">First visit? Take the guided tour →</Link></p>
-      </section>
-
-      <section className="initiativeSection" style={{marginTop:'34px',marginBottom:'48px'}}>
-        <div>
-          <p className="kicker">Definitive guide</p>
-          <h2 className="sectionTitle">Avadhāna and the Indian Science of Attention</h2>
-          <p>What can a living Indian tradition of structured multi-stream performance teach us about attention, working memory, language, improvisation, and long-duration expertise?</p>
-          <p>This evidence-aware article explains what Avadhāna is, why “multitasking” is an incomplete label, which cognitive mechanisms can be tested, and what responsible neuroscience research should do next.</p>
-          <Link className="btn primary" href="/research/consciousness/avadhana">Read the definitive article</Link>
-        </div>
-        <div className="panel">
-          <span className="label">AVADHĀNA • ATTENTION • MEMORY</span>
-          <h3>Tradition understood. Hypotheses tested.</h3>
-          <p>Historical practice, Indian conceptual vocabulary, cognitive task analysis, research safeguards, scholarly references, and a staged behavioral–EEG–MRI–longitudinal program.</p>
-          <Link className="textLink" href="/speaking/avadhana-indian-science-attention">Explore the related lecture →</Link>
-        </div>
-      </section>
-
-
-      <section className="panel" aria-label="Brain Health and Indian Traditions" style={{marginBottom:'30px',padding:'24px'}}>
-        <p className="kicker">Community lecture series in development</p>
-        <h2 className="sectionTitle">Brain Health &amp; Indian Traditions</h2>
-        <p>Accessible conversations with neurologist Nishant K. Mishra about memory, attention, and the aging brain, enriched by Indian intellectual traditions. The first planned lecture explores how we remember, why we forget, and when to seek help.</p>
-        <Link className="btn primary" href="/brain-health">Explore the series</Link>
-      </section>
-
-      <section className="panel" aria-label="Browse Śāstra themes" style={{marginBottom:'30px',padding:'24px'}}>
-        <p className="kicker">Browse by text or tradition</p>
-        <h2 className="sectionTitle">Śāstra pathways</h2>
-        <p>Go directly to a familiar text or discover a wider tradition.</p>
-        <div className="buttons" style={{justifyContent:'flex-start',flexWrap:'wrap',gap:'10px'}}>
-          {[
-            ['Vedas','/shastra-study#vedas'],
-            ['Upaniṣads','/shastra-study#upanishads'],
-            ['Bhagavad Gītā','/gita'],
-            ['Mahābhārata','/mahabharata'],
-            ['Purāṇas','/shastra-study#puranas'],
-            ['Gāyatrī & Sandhyā','/gayatri'],
-            ['Sanskrit & Sāhitya','/shastra-study#sanskrit']
-          ].map(([name,href]) => <Link key={name} className="btn secondary" href={href}>{name} →</Link>)}
-        </div>
-      </section>
-
-      <section className="panel" aria-label="Yogvani October 2026 featured article" style={{marginBottom:'34px',padding:'28px',borderLeft:'5px solid #c7932d',background:'#fff7e7'}}>
-        <p className="kicker">New publication • Yogvani • October 2026</p>
-        <h2 className="sectionTitle">From Śāstra to the Laboratory</h2>
-        <p lang="hi"><b>शास्त्र से प्रयोगशाला तक — संस्कृत वाङ्मय का वैज्ञानिक अनुसन्धान</b></p>
-        <p>Read Dr. Nishant Kumar Mishra’s Hindi article on transforming insights from Sanskrit literature into testable research questions. Published in <i>Yogvani</i>, October 2026, pages 24–27.</p>
-        <div className="buttons" style={{justifyContent:'flex-start',flexWrap:'wrap'}}>
-          <Link className="btn primary" href="/articles/yogvani-october-2026">Explore the featured article</Link>
-          <a className="btn secondary" href="/library/yogvani-october-2026-nishant-mishra.pdf" target="_blank" rel="noopener noreferrer">Read the original Hindi article</a>
-          <a className="btn secondary" href="/library/yogvani-october-2026.pdf" target="_blank" rel="noopener noreferrer">Read the complete October issue</a>
-        </div>
-      </section>
-
-      <section className="panel" style={{marginBottom:'34px',padding:'28px'}} aria-label="Knowledge Navigator">
-        <p className="kicker">Find anything on IvyPandit</p>
-        <h2 className="sectionTitle">What would you like to explore?</h2>
-        <p>Search by text, person, practice, scientific topic, content type, or language. You do not need to know which section of the website contains it.</p>
-        <form action="/explore" method="get" style={{display:'flex',gap:'10px',flexWrap:'wrap',marginTop:'18px'}}>
-          <input name="q" aria-label="Search IvyPandit" placeholder="Mahābhārata, Gāyatrī, Sanskrit, stroke, memory, karma…" style={{flex:'1 1 360px',padding:'14px 16px',border:'1px solid #d7c5a5',borderRadius:'10px',fontSize:'17px',background:'#fffdf8'}} />
-          <button className="btn primary" type="submit">Search IvyPandit</button>
-        </form>
-        <div className="buttons" style={{justifyContent:'flex-start',marginTop:'16px',flexWrap:'wrap'}}>
-          <Link className="btn secondary" href="/explore?q=Mah%C4%81bh%C4%81rata">Mahābhārata</Link>
-          <Link className="btn secondary" href="/explore?q=G%C4%81yatr%C4%AB">Gāyatrī</Link>
-          <Link className="btn secondary" href="/explore?q=Sanskrit">Sanskrit</Link>
-          <Link className="btn secondary" href="/explore?q=Post-Stroke%20Epilepsy">Post-Stroke Epilepsy</Link>
-          <Link className="btn secondary" href="/explore">Browse everything →</Link>
-        </div>
-      </section>
-
-      <section className="panel" aria-label="Pitṛpakṣa remembrance" style={{marginBottom:'34px',padding:'28px',borderLeft:'5px solid #9b3a17',background:'#fff7e7'}}>
-        <p className="kicker">From our archive • Ancestors and remembrance</p>
-        <h2 className="sectionTitle">Remembering those who came before us</h2>
-        <p>During Pitṛpakṣa, families make time for śrāddha, tarpaṇa, stories, and gratitude. Our guide explores the tradition alongside careful questions about memory, grief, and intergenerational identity, with a curated path through IvyPandit’s related videos.</p>
-        <Link className="btn primary" href="/articles/pitrapaksha-memory-grief">Read the Pitṛpakṣa article and watch the videos →</Link>
-      </section>
-
-
-      <section className="featuredTalks" id="tarpana-sandhyopasana" style={{marginTop:'34px',marginBottom:'48px'}}>
-        <div className="sectionHeaderRow"><div><p className="kicker">New lecture • Hindi • 50 minutes</p><h2 className="sectionTitle">Tarpaṇa, Sandhyopāsanā & Cognitive Science</h2></div><a className="textLink" href="https://www.youtube.com/watch?v=kyvyYmwIpJg" target="_blank" rel="noopener noreferrer">Watch on YouTube</a></div>
-        <div className="talkGrid">
-          <div className="videoEmbed"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/kyvyYmwIpJg" title="तर्पण और संध्योपासना के पीछे का विज्ञान | The Hidden Cognitive Science of Vedic Rituals" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></div>
-          <div className="talkCopy"><span className="label">INTERDISCIPLINARY INQUIRY • HINDI</span><h3 lang="hi">तर्पण और संध्योपासना के पीछे का विज्ञान</h3><p><b>The Hidden Cognitive Science of Vedic Rituals</b></p><p>Dr. Nishant K. Mishra explores ancestral remembrance, tarpaṇa, Sandhyopāsanā, attention, memory, gratitude, and the place of daily ritual in contemporary life.</p><p>The lecture opens questions for neuroscience and psychology while keeping traditional meaning, scientific analogy, and testable hypotheses distinct.</p><Link className="textLink" href="/articles/pitrapaksha-memory-grief">Explore memory, grief & ancestral remembrance</Link><br/><Link className="textLink" href="/gayatri">Gāyatrī & Sandhyopāsanā Study Hub</Link><br/><Link className="textLink" href="/videos#inquiry">More interdisciplinary lectures</Link></div>
-        </div>
-      </section>
-
-      <section className="initiativeSection">
-        <div>
-          <p className="kicker">Research infrastructure</p>
-          <h2 className="sectionTitle">From source to question to evidence.</h2>
-          <p>Structured repositories connect classical sources, modern scholarship, research questions, working papers, lectures, and future datasets.</p>
-          <div className="flowLine"><span>Source</span><b>→</b><span>Interpretation</span><b>→</b><span>Question</span><b>→</b><span>Evidence</span><b>→</b><span>Scholarship</span><b>→</b><span>Public learning</span></div>
-        </div>
-        <div className="initiativeCards">
-          <Link className="initiativeCard" href="/sbkb"><small>FLAGSHIP INITIATIVE</small><h3>Sanskrit Biomedical Knowledge Base</h3><p>A structured program for identifying medically and scientifically relevant observations in Sanskrit literature and converting them into transparent, testable research questions.</p><strong>Discover SBKB →</strong></Link>
-          <Link className="initiativeCard" href="/questions"><small>INVITATION TO INQUIRY</small><h3>Research Questions & Collaborations</h3><p>Carefully framed questions inviting textual expertise, scientific discussion, interdisciplinary projects, and future collaborations.</p><strong>Explore the questions →</strong></Link>
-        </div>
-      </section>
-
-      <section className={`${styles.featuredRefined} featuredTalks`}>
-        <div className="sectionHeaderRow"><div><p className="kicker">Interdisciplinary Inquiry • Featured talks</p><h2 className="sectionTitle">Questions at the meeting point of disciplines.</h2></div><Link className="textLink" href="/videos">Browse video collections →</Link></div>
-        <div className="talkGrid">
-          <div className="videoEmbed"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/CTgAsLs4IUY" title="Indian Knowledge Systems and New Directions for Neuroscience" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></div>
-          <div className="talkCopy"><span className="label">ACADEMIC / INTERDISCIPLINARY</span><h3>Indian Knowledge Systems & New Directions for Neuroscience</h3><p>Engaging classical knowledge respectfully while distinguishing textual interpretation, research hypotheses, and scientific evidence.</p><a className="textLink" href="/videos#inquiry">Interdisciplinary collection →</a><br/><a className="textLink" href="/videos#tradition">Tradition & Dharma collection →</a><br/><a className="textLink" href="https://www.youtube.com/@IvyPandit" target="_blank" rel="noopener noreferrer">YouTube channel →</a></div>
-        </div>
-        <div className="talkGrid" style={{marginTop:'28px'}}>
-          <div className="videoEmbed"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/vArP8eE0ROU" title="Sandhyopasana, samskara, brain development and modern science" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></div>
-          <div className="talkCopy"><span className="label">INTERDISCIPLINARY INQUIRY • HINDI</span><h3>Sandhyopāsanā, Saṃskāra & the Developing Brain</h3><p>A Hindi lecture examining Sandhyopāsanā as a multi-component daily practice involving prāṇāyāma, Gāyatrī-japa, attention, imagery, meaning, self-regulation, and routine — and asking which of these dimensions can be studied rigorously with modern neuroscience.</p><p>The lecture treats traditional meaning and scientific evidence as distinct, and argues for collaboration among Sanskrit scholars, practitioners, clinicians, psychologists, and neuroscientists.</p><Link className="textLink" href="/gayatri">Gāyatrī Study Hub →</Link><br/><Link className="textLink" href="/questions#nityakarma-sandhya-daily-practice">Related research question →</Link><br/><a className="textLink" href="https://youtu.be/vArP8eE0ROU" target="_blank" rel="noopener noreferrer">Watch on YouTube →</a></div>
-        </div>
-        <div className="talkGrid" style={{marginTop:'28px'}}>
-          <div className="videoEmbed"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/fQ5gXu7pt1c" title="Sandhyopasana, contemplative practice and neuroscience — English lecture" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></div>
-          <div className="talkCopy"><span className="label">INTERDISCIPLINARY INQUIRY • ENGLISH</span><h3>Sandhyopāsanā, Contemplative Practice & Neuroscience</h3><p>An English-language exploration of Sandhyopāsanā as a structured daily practice bringing together mantra, breath, attention, reflection, imagery, regularity, and meaning.</p><p>The lecture asks how these components might be investigated through neuroscience and behavioral science while keeping traditional interpretation, scientific analogy, hypothesis, and established evidence clearly distinct.</p><Link className="textLink" href="/gayatri">Gāyatrī Study Hub →</Link><br/><Link className="textLink" href="/evidence">Related scientific evidence →</Link><br/><Link className="textLink" href="/questions#nityakarma-sandhya-daily-practice">Related research question →</Link><br/><a className="textLink" href="https://www.youtube.com/watch?v=fQ5gXu7pt1c" target="_blank" rel="noopener noreferrer">Watch on YouTube →</a></div>
-        </div>
-      </section>
-
-      <section className="initiativeSection">
-        <div>
-          <p className="kicker">Lectures & speaking</p>
-          <h2 className="sectionTitle">Bring IvyPandit to your institution or community.</h2>
-          <p>Dr. Nishant K. Mishra offers live and virtual lectures at the intersection of Sanskrit, Indian Knowledge Systems, neuroscience, medicine, and scientific inquiry. Talks can be adapted for universities, Sanskrit institutions, temples, conferences, professional groups, youth programs, podcasts, and community audiences.</p>
-          <div className="buttons" style={{justifyContent:'flex-start'}}><Link className="btn primary" href="/speaking">Explore Speaking Topics</Link><a className="btn secondary" href="mailto:nishant.mishra@ivypandit.com?subject=IvyPandit%20Lecture%20Invitation">Invite Dr. Mishra</a></div>
-        </div>
-        <div className="panel">
-          <h3>Featured lecture themes</h3>
-          <ul className={styles.themeList}>
-            <li>Gāyatrī & the developing brain</li>
-            <li>Pitṛpakṣa, memory & identity</li>
-            <li>Avadhāna & attention</li>
-            <li>Sandhyopāsanā & contemplative practice</li>
-            <li>Sanskrit, bilingualism & neuroplasticity</li>
-          </ul>
-          <p className={styles.languageLine}><b>Languages:</b> English • Hindi • Sanskrit</p>
-        </div>
-      </section>
-
-      <section className={`${styles.evidenceRefined} evidenceSection`}>
-        <h2 className="sectionTitle">How IvyPandit approaches interdisciplinary questions</h2>
-        <p>When a traditional idea is discussed alongside modern science, four questions are kept separate:</p>
-        <div className="evidenceGrid">
-          <div><b>Classical source</b><p>What does the text actually say?</p></div>
-          <div><b>Traditional interpretation</b><p>How has the idea been understood within its own tradition?</p></div>
-          <div><b>Research question</b><p>What new hypothesis or inquiry might the source inspire?</p></div>
-          <div><b>Scientific evidence</b><p>What has actually been tested, measured, replicated, or remains uncertain?</p></div>
-        </div>
-      </section>
-
-      <section className="missionBox"><h2>वसुधैव कुटुम्बकम्</h2><p>The world is one family. IvyPandit treats knowledge as humanity&apos;s shared inheritance and seeks dialogue across traditions, disciplines, cultures, and generations for the good of the wider world.</p></section>
     </main>
   </>;
 }

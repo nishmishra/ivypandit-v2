@@ -9,6 +9,7 @@ export default function Research(){
           <div className={styles.heroEyebrow}>Research & Scientific Work</div>
           <h1>Science & Research</h1>
           <p className={styles.heroLead}>Research across stroke, reperfusion, neuroimaging, post-stroke epilepsy, biomarkers, clinical trials, cognition, language, neuroplasticity, and emerging cultural neuroscience.</p>
+          <div className="buttons" style={{justifyContent:'flex-start'}}><Link className="btn primary" href="/publications">Scientific publications →</Link><Link className="btn secondary" href="/evidence">Evidence Library →</Link></div>
           <div className={styles.heroTags}>
             <span>Stroke</span><span>Perfusion Imaging</span><span>Post-Stroke Epilepsy</span><span>Precision Neuroscience</span>
           </div>
@@ -176,6 +177,12 @@ export default function Research(){
         <Link className="textLink" href="/questions">Explore research questions →</Link>
       </section>
 
+      <section className="panel" id="research-projects">
+        <p className="kicker">Interdisciplinary projects • In development</p>
+        <h2>From source to research question</h2>
+        <p>The Sanskrit Biomedical Knowledge Base and Knowledge Repository are pilot initiatives documenting sources, interpretations and questions for future investigation. They are distinct from completed clinical studies and peer-reviewed publications.</p>
+        <div className="buttons" style={{justifyContent:'flex-start'}}><Link className="btn secondary" href="/sbkb">Biomedical knowledge pilot →</Link><Link className="btn secondary" href="/repository">Repository Pilot →</Link><Link className="btn secondary" href="/questions">Research questions →</Link></div>
+      </section>
       <section className="panel">
         <h2>Explore the scientific record</h2>
         <p>For the complete publication record and current research activity, use the links below.</p>

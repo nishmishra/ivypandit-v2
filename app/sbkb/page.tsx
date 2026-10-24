@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export default function SBKB(){return <>
-  <section className="pageHero"><div className="eyebrow">Sanskrit Biomedical Knowledge Base</div><h1>SBKB</h1><p>From carefully documented textual observations to transparent, testable research questions.</p></section>
+  <section className="pageHero"><div className="eyebrow">Sanskrit Biomedical Knowledge Base • Pilot initiative</div><h1>SBKB Pilot</h1><p>From carefully documented textual observations to transparent, testable research questions.</p></section>
   <main className="content">
     <div className="twoCol">
       <section className="panel"><h2>What SBKB is</h2><p>The Sanskrit Biomedical Knowledge Base is an independent scholarly initiative for the systematic study of medically and scientifically relevant observations preserved in Sanskrit literature.</p><p>Its purpose is to make sources traceable, concepts interpretable, claims explicit, and research questions testable.</p></section>

@@ -28,7 +28,7 @@ const featuredInquiry = [
     id: 'kyvyYmwIpJg',
     start: 0,
     label: 'NEW LECTURE • INTERDISCIPLINARY INQUIRY • HINDI',
-    title: 'तर्पण और संध्योपासना के पीछे का विज्ञान | The Hidden Cognitive Science of Vedic Rituals',
+    title: 'तर्पण, संध्योपासना और स्मृति | Interdisciplinary Questions',
     summary: 'Dr. Nishant K. Mishra explores tarpaṇa, Sandhyopāsanā, ancestral remembrance, attention, memory, gratitude, and daily practice through questions from neuroscience and psychology. Traditional meaning, scientific analogy, and testable hypotheses remain distinct.'
   },
   {
@@ -70,14 +70,14 @@ const featuredInquiry = [
     id: 'QsLBK1qPCPg',
     start: 517,
     label: 'INTERDISCIPLINARY INQUIRY',
-    title: 'The Neurology of Fire',
+    title: 'Agni: Symbolism, Experience & Questions About Attention',
     summary: 'An exploratory conversation about fire, embodied experience, attention, symbolism, and the limits of neuroscientific analogy.'
   },
   {
     id: 'nTCykV_86Mo',
     start: 153,
     label: 'INTERDISCIPLINARY INQUIRY',
-    title: 'Reshape Your Brain? Arjuna, Cognition & Reframing',
+    title: 'Arjuna’s Crisis: Perspective, Cognition & Reframing',
     summary: 'A psychology- and cognition-oriented discussion of Arjuna’s crisis before the war, using the Bhagavad Gītā to examine confusion, perspective, duty, and cognitive reframing.'
   }
 ];
@@ -123,7 +123,7 @@ export default function Videos(){return <>
     <section className="panel" style={{marginBottom:'34px',padding:'22px 26px'}}>
       <p className="kicker">Scholar & speaker</p>
       <h2 style={{marginBottom:'8px'}}>Nishant K. Mishra, MD, PhD</h2>
-      <p style={{margin:'0'}}>Physician-scientist • Neurologist • Neuroscience researcher • Sanskrit & Indian Knowledge Systems scholar</p>
+      <p style={{margin:'0'}}>Physician-scientist • Neurologist • Neuroscience researcher • Student of Sanskrit and Indian Knowledge Systems</p>
     </section>
 
     <section className="featuredTalks" style={{marginTop:'0',marginBottom:'52px'}}>

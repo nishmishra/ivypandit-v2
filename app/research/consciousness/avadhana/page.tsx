@@ -6,7 +6,7 @@ export default function AvadhanaArticle() {
     '@type': 'ScholarlyArticle',
     headline: 'Avadhāna and the Indian Science of Attention: A Cognitive-Neuroscientific Framework',
     alternativeHeadline: 'What Avadhāna can teach neuroscience about attention, memory, and long-duration cultural expertise',
-    description: 'A definitive, evidence-aware guide to Avadhāna: its history, performance structure, cognitive demands, relationship to attention and working memory, and a rigorous neuroscience research agenda.',
+    description: 'A source-based review to Avadhāna: its history, performance structure, cognitive demands, relationship to attention and working memory, and a rigorous neuroscience research agenda.',
     author: { '@type': 'Person', name: 'Nishant K. Mishra', honorificSuffix: 'MD, PhD', url: 'https://www.ivypandit.com/about' },
     publisher: { '@type': 'Organization', name: 'IvyPandit', url: 'https://www.ivypandit.com' },
     datePublished: '2026-09-15',
@@ -32,7 +32,7 @@ export default function AvadhanaArticle() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(faqLd)}} />
 
     <section className="pageHero">
-      <div className="eyebrow">Definitive guide • Avadhāna • Attention • Memory • Cognitive neuroscience</div>
+      <div className="eyebrow">Scholarly review • Avadhāna • Attention • Memory • Cognitive neuroscience</div>
       <h1>Avadhāna and the Indian Science of Attention</h1>
       <p>A cognitive-neuroscientific framework for studying long-duration cultural expertise.</p>
     </section>
