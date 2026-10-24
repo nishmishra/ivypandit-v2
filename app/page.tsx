@@ -57,7 +57,8 @@ export default function Home() {
       </section>
 
 
-      <section className="manifesto">
+      <section className="panel" aria-label="Guided learning" style={{marginBottom:34,padding:28,background:'#fff7e7'}}><p className="kicker">Watch on YouTube • Study on IvyPandit</p><h2 className="sectionTitle">A clear next step after every lecture</h2><p>New here? Begin with five introductory videos. Ready for sustained study? Follow the Devī Bhāgavata readings with notes, vocabulary and links to the next lesson.</p><div className="buttons"><Link className="btn primary" href="/start-here">Start Here: 5 videos →</Link><Link className="btn secondary" href="/devi-bhagavata">Current study: Devī Bhāgavata →</Link><Link className="btn secondary" href="/videos#collections">Browse the collections →</Link></div></section>
+<section className="manifesto">
         <p className="kicker">The IvyPandit approach</p>
         <h2 className="sectionTitle">Tradition deserves understanding before judgment.<br/>Scientific claims deserve evidence before acceptance.</h2>
         <p>IvyPandit studies Sanskrit and Indian Knowledge Systems in their historical and intellectual contexts while asking new questions through neuroscience, medicine, cognitive science, behavioral science, and other modern disciplines.</p>

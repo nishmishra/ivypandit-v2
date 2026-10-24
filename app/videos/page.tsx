@@ -1,3 +1,4 @@
+import LearningCollections from '../../components/LearningCollections';
 const featuredAcademic = [
   {
     id: 'dr-H6IToGx4',
@@ -52,11 +53,11 @@ const featuredInquiry = [
     summary: 'A Hindi lecture asking how the multi-component discipline of Sandhyopāsanā — including prāṇāyāma, Gāyatrī-japa, attention, imagery, meaning, and daily routine — might be studied scientifically without presuming benefit in advance.'
   },
   {
-    id: 'CbtzXqFRGKI',
+    id: 'CTgAsLs4IUY',
     start: 0,
     label: 'INTERDISCIPLINARY INQUIRY',
-    title: 'Sanskrit, Indian Knowledge Systems & Scientific Inquiry',
-    summary: 'Classical knowledge, scientific curiosity, interpretation, hypothesis, and evidence brought into a carefully bounded interdisciplinary conversation.'
+    title: 'Indian Knowledge Systems & New Directions for Neuroscience',
+    summary: 'A research agenda for long-duration expertise in Vedic recitation, Sanskrit and Avadhāna, with interpretation, hypotheses and evidence kept distinct.'
   },
   {
     id: '_U0YB0YVWxI',
@@ -118,7 +119,7 @@ export default function Videos(){return <>
     <p>Three clearly marked pathways: research and academic scholarship, interdisciplinary inquiry, and explicitly traditional Hindu learning.</p>
   </section>
 
-  <main className="content">
+  <main className="content"><section className="panel" style={{marginBottom:28}}><p className="kicker">Watch • Read • Continue</p><h2>Choose a guided learning pathway</h2><p>Start with five introductory conversations, or join the current Devī Bhāgavata study. Full lectures and shorter discussions are clearly separated in the lesson guides.</p><div className="buttons"><a className="btn primary" href="/start-here">Start Here: 5 videos →</a><a className="btn secondary" href="/devi-bhagavata">Devī Bhāgavata: sequential study →</a></div></section><LearningCollections/>
     <section className="panel" style={{marginBottom:'34px',padding:'22px 26px'}}>
       <p className="kicker">Scholar & speaker</p>
       <h2 style={{marginBottom:'8px'}}>Nishant K. Mishra, MD, PhD</h2>

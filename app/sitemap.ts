@@ -1,8 +1,10 @@
 import type { MetadataRoute } from 'next';
+import { introductions, deviLessons } from '../data/learning';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://www.ivypandit.com';
   const routes = [
+    '/start-here', '/devi-bhagavata', ...introductions.map(v=>`/learn/${v.slug}`), ...deviLessons.map(v=>`/devi-bhagavata/${v.slug}`),
     '/', '/brain-health', '/iks', '/shastra-study', '/research', '/sbkb', '/questions', '/videos', '/news', '/speaking', '/collaborate', '/about',
     '/repository', '/evidence', '/publications', '/articles', '/support', '/contact', '/disclaimer', '/editorial-policy', '/privacy', '/terms',
     '/gayatri', '/gita', '/garbhadhana', '/mahabharata', '/bhagavatam', '/principles', '/perspectives',
