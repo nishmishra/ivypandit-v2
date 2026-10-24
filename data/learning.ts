@@ -287,7 +287,7 @@ export const learningCollections = [
     [
       [
         "Śrīmad Devī Bhāgavata",
-        "PLW5RFFa0nMww"
+        "PLazptD9lBgJM"
       ],
       [
         "Bhagavad Gītā",
