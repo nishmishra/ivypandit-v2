@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import SectionPathways from '../components/SectionPathways';
 import styles from './home.module.css';
-import { introductions, deviLessons } from '../data/learning';
+import { deviLessons } from '../data/learning';
 
 export default function Home() {
   return <>
@@ -35,11 +35,11 @@ export default function Home() {
         </div>
         <div className={styles.lessonCards}>
           {[
-            { href: '/learn/introducing-ivypandit', videoId: introductions[0].videoId, title: 'Welcome to IvyPandit', meta: 'Sanskrit • Platform introduction', summary: 'Discover the idea behind IvyPandit and choose where to begin.' },
-            { href: '/devi-bhagavata/mahatmya', videoId: deviLessons[0].videoId, title: 'Begin the Devī Bhāgavata', meta: `Hindi • Guided reading • ${deviLessons[0].duration}`, summary: 'Read and listen to the Māhātmya with notes and essential vocabulary.' },
-            { href: '/learn/hindu-culture', videoId: introductions[3].videoId, title: 'The Essence of Hindu Culture', meta: 'English • Introductory lecture', summary: 'Explore dharma, karma, and Hindu ways of life in their traditional settings.' },
+            { href: '/learn/introducing-ivypandit', image: '/images/nishant-varanasi-boat.jpeg', title: 'Welcome to IvyPandit', meta: 'Sanskrit • Platform introduction', summary: 'Discover the idea behind IvyPandit and choose where to begin.' },
+            { href: '/devi-bhagavata/mahatmya', image: '/images/kashi-vishwanath.jpg', title: 'Begin the Devī Bhāgavata', meta: `Hindi • Guided reading • ${deviLessons[0].duration}`, summary: 'Read and listen to the Māhātmya with notes and essential vocabulary.' },
+            { href: '/learn/hindu-culture', image: '/images/cultural-page-banner.jpg', title: 'The Essence of Hindu Culture', meta: 'English • Introductory lecture', summary: 'Explore dharma, karma, and Hindu ways of life in their traditional settings.' },
           ].map(lesson => <Link key={lesson.href} href={lesson.href} className={styles.lessonCard}>
-            <div className={styles.thumbnail}><img src={`https://i.ytimg.com/vi/${lesson.videoId}/hqdefault.jpg`} alt="" width="480" height="360" loading="lazy" /><span aria-hidden="true" className={styles.playIcon}>▷</span></div>
+            <div className={styles.thumbnail}><img src={lesson.image} alt="" width="480" height="360" loading="lazy" /><span aria-hidden="true" className={styles.playIcon}>▷</span></div>
             <div className={styles.lessonCopy}><p className={styles.lessonMeta}>{lesson.meta}</p><h3>{lesson.title}</h3><p>{lesson.summary}</p><span className="textLink">Watch &amp; explore →</span></div>
           </Link>)}
         </div>
