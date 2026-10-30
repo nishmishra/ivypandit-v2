@@ -121,7 +121,7 @@
 .compactHero h1{font-size:clamp(34px,4.1vw,58px);letter-spacing:-.025em;line-height:1.12;margin:18px 0 20px;text-shadow:none}
 .compactHero :global(.heroInner)>p{max-width:690px;font-size:20px;line-height:1.6;color:#514035}
 .compactHero :global(.heroInner) .heroNote{font:13px/1.6 Arial,sans-serif;letter-spacing:.035em;margin-top:22px;color:#79614f}
-.bannerImage{height:210px;background:url('/images/ivypandit-legacy-hero.jpg') center 40%/cover;border-bottom:1px solid var(--line)}
+.bannerImage{height:210px;background:url('/images/ivypandit-legacy-hero.jpg') center 20%/cover;border-bottom:1px solid var(--line)}
 .founderIntro{display:flex;align-items:center;gap:24px;padding:0 0 32px;border-bottom:1px solid var(--line);margin-bottom:40px}
 .founderIntro img{width:96px;height:96px;object-fit:cover;object-position:50% 38%;border-radius:50%;border:3px solid #e7cfa8;flex-shrink:0}
 .founderIntro h2{font-size:25px;color:var(--maroon);margin:0 0 8px}
