@@ -1,32 +1,50 @@
 import Link from 'next/link';
 import SectionPathways from '../components/SectionPathways';
 import styles from './home.module.css';
+import { introductions, deviLessons } from '../data/learning';
 
 export default function Home() {
   return <>
     <section className={`hero ${styles.compactHero}`}>
       <div className="heroInner">
         <div className="eyebrow">Sanskrit • Indian Knowledge Systems • Neuroscience</div>
-        <h1>IVY PANDIT</h1>
-        <h2>Religious Study &amp; Scientific Research</h2>
-        <p>Study Hindu texts and traditions, explore neuroscience and medicine, or follow clearly labelled interdisciplinary questions.</p>
+        <h1>Explore Sanskrit, Indian Wisdom<br className={styles.desktopBreak} /> &amp; the Science of Mind</h1>
+        <p>Read foundational texts, follow guided lectures, and explore questions about language, attention, and the mind.</p>
+        <div className="buttons">
+          <Link className="btn primary" href="/start-here">Start Learning →</Link>
+          <Link className="btn secondary" href="/learn/introducing-ivypandit">Watch an Introduction ▷</Link>
+        </div>
+        <p className={styles.heroNote}>Respect tradition. Encourage curiosity. Demand rigor.</p>
       </div>
     </section>
+    <div className={styles.bannerImage} role="img" aria-label="University architecture, Nishant Mishra on the Ganga, and the ghats of Varanasi" />
     <main className="main">
-      <SectionPathways />
-      <section className={`panel ${styles.welcome}`} aria-labelledby="welcome-title">
+      <section className={styles.founderIntro} aria-labelledby="founder-intro-title">
+        <img src="/images/dr-nishant-mishra.jpeg" width="96" height="96" alt="Nishant K. Mishra" />
         <div>
-          <p className="kicker">Start here</p>
-          <h2 id="welcome-title">Welcome to IvyPandit</h2>
-          <p>Religious Study begins with texts, commentary and practice. Science &amp; Research presents scientific work, publications and evidence. Interdisciplinary Inquiry explores connections as interpretations and questions for investigation.</p>
-          <p>Choose a subject above, or begin with our five-video introduction. Each lecture links to notes, sources and a next step.</p>
-        </div>
-        <div className={styles.welcomeLinks}>
-          <Link className="btn primary" href="/start-here">Start Here: five videos →</Link>
-          <Link className="textLink" href="/learn/introducing-ivypandit">Original introduction • Sanskrit →</Link>
-          <Link className="textLink" href="/editorial-policy">Our editorial &amp; evidence policy →</Link>
+          <p className="kicker">Your guide to IvyPandit</p>
+          <h2 id="founder-intro-title">Nishant K. Mishra, MD, PhD</h2>
+          <p>A neurologist, physician-scientist, and student of Sanskrit. Join me in studying classical texts, exploring neuroscience, and asking thoughtful questions across disciplines.</p>
+          <Link className="textLink" href="/about">Meet the founder →</Link>
         </div>
       </section>
+      <section className={styles.lessonSection} aria-labelledby="lessons-title">
+        <div className={styles.lessonHeading}>
+          <div><p className="kicker">Watch · Read · Reflect</p><h2 className="sectionTitle" id="lessons-title">Begin with a lesson</h2></div>
+          <Link className="textLink" href="/videos">All lectures &amp; readings →</Link>
+        </div>
+        <div className={styles.lessonCards}>
+          {[
+            { href: '/learn/introducing-ivypandit', videoId: introductions[0].videoId, title: 'Welcome to IvyPandit', meta: 'Sanskrit • Platform introduction', summary: 'Discover the idea behind IvyPandit and choose where to begin.' },
+            { href: '/devi-bhagavata/mahatmya', videoId: deviLessons[0].videoId, title: 'Begin the Devī Bhāgavata', meta: `Hindi • Guided reading • ${deviLessons[0].duration}`, summary: 'Read and listen to the Māhātmya with notes and essential vocabulary.' },
+            { href: '/learn/hindu-culture', videoId: introductions[3].videoId, title: 'The Essence of Hindu Culture', meta: 'English • Introductory lecture', summary: 'Explore dharma, karma, and Hindu ways of life in their traditional settings.' },
+          ].map(lesson => <Link key={lesson.href} href={lesson.href} className={styles.lessonCard}>
+            <div className={styles.thumbnail}><img src={`https://i.ytimg.com/vi/${lesson.videoId}/hqdefault.jpg`} alt="" width="480" height="360" loading="lazy" /><span aria-hidden="true" className={styles.playIcon}>▷</span></div>
+            <div className={styles.lessonCopy}><p className={styles.lessonMeta}>{lesson.meta}</p><h3>{lesson.title}</h3><p>{lesson.summary}</p><span className="textLink">Watch &amp; explore →</span></div>
+          </Link>)}
+        </div>
+      </section>
+      <SectionPathways />
       <section className={styles.currentStudy} aria-labelledby="current-study-title">
         <div>
           <p className="kicker">Current study • Religious Study • Hindi</p>
