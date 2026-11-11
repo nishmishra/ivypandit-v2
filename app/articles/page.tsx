@@ -1,6 +1,12 @@
 export default function Articles(){return <>
   <section className="pageHero"><div className="eyebrow">Definitive guides • Scholarly essays • Evidence-aware inquiry</div><h1>Articles</h1><p>Canonical, source-conscious articles connecting Indian Knowledge Systems, neuroscience, learning, culture, health, and public scholarship.</p></section>
   <main className="content">
+    <section className="panel" aria-label="Yogvani publication supplement" style={{marginBottom:'34px',padding:'28px',borderLeft:'5px solid #7f6a3a'}}>
+      <p className="kicker">The IvyPandit Letter • Publication supplement • November 2026</p>
+      <h2 className="sectionTitle">From Śāstra to the Laboratory</h2>
+      <p>A note accompanying my October 2026 <i>Yogvani</i> essay on Sanskrit texts, scientific research questions, and collaboration between scholars and scientists.</p>
+      <a className="btn primary" href="/articles/yogvani-research-supplement-november-2026">Read the supplement</a>
+    </section>
     <section className="panel" aria-label="IvyPandit November 2026 newsletter" style={{marginBottom:'34px',padding:'28px',borderLeft:'5px solid #7f6a3a',background:'#f8f5ee'}}>
       <p className="kicker">The IvyPandit Letter • Issue 2 • November 2026</p>
       <h2 className="sectionTitle">Study by Sequence, Curiosity & Question</h2>
