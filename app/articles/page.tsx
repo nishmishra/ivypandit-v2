@@ -1,6 +1,16 @@
 export default function Articles(){return <>
   <section className="pageHero"><div className="eyebrow">Definitive guides • Scholarly essays • Evidence-aware inquiry</div><h1>Articles</h1><p>Canonical, source-conscious articles connecting Indian Knowledge Systems, neuroscience, learning, culture, health, and public scholarship.</p></section>
   <main className="content">
+    <section className="panel" aria-label="IvyPandit November 2026 newsletter" style={{marginBottom:'34px',padding:'28px',borderLeft:'5px solid #7f6a3a',background:'#f8f5ee'}}>
+      <p className="kicker">The IvyPandit Letter • Issue 2 • November 2026</p>
+      <h2 className="sectionTitle">Study by Sequence, Curiosity & Question</h2>
+      <p>The second IvyPandit newsletter reflects the platform’s actual rhythm: sustained study when sequence matters, freedom to follow intellectual curiosity, and a practical science/neuroscience section pairing selected videos with papers for further reading.</p>
+      <div className="buttons" style={{justifyContent:'flex-start',flexWrap:'wrap'}}>
+        <a className="btn primary" href="/articles/ivypandit-letter-november-2026">Read Issue 2</a>
+        <a className="btn secondary" href="/newsletter">Newsletter archive</a>
+      </div>
+    </section>
+
     <section className="panel" aria-label="IvyPandit October 2026 newsletter" style={{marginBottom:'34px',padding:'28px',borderLeft:'5px solid #7f6a3a',background:'#f8f5ee'}}>
       <p className="kicker">The IvyPandit Letter • October 2026</p>
       <h2 className="sectionTitle">From Śāstra to Science: Attention, Memory & New Conversations</h2>
