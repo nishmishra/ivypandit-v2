@@ -61,6 +61,7 @@ export default function YogvaniOctober2026() {
             <p>ध्यान, जप तथा एकादशी जैसे उदाहरणों के माध्यम से लेख वास्तविक अभ्यास को समझने और उसके विभिन्न घटकों का निष्पक्ष अध्ययन करने का आग्रह करता है। संस्कृतविदों, परम्परा के जानकारों और वैज्ञानिकों का सहयोग इस प्रक्रिया में आवश्यक है। संस्कृत विश्वविद्यालय अपनी पाठ-विशेषज्ञता को बनाए रखते हुए अन्तरविषयी अनुसन्धान के केन्द्र बन सकते हैं।</p>
             <blockquote style={{borderLeft:'3px solid #c7932d',paddingLeft:'20px',margin:'24px 0'}}>“शास्त्र प्रश्न उत्पन्न करे। विज्ञान उसकी परीक्षा करे।”</blockquote>
           </section>
+          <p><Link className="textLink" href="/articles/yogvani-research-supplement-november-2026">Read my November 2026 IvyPandit Letter supplement on this article →</Link></p>
           <h2>Publication details</h2>
           <p lang="hi">मिश्र, निशांत कुमार। “शास्त्र से प्रयोगशाला तक — संस्कृत वाङ्मय का वैज्ञानिक अनुसन्धान।” <i>योगवाणी</i>, अक्टूबर 2026, पृ. 24–27।</p>
           <p><b>Publisher:</b> Shri Gorakhnath Mandir, Gorakhpur. <b>Category:</b> magazine essay / public scholarship. The summaries on this page are reading guides; the linked PDF contains the original published text.</p>
