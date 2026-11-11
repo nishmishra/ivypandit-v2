@@ -19,6 +19,12 @@ export default function NewsletterArchive(){
       </section>
 
       <div className="resourceGrid">
+        <Link className="panel linkedCard" href="/articles/yogvani-research-supplement-november-2026">
+          <span className="label">PUBLICATION SUPPLEMENT • NOVEMBER 2026</span>
+          <h2>From Śāstra to the Laboratory</h2>
+          <p>A note on the October 2026 <i>Yogvani</i> essay: how close reading of Sanskrit sources can lead to sound research questions and scholarly collaboration.</p>
+          <span>Read the supplement →</span>
+        </Link>
         <Link className="panel linkedCard" href="/articles/ivypandit-letter-november-2026">
           <span className="label">ISSUE 2 • NOVEMBER 2026</span>
           <h2>Study by Sequence, Curiosity & Question</h2>
