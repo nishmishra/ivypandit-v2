@@ -13,6 +13,7 @@ export type ContentItem = {
 };
 
 export const contentItems: ContentItem[] = [
+  {id:'IP-NEWS-002',title:'The IvyPandit Letter — November 2026',summary:'Issue 2: flexible study across Śāstra, Sanskrit, Indian Knowledge Systems, neuroscience, selected science-focused videos, and papers for further reading.',href:'/articles/ivypandit-letter-november-2026',type:'Newsletter',track:'Public Scholarship',topics:['IvyPandit','Newsletter','Neuroscience','YouTube','Sanskrit','Śāstra','Research Methods','Evidence'],language:'English',level:'General'},
   {id:'IP-DEVI-HUB',title:'Devī Bhāgavata: Sequential Study',summary:'Full Hindi readings, shorter discussions, study notes and Sanskrit vocabulary, beginning with Māhātmya and First Skandha chapters 1–5.',href:'/devi-bhagavata',type:'Study Hub',track:'Tradition / Śāstra',topics:['Devī Bhāgavata','देवीभागवत','Purāṇa','Śakti','Hayagrīva'],language:'Multilingual',level:'Start Here'},
   ...deviLessons.map((l,i):ContentItem=>({id:`IP-DEVI-LESSON-${i+1}`,title:l.title+' | '+l.hindi,summary:l.summary,href:`/devi-bhagavata/${l.slug}`,type:'Lesson',track:'Tradition / Śāstra',topics:['Devī Bhāgavata','देवीभागवत','Purāṇa','Śakti'],language:'Multilingual',level:'General'})),
   ...introductions.map((l,i):ContentItem=>({id:`IP-INTRO-${i+1}`,title:l.title,summary:l.summary,href:`/learn/${l.slug}`,type:'Lecture Guide',track:l.label.includes('Interdisciplinary')?'Interdisciplinary Inquiry':'Tradition / Śāstra',topics:['Start Here','IvyPandit',l.title],language:'Multilingual',level:'Start Here'})),
