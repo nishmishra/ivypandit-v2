@@ -164,6 +164,11 @@ export default function Videos(){return <>
       <h2 className="sectionTitle">Hindu traditions, Purāṇa, ritual, festivals, recitation & lived practice</h2>
       <p>This collection is explicitly traditional and cultural. It includes discussions of Hindu identity and saṃskṛti, Purāṇic and scriptural themes, vrata and festivals, ancestral traditions, mantra, Sandhyā, Sanskrit recitation, and lived Hindu practice.</p>
 
+      <div className="talkGrid" style={{marginBottom:'32px'}}>
+        <div className="videoEmbed"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/rPBlo-pRmKE" title="मङ्गलाचरण क्यों करते हैं?" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></div>
+        <div className="talkCopy"><span className="label">NEW LECTURE • NYĀYA / ŚĀSTRA • HINDI • 1 HR 28 MIN</span><h3>मङ्गलाचरण क्यों करते हैं? कार्य की समाप्ति या विघ्नों का नाश?</h3><p>Why do we begin scholarly works with an auspicious invocation? This lecture examines Maṅgalavāda, the three forms of maṅgalācaraṇa, Nyāya causal reasoning, Bāṇabhaṭṭa’s Kādambarī, and the distinction between completing a work and removing obstacles to its completion.</p><p>Published 23 November 2026.</p><a className="textLink" href="https://www.youtube.com/watch?v=rPBlo-pRmKE" target="_blank" rel="noopener noreferrer">Watch on YouTube →</a></div>
+      </div>
+
       <div className="curatedVideoGrid" style={{marginBottom:'32px'}}>
         {traditionHighlights.map((talk)=><div key={talk.id} className="videoCard"><a href={`https://www.youtube.com/watch?v=${talk.id}&t=${talk.start}s`} target="_blank" rel="noopener noreferrer"><img src={`https://i.ytimg.com/vi/${talk.id}/hqdefault.jpg`} alt={talk.title} loading="lazy"/></a><div><span className="label">TRADITION / ŚĀSTRA / CULTURE</span><h2>{talk.title}</h2><p>{talk.summary}</p><div className="buttons" style={{marginTop:'16px',flexWrap:'wrap'}}>{talk.versions.map((version)=><a key={version.id} className="btn secondary" href={`https://www.youtube.com/watch?v=${version.id}${version.start ? `&t=${version.start}s` : ''}`} target="_blank" rel="noopener noreferrer">{version.label}</a>)}</div></div></div>)}
       </div>
